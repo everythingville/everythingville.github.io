@@ -1,6 +1,6 @@
 # [Everythingville](https://everythingville.github.io/)
 
-![Hackatime Badge](https://hackatime-badge.hackclub.com/U07DMCJTB8Q/everythingville.github.io)
+![Hackatime Badge](https://hackatime-badge.hackclub.com/U07DMCJTB8Q/everythingville)
 
 *(Work in Progress)*
 
