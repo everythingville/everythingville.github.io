@@ -1,9 +1,8 @@
-// Map setup
+// Non-geographic map setup
 const map = L.map('map', {
-    center: [-29,50, 145],
-    zoom: 3.5
+    crs: L.CRS.Simple,
+    //minZoom: -5
 });
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attributtion: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+var  bounds = [[0,0], [1000,1000]];
+var image = L.imageOverlay('assets/img/uqm_map_full.png', bounds).addTo(map);
+map.fitBounds(bounds);
