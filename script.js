@@ -4,7 +4,7 @@
 var  bounds = [[0,0], [1000,1000]];
 const map = L.map('map', {
     crs: L.CRS.Simple, // REMINDER: CRS.Simple coordinates are in [y,x] format (L.latLng is opposite order from typical coordinates)
-    minZoom: -1,
+    minZoom: 0,
     maxBounds: bounds, // Prevents user from navigating outside grass
     maxBoundsViscosity: 1.0 // Re-enforces maxBounds
 });
@@ -14,57 +14,57 @@ map.fitBounds(bounds);
 const icons = {
     musicStore: L.icon({
         iconUrl: 'assets/img/buildings/musicStore.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     }),
     gym: L.icon({
         iconUrl: 'assets/img/buildings/gym.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     }),
     restaurant: L.icon({
         iconUrl: 'assets/img/buildings/restaurant.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     }),
     home: L.icon({
         iconUrl: 'assets/img/buildings/home.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     }),
     townHall: L.icon({
         iconUrl: 'assets/img/buildings/townHall.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     }),
     postOffice: L.icon({
         iconUrl: 'assets/img/buildings/postOffice.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     }),
     hardwareStore: L.icon({
         iconUrl: 'assets/img/buildings/hardwareStore.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     }),
     school: L.icon({
         iconUrl: 'assets/img/buildings/school.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     }),
     library: L.icon({
         iconUrl: 'assets/img/buildings/library.png',
-        iconSize: [100, 100],
-        iconAnchor: [50, 50],
-        popupAnchor: [0, -50]
+        iconSize: [150, 150],
+        iconAnchor: [75, 75],
+        popupAnchor: [0, -75]
     })
 };
 
@@ -90,7 +90,7 @@ L.marker(locations.hardwareStore, {icon: icons.hardwareStore}).addTo(map).bindPo
 L.marker(locations.school, {icon: icons.school}).addTo(map).bindPopup('<div class="popup"><h3>School</h3><a href="school.html"><button>Enter</button></a></div>');
 L.marker(locations.library, {icon: icons.library}).addTo(map).bindPopup('<div class="popup"><h3>Library</h3><a href="library.html"><button>Enter</button></a></div>');
 
-map.setView([500, 500], 0);
+map.setView([500, 500], 1);
 
 /*** LETTER GUIDES ***/
 
