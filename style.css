@@ -3,6 +3,27 @@ body {
     padding: 0;
 }
 
+button {
+    margin: 0 auto;
+    width: 75px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
 header {
     padding: 1rem;
     text-align: center;
@@ -19,12 +40,26 @@ body, h1, h2, h3, p, a, button {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+h1, h2, h3, button {
+    text-align: center;
+}
+
 .leaflet-container {
     background-color: #7ed957 !important;
 }
 
-#index-header {
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup button {
+    padding: 5px;
+    border-radius: 40px;
     background-color: #75d8ff;
+    border: 1px solid #75d8ff;
 }
 
 #map {

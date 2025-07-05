@@ -80,14 +80,14 @@ const locations = {
     library: [250, 750]
 };
 
-L.marker(locations.musicStore, {icon: icons.musicStore}).addTo(map).bindPopup('<h3>Music Store</h3><a href="musicStore.html"><button>Enter</button></a>');
-L.marker(locations.gym, {icon: icons.gym}).addTo(map).bindPopup('<h3>Gym</h3><a href="gym.html"><button>Enter</button></a>');
-L.marker(locations.restaurant, {icon: icons.restaurant}).addTo(map).bindPopup('<h3>Restaurant</h3><a href="restaurant.html"><button>Enter</button></a>');
-L.marker(locations.home, {icon: icons.home}).addTo(map).bindPopup('<h3>Home</h3><a href="home.html"><button>Enter</button></a>');
-L.marker(locations.townHall, {icon: icons.townHall}).addTo(map).bindPopup('<h3>Town Hall</h3><a href="townHall.html"><button>Enter</button></a>');
-L.marker(locations.postOffice, {icon: icons.postOffice}).addTo(map).bindPopup('<h3>Post Office</h3><a href="postOffice.html"><button>Enter</button></a>');
-L.marker(locations.hardwareStore, {icon: icons.hardwareStore}).addTo(map).bindPopup('<h3>Hardware Store</h3><a href="hardwareStore.html"><button>Enter</button></a>');
-L.marker(locations.school, {icon: icons.school}).addTo(map).bindPopup('<h3>School</h3><a href="school.html"><button>Enter</button></a>');
-L.marker(locations.library, {icon: icons.library}).addTo(map).bindPopup('<h3>Library</h3><a href="library.html"><button>Enter</button></a>');
+L.marker(locations.musicStore, {icon: icons.musicStore}).addTo(map).bindPopup('<div class="popup"><h3>Music Store</h3><a href="musicStore.html"><button>Enter</button></a></div>');
+L.marker(locations.gym, {icon: icons.gym}).addTo(map).bindPopup('<div class="popup"><h3>Gym</h3><a href="gym.html"><button>Enter</button></a></div>');
+L.marker(locations.restaurant, {icon: icons.restaurant}).addTo(map).bindPopup('<div class="popup"><h3>Restaurant</h3><a href="restaurant.html"><button>Enter</button></a></div>');
+L.marker(locations.home, {icon: icons.home}).addTo(map).bindPopup('<div class="popup"><h3>Home</h3><a href="home.html"><button>Enter</button></a></div>');
+L.marker(locations.townHall, {icon: icons.townHall}).addTo(map).bindPopup('<div class="popup"><h3>Town Hall</h3><a href="townHall.html"><button>Enter</button></a></div>');
+L.marker(locations.postOffice, {icon: icons.postOffice}).addTo(map).bindPopup('<div class="popup"><h3>Post Office</h3><a href="postOffice.html"><button>Enter</button></a></div>');
+L.marker(locations.hardwareStore, {icon: icons.hardwareStore}).addTo(map).bindPopup('<div class="popup"><h3>Hardware Store</h3><a href="hardwareStore.html"><button>Enter</button></a></div>');
+L.marker(locations.school, {icon: icons.school}).addTo(map).bindPopup('<div class="popup"><h3>School</h3><a href="school.html"><button>Enter</button></a></div>');
+L.marker(locations.library, {icon: icons.library}).addTo(map).bindPopup('<div class="popup"><h3>Library</h3><a href="library.html"><button>Enter</button></a></div>');
 
 map.setView([500, 500], 0);
