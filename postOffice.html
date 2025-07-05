@@ -7,7 +7,7 @@
         <link href="style.css" rel="stylesheet" type="text/css">
         <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     </head>
 
     <body class="postOffice">
@@ -22,10 +22,13 @@
             <main>
                 <section class="letter-guides">
                     <h2>Letter-Writing Guides</h2>
-                    <div class="btns">
-                        <button data-type="formal">Formal Letters</button>
-                        <button data-type="casual">Casual Letters</button>
-                        <button data-type="business">Business Letters</button>
+                    <div class="btns letter-guides">
+                        <button id="formal-btn" class="letter-guides" data-type="formal">Formal Letters</button>
+                        <button class="letter-guides" data-type="casual">Casual Letters</button>
+                        <button class="letter-guides" data-type="business">Business Letters</button>
+                        <button class="letter-guides" data-type="thanks">Thank You Letters</button>
+                        <button class="letter-guides" data-type="complaint">Complaint Letters</button>
+                        <button class="letter-guides" data-type="invite">Invitations</button>
                     </div>
                     <div id="letter-display"></div>
                 </section>
