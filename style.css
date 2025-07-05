@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'ProductSans';
+    src: url('assets/fonts/ProductSans-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'ProductSans';
 }
 
 header {
@@ -12,6 +21,7 @@ main {
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 .leaflet-container {
