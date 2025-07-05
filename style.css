@@ -23,6 +23,10 @@ h3 {
     font-size: 18px;
 }
 
+iframe {
+    margin: 20px;
+}
+
 p {
     font-size: 16px;
 }
@@ -57,7 +61,7 @@ body.musicStore {
     background-repeat: no-repeat;
 }
 body.musicStore div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.gym {
@@ -68,7 +72,7 @@ body.gym {
     background-repeat: no-repeat;
 }
 body.gym div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.restaurant {
@@ -79,7 +83,7 @@ body.restaurant {
     background-repeat: no-repeat;
 }
 body.restaurant div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.home {
@@ -90,7 +94,7 @@ body.home {
     background-repeat: no-repeat;
 }
 body.home div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.townHall {
@@ -101,7 +105,7 @@ body.townHall {
     background-repeat: no-repeat;
 }
 body.townHall div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.postOffice {
@@ -112,7 +116,7 @@ body.postOffice {
     background-repeat: no-repeat;
 }
 body.postOffice div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.hardwareStore {
@@ -123,7 +127,7 @@ body.hardwareStore {
     background-repeat: no-repeat;
 }
 body.hardwareStore div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.school {
@@ -134,7 +138,7 @@ body.school {
     background-repeat: no-repeat;
 }
 body.school div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 body.library {
@@ -145,7 +149,7 @@ body.library {
     background-repeat: no-repeat;
 }
 body.library div {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .leaflet-container {
