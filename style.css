@@ -3,11 +3,41 @@ body {
     padding: 0;
 }
 
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.leaflet-container {
+    background-color: #7ed957 !important;
+}
+
 #map {
     height: 100vh;
     width: 100vw;
 }
 
-.leaflet-container {
-    background-color: #7ed957 !important;
+#map-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#map-nav img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+#map-nav img:hover {
+    opacity: 1;
+    transition: all 0.3s;
 }
