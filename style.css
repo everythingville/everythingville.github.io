@@ -24,7 +24,7 @@ h3 {
 }
 
 iframe {
-    margin: 20px;
+    margin: 20px 0px;
 }
 
 p {
@@ -194,4 +194,9 @@ body.library div {
 #map-nav img:hover {
     opacity: 1;
     transition: all 0.3s;
+}
+
+#playlists {
+    max-width: 600px;
+    margin: auto;
 }
