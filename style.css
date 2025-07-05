@@ -44,7 +44,7 @@ main {
 }
 
 body, h1, h2, h3, p, a, button {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, button {
