@@ -5,7 +5,7 @@ const letterTemplates = {
         title: "Formal Letter (Job Application)",
         structure: `
             <div>
-                <h3>Structure</h3>
+                <h4>Structure</h4>
                 <ol>
                     <li>Your address</li>
                     <li>Date</li>
@@ -20,7 +20,7 @@ const letterTemplates = {
         `,
         example: `
             <div class="letter-example">
-                <h3>Example</h3>
+                <h4>Example</h4>
                 <textarea readonly>
                     123 Main St
                     Anytown, USA
@@ -34,7 +34,7 @@ const letterTemplates = {
 
                     Dear Ms. Doe,
 
-                    I am writing to apply... [continues explaining for 3-4 paragraphs]
+                    I am writing to apply... [etc.]
                 </textarea>
             </div>
         `
@@ -43,14 +43,14 @@ const letterTemplates = {
 
 document.querySelectorAll('button.letter-guides').forEach(button => {
     button.addEventListener('click', () => {
-        console.log("click");
         const type = button.dataset.type;
         const letterTemplate = letterTemplates[type];
 
         document.getElementById('letter-display').innerHTML = `
-            <h3>${template.title}</h3>
-            ${template.structure}
-            ${template.example}
+            <h3>${letterTemplate.title}</h3>
+            ${letterTemplate.structure}
+            ${letterTemplate.example}
+            <br>
             <button class="copy-btn">Copy Example</button>
         `;
     });
@@ -61,6 +61,6 @@ document.addEventListener('click', (e) => {
         const textarea = e.target.closest('div').querySelector('textarea');
         textarea.select();
         document.execCommand('copy');
-        alert('Copied to clipboard');
+        alert('Copied to clipboard!');
     }
 });

@@ -32,20 +32,24 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h4, p {
     font-size: 16px;
 }
 
+header {
+    padding: 1rem;
+    text-align: center;
+}
+
 iframe {
     margin: 20px 0px;
 }
 
-header {
-    padding: 1rem;
-    text-align: center;
+li {
+    padding: 5px;
 }
 
 main {
@@ -63,6 +67,7 @@ section {
 section div {
     background: none !important;
     display: flex;
+    flex-direction: column;
 }
 
 textarea {
@@ -72,11 +77,11 @@ textarea {
     padding: 10px;
 }
 
-body, h1, h2, h3, p, a, button {
+body, h1, h2, h3, h4, p, a, button {
     font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h1, h2, h3, button {
+h1, h2, h3, h4, button {
     text-align: center;
 }
 
@@ -181,8 +186,8 @@ body.library div {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-div.btns {
-    flex-direction: column;
+button.copy-btn {
+    width: 150px;
 }
 
 div.btns button {
@@ -218,7 +223,7 @@ div.btns button {
 /*** IDS ***/
 
 #letter-display {
-    margin-top: 20px;
+    margin: 20px;
     padding: 20px;
     background: #f9f9f9;
     border-radius: 5px;
