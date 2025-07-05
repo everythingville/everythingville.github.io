@@ -91,3 +91,6 @@ L.marker(locations.school, {icon: icons.school}).addTo(map).bindPopup('<div clas
 L.marker(locations.library, {icon: icons.library}).addTo(map).bindPopup('<div class="popup"><h3>Library</h3><a href="library.html"><button>Enter</button></a></div>');
 
 map.setView([500, 500], 0);
+
+/*** LETTER GUIDES ***/
+

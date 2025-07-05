@@ -153,6 +153,11 @@ body.library div {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+section.playlists {
+    max-width: 600px;
+    margin: auto;
+}
+
 .leaflet-container {
     background-color: #7ed957 !important;
 }
@@ -195,9 +200,4 @@ body.library div {
 #map-nav img:hover {
     opacity: 1;
     transition: all 0.3s;
-}
-
-#playlists {
-    max-width: 600px;
-    margin: auto;
 }
