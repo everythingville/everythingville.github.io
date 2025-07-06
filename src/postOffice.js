@@ -397,11 +397,11 @@ const loadFields = (type) => {
                 <input type="text" id="sender-org" required>
             <label>Address of Your Institution:</label>
                 <input type="text" id="sender-address" required>
-            <label>Your Email Address:</label>
+            <label>Your Email Address (Optional):</label>
                 <input type="text" id="sender-email">
             <label>Recipient's Name and Title:</label>
                 <input type="text" id="recipient-name" required>
-            <label>Recipient's Department or Position:</label>
+            <label>Recipient's Department or Position (Optional):</label>
                 <input type="text" id="recipient-position">
             <label>Recipient's Institution:</label>
                 <input type="text" id="recipient-org" required>
@@ -413,23 +413,23 @@ const loadFields = (type) => {
                 <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Reason for writing" required>
-            <label>Body Paragraph 2:</label>
+            <label>Body Paragraph 2 (Optional):</label>
                 <input type="text" id="body2" placeholder="Context/background">
-            <label>Body Paragraph 3:</label>
+            <label>Body Paragraph 3 (Optional):</label>
                 <input type="text" id="body3" placeholder="What you're asking for">
             <label>Closing:</label>
                 <input type="text" id="closing" value="Respectfully," required>
-            <label>Your Credentials:</label>
+            <label>Your Credentials (Optional):</label>
                 <input type="text" id="sender-credentials">
         `,
         business: `
-            <label>Your Company:</label>
+            <label>Your Company (Optional):</label>
                 <input type="text" id="sender-org">
             <label>Personal or Company Address:</label>
                 <input type="text" id="sender-address" required>
             <label>Recipient's Name and Title:</label>
                 <input type="text" id="recipient-name" required>
-            <label>Recipient's Department or Position:</label>
+            <label>Recipient's Department or Position (Optional):</label>
                 <input type="text" id="recipient-position">
             <label>Recipient's Company:</label>
                 <input type="text" id="recipient-org" required>
@@ -441,19 +441,19 @@ const loadFields = (type) => {
                 <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Goal of letter" required>
-            <label>Body Paragraph 2:</label>
+            <label>Body Paragraph 2 (Optional):</label>
                 <input type="text" id="body2" placeholder="Data/context">
-            <label>Body Paragraph 3:</label>
+            <label>Body Paragraph 3 (Optional):</label>
                 <input type="text" id="body3" placeholder="Next steps">
             <label>Closing:</label>
                 <input type="text" id="closing" value="Best regards," required>
             <label>Your Name and Title:</label>
                 <input type="text" id="sender-name" required>
-            <label>Your Department or Position:</label>
+            <label>Your Department or Position (Optional):</label>
                 <input type="text" id="sender-position">
         `,
         casual: `
-            <label>Your Address:</label>
+            <label>Your Address (Optional):</label>
                 <input type="text" id="sender-address">
             <label>Greeting:</label>
                 <input type="text" id="greeting" value="Hi !" required>
@@ -469,7 +469,7 @@ const loadFields = (type) => {
                 <input type="text" id="sender-name" required>
             <label>Recipient's Name and Title:</label>
                 <input type="text" id="recipient-name" required>
-            <label>Recipient's Department or Position:</label>
+            <label>Recipient's Department or Position (Optional):</label>
                 <input type="text" id="recipient-position">
             <label>Recipient's Company:</label>
                 <input type="text" id="recipient-org" required>
@@ -477,9 +477,9 @@ const loadFields = (type) => {
                 <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Specific thanks" required>
-            <label>Body Paragraph 2:</label>
+            <label>Body Paragraph 2 (Optional):</label>
                 <input type="text" id="body2" placeholder="Personal detail">
-            <label>Body Paragraph 3:</label>
+            <label>Body Paragraph 3 (Optional):</label>
                 <input type="text" id="body3" placeholder="Future intentions">
             <label>Closing:</label>
                 <input type="text" id="closing" value="With gratitude," required>
@@ -489,7 +489,7 @@ const loadFields = (type) => {
                 <input type="text" id="sender-name" required>
             <label>Your Address:</label>
                 <input type="text" id="sender-address" required>
-            <label>Recipient's Position:</label>
+            <label>Recipient's Position (Optional):</label>
                 <input type="text" id="recipient-position">
             <label>Recipient's Company:</label>
                 <input type="text" id="recipient-org" required>
@@ -501,27 +501,27 @@ const loadFields = (type) => {
                 <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Date, location, product" required>
-            <label>Body Paragraph 2:</label>
+            <label>Body Paragraph 2 (Optional):</label>
                 <input type="text" id="body2" placeholder="Impact">
-            <label>Body Paragraph 3:</label>
+            <label>Body Paragraph 3 (Optional):</label>
                 <input type="text" id="body3" placeholder="Resolution request">
             <label>Closing:</label>
                 <input type="text" id="closing" value="Sincerely,">
-            <label>Your Phone Number:</label>
+            <label>Your Phone Number (Optional):</label>
                 <input type="text" id="sender-phone">
-            <label>Your Email Address:</label>
+            <label>Your Email Address (Optional):</label>
                 <input type="text" id="sender-email">
         `,
         invite: `
-            <label>Your Organization:</label>
+            <label>Your Organization (Optional):</label>
                 <input type="text" id="sender-org">
             <label>Personal or Organization Address:</label>
                 <input type="text" id="sender-address" required>
             <label>Recipient's Name and Title:</label>
                 <input type="text" id="recipient-name" required>
-            <label>Recipient's Position:</label>
+            <label>Recipient's Position (Optional):</label>
                 <input type="text" id="recipient-position">
-            <label>Recipient's Organization:</label>
+            <label>Recipient's Organization (Optional):</label>
                 <input type="text" id="recipient-org">
             <label>Subject:</label>
                 <input type="text" id="subject" value="Invitation: " required>
@@ -529,15 +529,15 @@ const loadFields = (type) => {
                 <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Event purpose" required>
-            <label>Body Paragraph 2:</label>
+            <label>Body Paragraph 2 (Optional):</label>
                 <input type="text" id="body2" placeholder="Date, time, venue">
-            <label>Body Paragraph 3:</label>
+            <label>Body Paragraph 3 (Optional):</label>
                 <input type="text" id="body3" placeholder="RSVP instructions">
             <label>Closing:</label>
                 <input type="text" id="closing" value="Best regards," required>
             <label>Your Name and Title:</label>
                 <input type="text" id="sender-name" required>
-            <label>Your Position:</label>
+            <label>Your Position (Optional):</label>
                 <input type="text" id="sender-position">
         `
     };
