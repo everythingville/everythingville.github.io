@@ -220,9 +220,11 @@ div.btns button {
     background: #e74c3c;
     color: white;
     border: none;
-    border-radius: 3px;
-    padding: 2px 5px;
-    font-size: 12px;
+}
+
+.delete-btn:active {
+    color: black;
+    transition: all 0.3s;
 }
 
 .hidden {

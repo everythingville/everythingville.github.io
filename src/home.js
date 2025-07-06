@@ -11,7 +11,6 @@ try {
 // Save journal entry
 document.getElementById('save-btn').addEventListener('click', () => {
     const journalEntry = document.getElementById('current-journal').value;
-    console.log(journalEntry);
     if(journalEntry) {
         const timestamp = new Date().toLocaleString();
         journalEntries.push({timestamp, journalEntry});
@@ -28,7 +27,7 @@ function displayEntries() {
     pastJournals.innerHTML = journalEntries.map((item, index) => `
         <div class="journal-entry">
             <small>${item.timestamp}</small>
-            <p>${item.entry}</p>
+            <p>${item.journalEntry}</p>
             <button class="delete-btn" data-index="${index}">Delete</button>
         </div>
     `).join('');
@@ -36,7 +35,7 @@ function displayEntries() {
 
 // Delete journal entries
 document.querySelectorAll('.delete-btn').forEach(btn => {
-    btn.addEventListener('clcik', (e) => {
+    btn.addEventListener('click', (e) => {
         journalEntries.splice(e.target.dataset.index, 1);
         localStorage.setItem('journalEntries', JSON.stringify(journalEntries));
         displayEntries();
@@ -46,7 +45,7 @@ document.querySelectorAll('.delete-btn').forEach(btn => {
 // Export all past journal entries
 document.getElementById('export-btn').addEventListener('click', () => {
     const journalContent = journalEntries.map(item => `
-        ${item.timestamp}\n${item.entry}\n\n
+        ${item.timestamp}\n${item.journalEntry}\n\n
     `).join('');
     const blob = new Blob([journalContent], {type: 'text/plain'});
     const a = document.createElement('a');
