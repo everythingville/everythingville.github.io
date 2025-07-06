@@ -10,8 +10,8 @@ try {
 
 // Save journal entry
 document.getElementById('save-btn').addEventListener('click', () => {
-    const journalEntry = document.getElementById('current-journal').vallue;
-    // console.log(document.getElementById('current-journal'));
+    const journalEntry = document.getElementById('current-journal').value;
+    console.log(journalEntry);
     if(journalEntry) {
         const timestamp = new Date().toLocaleString();
         journalEntries.push({timestamp, journalEntry});
