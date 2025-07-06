@@ -629,7 +629,7 @@ ${formData.recipientOrg}
 
 ${formData.greeting}
 
-${formData.body1}${formData.body2 ? '\n' + formData.body2 : ''}${formData.body3 ? '\n' + formData.body3 : ''}
+${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
 
 ${formData.closing}
 ${formData.senderName}
@@ -637,12 +637,38 @@ ${formData.senderName}
             break;
         case 'complaint':
             letter = `
+${formData.senderName}
+${formData.senderAddress}
 ${new Date().toLocaleDateString()}
+
+${formData.recipientPosition ? formData.recipientPosition + '\n' : ''}${formData.recipientOrg}
+${formData.recipientAddress}
+
+${formData.subject}
+
+${formData.greeting}
+
+${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
+
+${formData.closing}
+${formData.senderName}${formData.senderPhone ? '\n' + formData.senderPhone : ''}${formData.senderEmail ? '\n' + formData.senderEmail : ''}
             `;
             break;
         case 'invite':
             letter = `
+${formData.senderOrg ? formData.senderOrg + '\n' : ''}${formData.senderAddress}
 ${new Date().toLocaleDateString()}
+
+${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}${formData.recipientOrg ? '\n' + formData.recipientOrg : ''}
+
+${formData.subject}
+
+${formData.greeting}
+
+${formData.body1}${formData.body2 ? '\n' + formData.body2 : ''}${formData.body3 ? '\n' + formData.body3 : ''}
+
+${formData.closing}
+${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition : ''}
             `;
             break;
     }
