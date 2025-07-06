@@ -373,7 +373,6 @@ const buildForm = () => {
             <h3>Your Letter</h3>
             <div id="final-letter"></div>
             <button id="print-btn">Print</button>
-            <button id="new-letter-btn">New Letter</button>
         </div>
     `;
     document.getElementById('letter-type').addEventListener('change', (e) => {
@@ -652,9 +651,6 @@ ${new Date().toLocaleDateString()}
     document.getElementById('generated-letter').classList.remove('hidden');
 
     document.getElementById('print-btn').addEventListener('click', printLetter);
-    document.getElementById('new-letter-btn').addEventListener('click', () => {
-        location.reload();
-    });
 };
 
 document.querySelector('[data-type="builder"]').addEventListener('click', buildForm);
