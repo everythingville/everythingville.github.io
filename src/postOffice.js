@@ -366,15 +366,12 @@ const buildForm = () => {
 
             <div id="letter-fields"></div>
 
-            <label>Your Letter:</label>
-            <textarea id="letter-draft" rows="10"></textarea>
-
             <button type="button" id="generate-btn">Generate Letter</button>
             <button type="button" id="reset-btn">Reset</button>
         </form>
 
         <div id="generated-letter" class="hidden">
-            <h4>Your Finished Letter</h4>
+            <h3>Your Letter</h3>
             <div id="final-letter"></div>
             <button id="print-btn">Print</button>
             <button id="new-letter-btn">New Letter</button>
@@ -568,8 +565,7 @@ const generateLetter = () => {
         body1: document.getElementById('body1')?.value || '',
         body2: document.getElementById('body2')?.value || '',
         body3: document.getElementById('body3')?.value || '',
-        closing: document.getElementById('closing')?.value || '',
-        content: document.getElementById('letter-draft').value
+        closing: document.getElementById('closing')?.value || ''
     };
     let letter = '';
 
@@ -577,24 +573,24 @@ const generateLetter = () => {
     switch(type) {
         case 'academic':
             letter = `
-                ${formData.senderName}
-                ${formData.senderOrg}
-                ${formData.senderAddress}${formData.senderEmail ? '\n' + formData.senderEmail : ''}
+${formData.senderName}
+${formData.senderOrg}
+${formData.senderAddress}${formData.senderEmail ? '\n' + formData.senderEmail : ''}
 
-                ${new Date().toLocaleDateString()}
-                
-                ${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}
-                ${formData.recipientOrg}
-                ${formData.recipientAddress}
+${new Date().toLocaleDateString()}
 
-                ${formData.subject}
+${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}
+${formData.recipientOrg}
+${formData.recipientAddress}
 
-                ${formData.greeting}
+${formData.subject}
 
-                ${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
+${formData.greeting}
 
-                ${formData.closing}
-                ${formData.senderName}${formData.senderCredentials ? '\n' + formData.senderCredentials : ''}
+${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
+
+${formData.closing}
+${formData.senderName}${formData.senderCredentials ? '\n' + formData.senderCredentials : ''}
             `;
             break;
         case 'business':
@@ -651,9 +647,29 @@ const printLetter = () => {
                         white-space: pre-wrap;
                         padding: 20px;
                     }
+                    button {
+                        display: block;
+                        margin: 10px auto;
+                        font-size: 14px;
+                        padding: 5px 20px;
+                        border-radius: 40px;
+                        background-color: #75d8ff;
+                        border: 1px solid #75d8ff;
+                        color: black;
+                        transition: all 0.3s;
+                    }
+                    button:hover {
+                        color: #ffffff;
+                        box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+                        cursor: pointer;
+                        transition: all 0.3s;
+                    }
                     @media print {
                         .no-print {
                             display: none;
+                        }
+                        #final-letter {
+                            white-space: pre-line !important;
                         }
                     }
                 </style>

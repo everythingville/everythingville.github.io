@@ -233,8 +233,12 @@ div.btns button {
 
 /*** IDS ***/
 
+#final-letter {
+    padding: 20px;
+    white-space: pre-line; /* For plain text, respects \n for line breaks, collapses other whitespace */
+}
+
 #generated-letter {
-    margin-top: 20px;
     padding: 20px;
     background: #f9f9f9;
     border-radius: 5px;
@@ -290,11 +294,14 @@ div.btns button {
 /*** MEDIA QUERIES ***/
 
 @media print {
-    #map-nav, div.letter-guides, #letter-form, .no-print {
-        display: none !important;
-    }
     body {
         background: white !important;
         color: black !important;
+    }
+    #final-letter {
+        white-space: pre-line !important;
+    }
+    #map-nav, div.letter-guides, #letter-form, .no-print {
+        display: none !important;
     }
 }
