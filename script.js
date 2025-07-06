@@ -115,8 +115,13 @@ const buildings = {
     }
 };
 
-L.marker(locations.musicStore, {icon: icons.musicStore}).addTo(map).bindPopup(`<div class="popup"><h3>${details.musicStore.title}</h3><p class="center"><i>${details.musicStore.hook}</i><br><br>${details.musicStore.description}</p><a href="${details.musicStore.file}.html"><button>Enter</button></a></div>`);
-L.marker(locations.gym, {icon: icons.gym}).addTo(map).bindPopup('<div class="popup"><h3>Gym</h3><p class="center"><i>Feel like exercising?</i><br><br>Check out workout guides designed to help you achieve your fitness goals</p><a href="gym.html"><button>Enter</button></a></div>');
+for (const b in buildings) {
+    console.log(b);
+    L.marker(locations.musicStore, {icon: icons.musicStore}).addTo(map).bindPopup(`<div class="popup"><h3>${details.musicStore.title}</h3><p class="center"><i>${details.musicStore.hook}</i><br><br>${details.musicStore.description}</p><a href="${details.musicStore.file}.html"><button>Enter</button></a></div>`);
+}
+
+// L.marker(locations.musicStore, {icon: icons.musicStore}).addTo(map).bindPopup(`<div class="popup"><h3>${details.musicStore.title}</h3><p class="center"><i>${details.musicStore.hook}</i><br><br>${details.musicStore.description}</p><a href="${details.musicStore.file}.html"><button>Enter</button></a></div>`);
+// L.marker(locations.gym, {icon: icons.gym}).addTo(map).bindPopup('<div class="popup"><h3>Gym</h3><p class="center"><i>Feel like exercising?</i><br><br>Check out workout guides designed to help you achieve your fitness goals</p><a href="gym.html"><button>Enter</button></a></div>');
 L.marker(locations.restaurant, {icon: icons.restaurant}).addTo(map).bindPopup('<div class="popup"><h3>Restaurant</h3><p class="center"><i>Want to cook or bake?</i><br><br>Access recipes to suit a variety of occasions and diets</p><a href="restaurant.html"><button>Enter</button></a></div>');
 L.marker(locations.home, {icon: icons.home}).addTo(map).bindPopup('<div class="popup"><h3>Home</h3><p class="center"><i>Feel like writing?</i><br><br>Jot down your thoughts and save them for future reference in your digital journal</p><a href="home.html"><button>Enter</button></a></div>');
 townHall = L.marker(locations.townHall, {icon: icons.townHall}).addTo(map);
