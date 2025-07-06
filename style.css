@@ -6,9 +6,9 @@ body {
 }
 
 button {
-    margin: 0 auto;
+    margin: 10px auto;
     font-size: 14px;
-    padding: 5px;
+    padding: 5px 20px;
     border-radius: 40px;
     background-color: #75d8ff;
     border: 1px solid #75d8ff;
@@ -83,6 +83,10 @@ body, h1, h2, h3, h4, p, a, button {
 
 h1, h2, h3, h4, button, p.center {
     text-align: center;
+}
+
+label, input {
+    margin: 5px 0px;
 }
 
 /*** CLASSES ***/
@@ -191,8 +195,7 @@ button.copy-btn {
 }
 
 div.btns button {
-    width: 150px;
-    margin: 7px auto;
+    width: 175px;
 }
 
 /* div.letter-guides {

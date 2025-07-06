@@ -349,13 +349,14 @@ document.addEventListener('click', (e) => {
 /*** LETTER BUILDER ***/
 
 // Builder structure
-const buildLetter = () => {
+const buildForm = () => {
     document.getElementById('letter-display').innerHTML = `
         <h3>Letter Builder</h3>
         <form id="letter-form">
             <label>Letter Type:</label>
             <select id="letter-type">
-                <option value="formal">Academic</option>
+                <option value="none">None selected</option>
+                <option value="academic">Academic</option>
                 <option value="business">Business</option>
                 <option value="casual">Casual</option>
                 <option value="thanks">Thank You</option>
@@ -391,6 +392,7 @@ const buildLetter = () => {
 // Form fields for each letter type
 const loadFields = (type) => {
     const fields = {
+        none: `<p>Select a letter type to continue</p>`,
         academic: `
             <label>Your Name:</label>
                 <input type="text" id="sender-name" required>
@@ -621,4 +623,18 @@ const generateLetter = () => {
             `;
             break;
     }
-}
+
+    document.getElementById('final-letter').textContent = letter;
+    document.getElementById('generated-letter').classList.remove('hidden');
+
+    document.getElementById('print-btn').addEventListener('click', printLetter);
+    document.getElementById('new-letter-btn').addEventListener('click', () => {
+        document.getElementById('generated-letter').classList.add('hidden');
+        document.getElementById('letter-form').reset();
+    });
+};
+
+document.querySelector('div.letter-guides').innerHTML += `
+    <button data-type="builder">Letter Builder</button>
+`;
+document.querySelector('[data-type="builder"]').addEventListener('click', buildForm);
