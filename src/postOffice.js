@@ -351,7 +351,7 @@ document.addEventListener('click', (e) => {
 // Builder structure
 const buildForm = () => {
     document.getElementById('letter-display').innerHTML = `
-        <h3>Letter Builder</h3>
+        <h2>Letter Builder</h2>
         <form id="letter-form">
             <label>Letter Type:</label>
             <select id="letter-type">
