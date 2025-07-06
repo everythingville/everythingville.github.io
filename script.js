@@ -99,6 +99,19 @@ const buildings = {
         hook: 'Want something in the background?',
         description: 'Listen to music and relaxing sounds to help you concentrate and have fun',
         file: 'musicStore'
+    },
+    gym: {
+        icon: L.icon({
+            iconUrl: 'assets/img/buildings/gym.png',
+            iconSize: [150, 150],
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
+        }),
+        location: [750, 500],
+        title: 'Gym',
+        hook: 'Feel like exercising?',
+        description: 'Check out workout guides designed to help you achieve your fitness goals',
+        file: 'gym'
     }
 };
 
