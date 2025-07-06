@@ -37,5 +37,10 @@
     "editor.suggest.showUnits": false,
     "editor.suggest.showValues": false,
     "editor.suggest.showVariables": false,
-    "editor.suggest.showWords": false
+    "editor.suggest.showWords": false,
+    "css.hover.documentation": false,
+    "less.hover.documentation": false,
+    "scss.hover.documentation": false,
+    "html.hover.documentation": false,
+    "html.hover.references": false
 }

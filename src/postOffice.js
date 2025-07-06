@@ -634,9 +634,6 @@ const generateLetter = () => {
     });
 };
 
-document.querySelector('div.letter-guides').innerHTML += `
-    <button data-type="builder">Letter Builder</button>
-`;
 document.querySelector('[data-type="builder"]').addEventListener('click', buildForm);
 
 // Letter printer
