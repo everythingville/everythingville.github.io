@@ -626,7 +626,18 @@ ${formData.senderName}
             break;
         case 'thanks':
             letter = `
+${formData.senderName}
 ${new Date().toLocaleDateString()}
+
+${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}
+${formData.recipientOrg}
+
+${formData.greeting}
+
+${formData.body1}${formData.body2 ? '\n' + formData.body2 : ''}${formData.body3 ? '\n' + formData.body3 : ''}
+
+${formData.closing}
+${formData.senderName}
             `;
             break;
         case 'complaint':
