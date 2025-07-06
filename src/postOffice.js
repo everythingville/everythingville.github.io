@@ -638,3 +638,38 @@ document.querySelector('div.letter-guides').innerHTML += `
     <button data-type="builder">Letter Builder</button>
 `;
 document.querySelector('[data-type="builder"]').addEventListener('click', buildForm);
+
+// Letter printer
+const printLetter = () => {
+    const printWindow = window.open('', '', 'width=600,height=600');
+    printWindow.document.write(`
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Print Letter | Everythingville</title>
+                <style>
+                    body {
+                        font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        line-height: 1.5;
+                        white-space: pre-wrap;
+                        padding: 20px;
+                    }
+                    @media print {
+                        .no-print {
+                            display: none;
+                        }
+                    }
+                </style>
+            </head>
+
+            <body>
+                <div>
+                    ${document.getElementById('final-letter').innerHTML.replace(/\n/g, '<br>')}
+                </div>
+                <button class="no-print" onclick="window.close()">Close</button>
+            </body>
+        </html>
+    `);
+    printWindow.document.close();
+    printWindow.focus()
+}
