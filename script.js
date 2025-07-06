@@ -85,8 +85,9 @@ L.marker(locations.gym, {icon: icons.gym}).addTo(map).bindPopup('<div class="pop
 L.marker(locations.restaurant, {icon: icons.restaurant}).addTo(map).bindPopup('<div class="popup"><h3>Restaurant</h3><p class="center">Access recipes to suit a variety of occasions and diets</p><a href="restaurant.html"><button>Enter</button></a></div>');
 L.marker(locations.home, {icon: icons.home}).addTo(map).bindPopup('<div class="popup"><h3>Home</h3><p class="center">Jot down your thoughts in your digital journal</p><a href="home.html"><button>Enter</button></a></div>');
 townHall = L.marker(locations.townHall, {icon: icons.townHall}).addTo(map);
+townHall.bindPopup('<div class="popup"><h3>Town Hall</h3><p class="center">Welcome to Everythingville! Learn more about the town and how to navigate</p><a href="townHall.html"><button>Enter</button></a></div>');
 townHall.on('click', function(e) {
-    townHall.bindPopup('<div class="popup"><h3>Town Hall</h3><p class="center">Welcome to Everythingville! Learn more about the town and how to navigate</p><a href="townHall.html"><button>Enter</button></a></div>').openPopup();
+    townHall.openPopup();
 });
 L.marker(locations.postOffice, {icon: icons.postOffice}).addTo(map).bindPopup('<div class="popup"><h3>Post Office</h3><p class="center">Write and print letters using templates designed for a variety of occasions</p><a href="postOffice.html"><button>Enter</button></a></div>');
 L.marker(locations.hardwareStore, {icon: icons.hardwareStore}).addTo(map).bindPopup('<div class="popup"><h3>Hardware Store</h3><p class="center">Access DIY tutorials to guide you through a variety of useful life hacks and crafts</p><a href="hardwareStore.html"><button>Enter</button></a></div>');
