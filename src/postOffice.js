@@ -22,9 +22,9 @@ const letterTemplates = {
                     <li>Formal greeting</li>
                     <li>Body:</li>
                     <ul>
-                        <li>State your reason for writing</li>
-                        <li>Provide context or background</li>
-                        <li>Specify what you are asking for</li>
+                        <li>Reason for writing</li>
+                        <li>Context or background</li>
+                        <li>What you are asking for</li>
                     </ul>
                     <li>Professional closing</li>
                     <li>Your name</li>
@@ -77,13 +77,13 @@ ABC University Class of 2027</textarea>
                     <li>Recipient's department or position (optional)</li>
                     <li>Recipient's company</li>
                     <li>Address of recipient's company</li>
-                    <li>Reference (Re:) or subject line</li>
+                    <li>Clear subject line</li>
                     <li>Formal greeting</li>
                     <li>Body:</li>
                     <ul>
-                        <li>State the letter's goal</li>
-                        <li>Provide data or context</li>
-                        <li>Specify next steps</li>
+                        <li>Goal of letter</li>
+                        <li>Data or context</li>
+                        <li>Next steps</li>
                     </ul>
                     <li>Professional closing</li>
                     <li>Your name and title</li>
@@ -270,7 +270,7 @@ janedoe@email.com</textarea>
                 <p class="center"><b>Use case:</b> Events, conferences, or ceremonies</p>
                 <h4>Structure</h4>
                 <ol>
-                    <li>Your name or organization</li>
+                    <li>Your organization (optional)</li>
                     <li>Personal or organization address</li>
                     <li>Date</li>
                     <li>Recipient's name and title</li>
@@ -395,67 +395,151 @@ const loadFields = (type) => {
             <label>Your Name:</label>
                 <input type="text" id="sender-name" required>
             <label>Your Institution:</label>
-                <input type="text" id="sender-org">
+                <input type="text" id="sender-org" required>
+            <label>Address of Your Institution:</label>
+                <input type="text" id="sender-address" required>
+            <label>Your Email Address:</label>
+                <input type="text" id="sender-email">
             <label>Recipient's Name and Title:</label>
                 <input type="text" id="recipient-name" required>
+            <label>Recipient's Department or Position:</label>
+                <input type="text" id="recipient-position">
             <label>Recipient's Institution:</label>
-                <input type="text" id="recipient-org">
+                <input type="text" id="recipient-org" required>
+            <label>Address of Recipient's Institution:</label>
+                <input type="text" id="recipient-address" required>
             <label>Subject:</label>
                 <input type="text" id="subject" required>
+            <label>Greeting:</label>
+                <input type="text" id="greeting" placeholder="Dear [title] [last name]," required>
+            <label>Body Paragraph 1:</label>
+                <input type="text" id="body1" placeholder="Reason for writing" required>
+            <label>Body Paragraph 2:</label>
+                <input type="text" id="body2" placeholder="Context/background">
+            <label>Body Paragraph 3:</label>
+                <input type="text" id="body3" placeholder="What you're asking for">
+            <label>Closing:</label>
+                <input type="text" id="closing" placeholder="Respectfully," required>
+            <label>Your Credentials:</label>
+                <input type="text" id="sender-credentials">
         `,
         business: `
-            <label>Your Name and Title:</label>
-                <input type="text" id="sender-name" required>
-            <label>Your Company Name:</label>
+            <label>Your Company:</label>
                 <input type="text" id="sender-org">
+            <label>Personal or Company Address:</label>
+                <input type="text" id="sender-address" required>
             <label>Recipient's Name and Title:</label>
                 <input type="text" id="recipient-name" required>
-            <label>Recipient's Company Name:</label>
-                <input type="text" id="recipient-org">
-            <label>Reference (Re):</label>
-                <input type="text" id="subject">
+            <label>Recipient's Department or Position:</label>
+                <input type="text" id="recipient-position">
+            <label>Recipient's Company:</label>
+                <input type="text" id="recipient-org" required>
+            <label>Address of Recipient's Company:</label>
+                <input type="text" id="recipient-address" required>
+            <label>Subject:</label>
+                <input type="text" id="subject" required>
+            <label>Greeting:</label>
+                <input type="text" id="greeting" placeholder="Dear [title] [last name]," required>
+            <label>Body Paragraph 1:</label>
+                <input type="text" id="body1" placeholder="Goal of letter" required>
+            <label>Body Paragraph 2:</label>
+                <input type="text" id="body2" placeholder="Data/context">
+            <label>Body Paragraph 3:</label>
+                <input type="text" id="body3" placeholder="Next steps">
+            <label>Closing:</label>
+                <input type="text" id="closing" placeholder="Best regards," required>
+            <label>Your Name and Title:</label>
+                <input type="text" id="sender-name" required>
+            <label>Your Department or Position:</label>
+                <input type="text" id="sender-position">
         `,
         casual: `
+            <label>Your Address:</label>
+                <input type="text" id="sender-address">
+            <label>Greeting:</label>
+                <input type="text" id="greeting" placeholder="Hi [first name]!" required>
+            <label>Body:</label>
+                <input type="text" id="body" placeholder="Freeform" required>
+            <label>Closing:</label>
+                <input type="text" id="closing" placeholder="Take care," required>
             <label>Your Name:</label>
                 <input type="text" id="sender-name" required>
-            <label>Recipient's Name:</label>
-                <input type="text" id="recipient-name" required>
         `,
         thanks: `
             <label>Your Name and Title:</label>
                 <input type="text" id="sender-name" required>
-            <label>Your Company Name:</label>
-                <input type="text" id="sender-org">
             <label>Recipient's Name and Title:</label>
                 <input type="text" id="recipient-name" required>
-            <label><Recipient's Company Name:</label>
-                <input type="text" id="recipient-org">
-            <label>Reference (Re:)</label>
-                <input type="text" id="subject">
+            <label>Recipient's Department or Position:</label>
+                <input type="text" id="recipient-position">
+            <label>Recipient's Company:</label>
+                <input type="text" id="recipient-org" required>
+            <label>Greeting:</label>
+                <input type="text" id="greeting" placeholder="Dear [title] [last name]," required>
+            <label>Body Paragraph 1:</label>
+                <input type="text" id="body1" placeholder="Specific thanks" required>
+            <label>Body Paragraph 2:</label>
+                <input type="text" id="body2" placeholder="Personal detail">
+            <label>Body Paragraph 3:</label>
+                <input type="text" id="body3" placeholder="Future intentions">
+            <label>Closing:</label>
+                <input type="text" id="closing" placeholder="With gratitude," required>
         `,
         complaint: `
             <label>Your Name:</label>
                 <input type="text" id="sender-name" required>
             <label>Your Address:</label>
-                <input type="text" id="sender-org">
-            <label>Recipient's Name and Title:</label>
-                <input type="text" id="recipient-name" required>
-            <label><Recipient's Company Name:</label>
-                <input type="text" id="recipient-org">
-            <label>Reference (Re:)</label>
-                <input type="text" id="subject">
+                <input type="text" id="sender-address" required>
+            <label>Recipient's Position:</label>
+                <input type="text" id="recipient-position">
+            <label>Recipient's Company:</label>
+                <input type="text" id="recipient-org" required>
+            <label>Address of Recipient's Company:</label>
+                <input type="text" id="recipient-address" required>
+            <label>Subject:</label>
+                <input type="text" id="subject" placeholder="Complaint" required>
+            <label>Greeting:</label>
+                <input type="text" id="greeting" placeholder="Dear [position]," required>
+            <label>Body Paragraph 1:</label>
+                <input type="text" id="body1" placeholder="Date, location, product" required>
+            <label>Body Paragraph 2:</label>
+                <input type="text" id="body2" placeholder="Impact">
+            <label>Body Paragraph 3:</label>
+                <input type="text" id="body3" placeholder="Resolution request">
+            <label>Closing:</label>
+                <input type="text" id="closing" placeholder="Sincerely,">
+            <label>Your Phone Number:</label>
+                <input type="text" id="phone">
+            <label>Your Email Address:</label>
+                <input type="text" id="email">
         `,
         invite: `
-            <label>Your Name:</label>
-                <input type="text" id="sender-name" required>
-            <label>Your Address:</label>
+            <label>Your Organization:</label>
                 <input type="text" id="sender-org">
+            <label>Personal or Organization Address:</label>
+                <input type="text" id="sender-address" required>
             <label>Recipient's Name and Title:</label>
-                <input type="text" id="recipient-name" required>
-            <label><Recipient's Company Name:</label>
+                <input type="text" id="recipient-title" required>
+            <label>Recipient's Position:</label>
+                <input type="text" id="recipient-position">
+            <label>Recipient's Organization:</label>
                 <input type="text" id="recipient-org">
-            <label>Reference (Re:)</label>
-                <input type="text" id="subject">
+            <label>Subject:</label>
+                <input type="text" id="subject" placeholder="Invitation" required>
+            <label>Greeting:</label>
+                <input type="text" id="greeting" placeholder="Dear [title] [last name]," required>
+            <label>Body Paragraph 1:</label>
+                <input type="text" id="body1" placeholder="Event purpose" required>
+            <label>Body Paragraph 2:</label>
+                <input type="text" id="body2" placeholder="Date, time, venue">
+            <label>Body Paragraph 3:</label>
+                <input type="text" id="body3" placeholder="RSVP instructions">
+            <label>Closing:</label>
+                <input type="text" id="closing" placeholder="Best regards," required>
+            <label>Your Name and Title:</label>
+                <input type="text" id="sender-name" required>
+            <label>Your Position:</label>
+                <input type="text" id="sender-position">
         `
     }
 }
