@@ -43,7 +43,7 @@ document.querySelectorAll('.delete-btn').forEach(btn => {
     });
 });
 
-// Export journal entry
+// Export all past journal entries
 document.getElementById('export-btn').addEventListener('click', () => {
     const journalContent = journalEntries.map(item => `
         ${item.timestamp}\n${item.entry}\n\n
@@ -51,7 +51,7 @@ document.getElementById('export-btn').addEventListener('click', () => {
     const blob = new Blob([journalContent], {type: 'text/plain'});
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `Everythingville-Journal-${new Date().toISOString().slice(0, 10)}.txt`;
+    a.download = `Everythingville-Journals-${new Date().toISOString().slice(0, 10)}.txt`;
     a.click();
 });
 
