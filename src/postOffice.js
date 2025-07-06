@@ -595,27 +595,41 @@ ${formData.senderName}${formData.senderCredentials ? '\n' + formData.senderCrede
             break;
         case 'business':
             letter = `
-                ${new Date().toLocaleDateString()}
+${formData.senderOrg ? formData.senderOrg + '\n' : ''}${formData.senderAddress}
+${new Date().toLocaleDateString()}
+
+${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}
+${formData.recipientOrg}
+${formData.recipientAddress}
+
+${formData.subject}
+
+${formData.greeting}
+
+${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
+
+${formData.closing}
+${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition : ''}${formData.senderOrg ? '\n' + formData.senderOrg : ''}
             `;
             break;
         case 'casual':
             letter = `
-                ${new Date().toLocaleDateString()}
+${new Date().toLocaleDateString()}
             `;
             break;
         case 'thanks':
             letter = `
-                ${new Date().toLocaleDateString()}
+${new Date().toLocaleDateString()}
             `;
             break;
         case 'complaint':
             letter = `
-                ${new Date().toLocaleDateString()}
+${new Date().toLocaleDateString()}
             `;
             break;
         case 'invite':
             letter = `
-                ${new Date().toLocaleDateString()}
+${new Date().toLocaleDateString()}
             `;
             break;
     }
