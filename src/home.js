@@ -1,10 +1,17 @@
 /*** JOURNAL ***/
 
-let journalEntries = JSON.parse(localStorage.getItem('journalEntries') || []);
+let journalEntries;
+try {
+    journalEntries = JSON.parse(localStorage.getItem('journalEntries')) || [];
+} catch (e) {
+    console.error("Error loading journal entries:"), e;
+    journalEntries = [];
+}
 
 // Save journal entry
 document.getElementById('save-btn').addEventListener('click', () => {
-    const journalEntry = document.getElementById('current-journal').vallue.trim;
+    const journalEntry = document.getElementById('current-journal').vallue;
+    // console.log(document.getElementById('current-journal'));
     if(journalEntry) {
         const timestamp = new Date().toLocaleString();
         journalEntries.push({timestamp, journalEntry});

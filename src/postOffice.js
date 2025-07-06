@@ -387,153 +387,153 @@ const loadFields = (type) => {
         none: `<p>Select a letter type to continue</p>`,
         academic: `
             <label>Your Name:</label>
-                <input type="text" id="sender-name" required>
+                <input type="text" id="sender-name" spellcheck="true" required>
             <label>Your Institution:</label>
-                <input type="text" id="sender-org" required>
+                <input type="text" id="sender-org" spellcheck="true" required>
             <label>Address of Your Institution:</label>
-                <input type="text" id="sender-address" required>
+                <input type="text" id="sender-address" spellcheck="true" required>
             <label>Your Email Address (Optional):</label>
-                <input type="text" id="sender-email">
+                <input type="text" id="sender-email" spellcheck="true">
             <label>Recipient's Name and Title:</label>
-                <input type="text" id="recipient-name" required>
+                <input type="text" id="recipient-name" spellcheck="true" required>
             <label>Recipient's Department or Position (Optional):</label>
-                <input type="text" id="recipient-position">
+                <input type="text" id="recipient-position" spellcheck="true">
             <label>Recipient's Institution:</label>
-                <input type="text" id="recipient-org" required>
+                <input type="text" id="recipient-org" spellcheck="true" required>
             <label>Address of Recipient's Institution:</label>
-                <input type="text" id="recipient-address" required>
+                <input type="text" id="recipient-address" spellcheck="true" required>
             <label>Subject:</label>
-                <input type="text" id="subject" value="Subject: " required>
+                <input type="text" id="subject" value="Subject: " spellcheck="true" required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" value="Dear ," required>
+                <input type="text" id="greeting" value="Dear ," spellcheck="true" required>
             <label>Body Paragraph 1:</label>
-                <input type="text" id="body1" placeholder="Reason for writing" required>
+                <input type="text" id="body1" placeholder="Reason for writing" spellcheck="true" required>
             <label>Body Paragraph 2 (Optional):</label>
-                <input type="text" id="body2" placeholder="Context/background">
+                <input type="text" id="body2" placeholder="Context/background" spellcheck="true">
             <label>Body Paragraph 3 (Optional):</label>
-                <input type="text" id="body3" placeholder="What you're asking for">
+                <input type="text" id="body3" placeholder="What you're asking for" spellcheck="true">
             <label>Closing:</label>
-                <input type="text" id="closing" value="Respectfully," required>
+                <input type="text" id="closing" value="Respectfully," spellcheck="true" required>
             <label>Your Credentials (Optional):</label>
-                <input type="text" id="sender-credentials">
+                <input type="text" id="sender-credentials" spellcheck="true">
         `,
         business: `
             <label>Your Company (Optional):</label>
-                <input type="text" id="sender-org">
+                <input type="text" id="sender-org" spellcheck="true">
             <label>Personal or Company Address:</label>
-                <input type="text" id="sender-address" required>
+                <input type="text" id="sender-address" spellcheck="true" required>
             <label>Recipient's Name and Title:</label>
-                <input type="text" id="recipient-name" required>
+                <input type="text" id="recipient-name" spellcheck="true" required>
             <label>Recipient's Department or Position (Optional):</label>
-                <input type="text" id="recipient-position">
+                <input type="text" id="recipient-position" spellcheck="true">
             <label>Recipient's Company:</label>
-                <input type="text" id="recipient-org" required>
+                <input type="text" id="recipient-org" spellcheck="true" required>
             <label>Address of Recipient's Company:</label>
-                <input type="text" id="recipient-address" required>
+                <input type="text" id="recipient-address" spellcheck="true" required>
             <label>Subject:</label>
-                <input type="text" id="subject" value="Subject: " required>
+                <input type="text" id="subject" value="Subject: " spellcheck="true" required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" value="Dear ," required>
+                <input type="text" id="greeting" value="Dear ," spellcheck="true" required>
             <label>Body Paragraph 1:</label>
-                <input type="text" id="body1" placeholder="Goal of letter" required>
+                <input type="text" id="body1" placeholder="Goal of letter" spellcheck="true" required>
             <label>Body Paragraph 2 (Optional):</label>
-                <input type="text" id="body2" placeholder="Data/context">
+                <input type="text" id="body2" placeholder="Data/context" spellcheck="true">
             <label>Body Paragraph 3 (Optional):</label>
-                <input type="text" id="body3" placeholder="Next steps">
+                <input type="text" id="body3" placeholder="Next steps" spellcheck="true">
             <label>Closing:</label>
-                <input type="text" id="closing" value="Best regards," required>
+                <input type="text" id="closing" value="Best regards," spellcheck="true" required>
             <label>Your Name and Title:</label>
-                <input type="text" id="sender-name" required>
+                <input type="text" id="sender-name" spellcheck="true" required>
             <label>Your Department or Position (Optional):</label>
-                <input type="text" id="sender-position">
+                <input type="text" id="sender-position" spellcheck="true">
         `,
         casual: `
             <label>Your Address (Optional):</label>
-                <input type="text" id="sender-address">
+                <input type="text" id="sender-address" spellcheck="true">
             <label>Greeting:</label>
-                <input type="text" id="greeting" value="Hi !" required>
+                <input type="text" id="greeting" value="Hi !" spellcheck="true" required>
             <label>Body:</label>
-                <input type="text" id="body1" placeholder="Freeform" required>
+                <input type="text" id="body1" placeholder="Freeform" spellcheck="true" required>
             <label>Closing:</label>
-                <input type="text" id="closing" value="Take care," required>
+                <input type="text" id="closing" value="Take care," spellcheck="true" required>
             <label>Your Name:</label>
-                <input type="text" id="sender-name" required>
+                <input type="text" id="sender-name" spellcheck="true" required>
         `,
         thanks: `
             <label>Your Name and Title:</label>
-                <input type="text" id="sender-name" required>
+                <input type="text" id="sender-name" spellcheck="true" required>
             <label>Recipient's Name and Title:</label>
-                <input type="text" id="recipient-name" required>
+                <input type="text" id="recipient-name" spellcheck="true" required>
             <label>Recipient's Department or Position (Optional):</label>
-                <input type="text" id="recipient-position">
+                <input type="text" id="recipient-position" spellcheck="true">
             <label>Recipient's Company:</label>
-                <input type="text" id="recipient-org" required>
+                <input type="text" id="recipient-org" spellcheck="true" required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" value="Dear ," required>
+                <input type="text" id="greeting" value="Dear ," spellcheck="true" required>
             <label>Body Paragraph 1:</label>
-                <input type="text" id="body1" placeholder="Specific thanks" required>
+                <input type="text" id="body1" placeholder="Specific thanks" spellcheck="true" required>
             <label>Body Paragraph 2 (Optional):</label>
-                <input type="text" id="body2" placeholder="Personal detail">
+                <input type="text" id="body2" placeholder="Personal detail" spellcheck="true">
             <label>Body Paragraph 3 (Optional):</label>
-                <input type="text" id="body3" placeholder="Future intentions">
+                <input type="text" id="body3" placeholder="Future intentions" spellcheck="true">
             <label>Closing:</label>
-                <input type="text" id="closing" value="With gratitude," required>
+                <input type="text" id="closing" value="With gratitude," spellcheck="true" required>
         `,
         complaint: `
             <label>Your Name:</label>
-                <input type="text" id="sender-name" required>
+                <input type="text" id="sender-name" spellcheck="true" required>
             <label>Your Address:</label>
-                <input type="text" id="sender-address" required>
+                <input type="text" id="sender-address" spellcheck="true" required>
             <label>Recipient's Position (Optional):</label>
-                <input type="text" id="recipient-position">
+                <input type="text" id="recipient-position" spellcheck="true">
             <label>Recipient's Company:</label>
-                <input type="text" id="recipient-org" required>
+                <input type="text" id="recipient-org" spellcheck="true" required>
             <label>Address of Recipient's Company:</label>
-                <input type="text" id="recipient-address" required>
+                <input type="text" id="recipient-address" spellcheck="true" required>
             <label>Subject:</label>
-                <input type="text" id="subject" value="Complaint: " required>
+                <input type="text" id="subject" value="Complaint: " spellcheck="true" required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" value="Dear ," required>
+                <input type="text" id="greeting" value="Dear ," spellcheck="true" required>
             <label>Body Paragraph 1:</label>
-                <input type="text" id="body1" placeholder="Date, location, product" required>
+                <input type="text" id="body1" placeholder="Date, location, product" spellcheck="true" required>
             <label>Body Paragraph 2 (Optional):</label>
-                <input type="text" id="body2" placeholder="Impact">
+                <input type="text" id="body2" placeholder="Impact" spellcheck="true">
             <label>Body Paragraph 3 (Optional):</label>
-                <input type="text" id="body3" placeholder="Resolution request">
+                <input type="text" id="body3" placeholder="Resolution request" spellcheck="true">
             <label>Closing:</label>
-                <input type="text" id="closing" value="Sincerely,">
+                <input type="text" id="closing" value="Sincerely," spellcheck="true">
             <label>Your Phone Number (Optional):</label>
-                <input type="text" id="sender-phone">
+                <input type="text" id="sender-phone" spellcheck="true">
             <label>Your Email Address (Optional):</label>
-                <input type="text" id="sender-email">
+                <input type="text" id="sender-email" spellcheck="true">
         `,
         invite: `
             <label>Your Organization (Optional):</label>
-                <input type="text" id="sender-org">
+                <input type="text" id="sender-org" spellcheck="true">
             <label>Personal or Organization Address:</label>
-                <input type="text" id="sender-address" required>
+                <input type="text" id="sender-address" spellcheck="true" required>
             <label>Recipient's Name and Title:</label>
-                <input type="text" id="recipient-name" required>
+                <input type="text" id="recipient-name" spellcheck="true" required>
             <label>Recipient's Position (Optional):</label>
-                <input type="text" id="recipient-position">
+                <input type="text" id="recipient-position" spellcheck="true">
             <label>Recipient's Organization (Optional):</label>
-                <input type="text" id="recipient-org">
+                <input type="text" id="recipient-org" spellcheck="true">
             <label>Subject:</label>
-                <input type="text" id="subject" value="Invitation: " required>
+                <input type="text" id="subject" value="Invitation: " spellcheck="true" required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" value="Dear ," required>
+                <input type="text" id="greeting" value="Dear ," spellcheck="true" required>
             <label>Body Paragraph 1:</label>
-                <input type="text" id="body1" placeholder="Event purpose" required>
+                <input type="text" id="body1" placeholder="Event purpose" spellcheck="true" required>
             <label>Body Paragraph 2 (Optional):</label>
-                <input type="text" id="body2" placeholder="Date, time, venue">
+                <input type="text" id="body2" placeholder="Date, time, venue" spellcheck="true">
             <label>Body Paragraph 3 (Optional):</label>
-                <input type="text" id="body3" placeholder="RSVP instructions">
+                <input type="text" id="body3" placeholder="RSVP instructions" spellcheck="true">
             <label>Closing:</label>
-                <input type="text" id="closing" value="Best regards," required>
+                <input type="text" id="closing" value="Best regards," spellcheck="true" required>
             <label>Your Name and Title:</label>
-                <input type="text" id="sender-name" required>
+                <input type="text" id="sender-name" spellcheck="true" required>
             <label>Your Position (Optional):</label>
-                <input type="text" id="sender-position">
+                <input type="text" id="sender-position" spellcheck="true">
         `
     };
     document.getElementById('letter-fields').innerHTML = fields[type];
