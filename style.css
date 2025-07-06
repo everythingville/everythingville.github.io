@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    line-height: 1.75;
 }
 
 button {
@@ -44,7 +45,7 @@ h4, p {
 }
 
 header {
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     text-align: center;
 }
 
@@ -57,7 +58,7 @@ li {
 }
 
 main {
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     max-width: 800px;
     margin: 0 auto;
     min-height: 100vh;
@@ -200,6 +201,11 @@ body.library div {
 
 button.copy-btn {
     width: 150px;
+}
+
+.inline {
+    display: inline;
+    margin: 0px 5px !important;
 }
 
 div.btns button {
