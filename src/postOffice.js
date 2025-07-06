@@ -367,7 +367,6 @@ const buildForm = () => {
             <div id="letter-fields"></div>
 
             <button type="button" id="generate-btn">Generate Letter</button>
-            <button type="button" id="reset-btn">Reset</button>
         </form>
 
         <div id="generated-letter" class="hidden">
@@ -381,9 +380,6 @@ const buildForm = () => {
         loadFields(e.target.value);
     });
     document.getElementById('generate-btn').addEventListener('click', generateLetter);
-    document.getElementById('reset-btn').addEventListener('click', () => {
-        document.getElementById('letter-form').reset();
-    });
 };
 
 // Form fields for each letter type
@@ -657,8 +653,7 @@ ${new Date().toLocaleDateString()}
 
     document.getElementById('print-btn').addEventListener('click', printLetter);
     document.getElementById('new-letter-btn').addEventListener('click', () => {
-        document.getElementById('generated-letter').classList.add('hidden');
-        document.getElementById('letter-form').reset();
+        location.reload();
     });
 };
 
