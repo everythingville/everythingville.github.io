@@ -409,9 +409,9 @@ const loadFields = (type) => {
             <label>Address of Recipient's Institution:</label>
                 <input type="text" id="recipient-address" required>
             <label>Subject:</label>
-                <input type="text" id="subject" required>
+                <input type="text" id="subject" value="Subject: " required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" placeholder="Dear [title] [last name]," required>
+                <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Reason for writing" required>
             <label>Body Paragraph 2:</label>
@@ -419,7 +419,7 @@ const loadFields = (type) => {
             <label>Body Paragraph 3:</label>
                 <input type="text" id="body3" placeholder="What you're asking for">
             <label>Closing:</label>
-                <input type="text" id="closing" placeholder="Respectfully," required>
+                <input type="text" id="closing" value="Respectfully," required>
             <label>Your Credentials:</label>
                 <input type="text" id="sender-credentials">
         `,
@@ -437,9 +437,9 @@ const loadFields = (type) => {
             <label>Address of Recipient's Company:</label>
                 <input type="text" id="recipient-address" required>
             <label>Subject:</label>
-                <input type="text" id="subject" required>
+                <input type="text" id="subject" value="Subject: " required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" placeholder="Dear [title] [last name]," required>
+                <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Goal of letter" required>
             <label>Body Paragraph 2:</label>
@@ -447,7 +447,7 @@ const loadFields = (type) => {
             <label>Body Paragraph 3:</label>
                 <input type="text" id="body3" placeholder="Next steps">
             <label>Closing:</label>
-                <input type="text" id="closing" placeholder="Best regards," required>
+                <input type="text" id="closing" value="Best regards," required>
             <label>Your Name and Title:</label>
                 <input type="text" id="sender-name" required>
             <label>Your Department or Position:</label>
@@ -457,11 +457,11 @@ const loadFields = (type) => {
             <label>Your Address:</label>
                 <input type="text" id="sender-address">
             <label>Greeting:</label>
-                <input type="text" id="greeting" placeholder="Hi [first name]!" required>
+                <input type="text" id="greeting" value="Hi !" required>
             <label>Body:</label>
-                <input type="text" id="body" placeholder="Freeform" required>
+                <input type="text" id="body1" placeholder="Freeform" required>
             <label>Closing:</label>
-                <input type="text" id="closing" placeholder="Take care," required>
+                <input type="text" id="closing" value="Take care," required>
             <label>Your Name:</label>
                 <input type="text" id="sender-name" required>
         `,
@@ -475,7 +475,7 @@ const loadFields = (type) => {
             <label>Recipient's Company:</label>
                 <input type="text" id="recipient-org" required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" placeholder="Dear [title] [last name]," required>
+                <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Specific thanks" required>
             <label>Body Paragraph 2:</label>
@@ -483,7 +483,7 @@ const loadFields = (type) => {
             <label>Body Paragraph 3:</label>
                 <input type="text" id="body3" placeholder="Future intentions">
             <label>Closing:</label>
-                <input type="text" id="closing" placeholder="With gratitude," required>
+                <input type="text" id="closing" value="With gratitude," required>
         `,
         complaint: `
             <label>Your Name:</label>
@@ -497,9 +497,9 @@ const loadFields = (type) => {
             <label>Address of Recipient's Company:</label>
                 <input type="text" id="recipient-address" required>
             <label>Subject:</label>
-                <input type="text" id="subject" placeholder="Complaint" required>
+                <input type="text" id="subject" value="Complaint: " required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" placeholder="Dear [position]," required>
+                <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Date, location, product" required>
             <label>Body Paragraph 2:</label>
@@ -507,11 +507,11 @@ const loadFields = (type) => {
             <label>Body Paragraph 3:</label>
                 <input type="text" id="body3" placeholder="Resolution request">
             <label>Closing:</label>
-                <input type="text" id="closing" placeholder="Sincerely,">
+                <input type="text" id="closing" value="Sincerely,">
             <label>Your Phone Number:</label>
-                <input type="text" id="phone">
+                <input type="text" id="sender-phone">
             <label>Your Email Address:</label>
-                <input type="text" id="email">
+                <input type="text" id="sender-email">
         `,
         invite: `
             <label>Your Organization:</label>
@@ -519,15 +519,15 @@ const loadFields = (type) => {
             <label>Personal or Organization Address:</label>
                 <input type="text" id="sender-address" required>
             <label>Recipient's Name and Title:</label>
-                <input type="text" id="recipient-title" required>
+                <input type="text" id="recipient-name" required>
             <label>Recipient's Position:</label>
                 <input type="text" id="recipient-position">
             <label>Recipient's Organization:</label>
                 <input type="text" id="recipient-org">
             <label>Subject:</label>
-                <input type="text" id="subject" placeholder="Invitation" required>
+                <input type="text" id="subject" value="Invitation: " required>
             <label>Greeting:</label>
-                <input type="text" id="greeting" placeholder="Dear [title] [last name]," required>
+                <input type="text" id="greeting" value="Dear ," required>
             <label>Body Paragraph 1:</label>
                 <input type="text" id="body1" placeholder="Event purpose" required>
             <label>Body Paragraph 2:</label>
@@ -535,11 +535,90 @@ const loadFields = (type) => {
             <label>Body Paragraph 3:</label>
                 <input type="text" id="body3" placeholder="RSVP instructions">
             <label>Closing:</label>
-                <input type="text" id="closing" placeholder="Best regards," required>
+                <input type="text" id="closing" value="Best regards," required>
             <label>Your Name and Title:</label>
                 <input type="text" id="sender-name" required>
             <label>Your Position:</label>
                 <input type="text" id="sender-position">
         `
+    };
+    document.getElementById('letter-fields').innerHTML = fields[type];
+};
+
+// Letter generator
+const generateLetter = () => {
+    const type = document.getElementById('letter-type').value;
+    const formData = {
+        senderName: document.getElementById('sender-name')?.value || '',
+        senderOrg: document.getElementById('sender-org')?.value || '',
+        senderAddress: document.getElementById('sender-address')?.value || '',
+        senderEmail: document.getElementById('sender-email')?.value || '',
+        senderCredentials: document.getElementById('sender-credentials')?.value || '',
+        senderPosition: document.getElementById('sender-position')?.value || '',
+        senderPhone: document.getElementById('sender-phone')?.value || '',
+        senderEmail: document.getElementById('sender-email')?.value || '',
+        recipientName: document.getElementById('recipient-name')?.value || '',
+        recipientPosition: document.getElementById('recipient-position')?.value || '',
+        recipientOrg: document.getElementById('recipient-org')?.value || '',
+        recipientAddress: document.getElementById('recipient-address')?.value || '',
+        subject: document.getElementById('subject')?.value || '',
+        greeting: document.getElementById('greeting')?.value || '',
+        body1: document.getElementById('body1')?.value || '',
+        body2: document.getElementById('body2')?.value || '',
+        body3: document.getElementById('body3')?.value || '',
+        closing: document.getElementById('closing')?.value || '',
+        content: document.getElementById('letter-draft').value
+    };
+    let letter = '';
+
+    // Format letter based on type
+    switch(type) {
+        case 'academic':
+            letter = `
+                ${formData.senderName}
+                ${formData.senderOrg}
+                ${formData.senderAddress}${formData.senderEmail ? '\n' + formData.senderEmail : ''}
+
+                ${new Date().toLocaleDateString()}
+                
+                ${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}
+                ${formData.recipientOrg}
+                ${formData.recipientAddress}
+
+                ${formData.subject}
+
+                ${formData.greeting}
+
+                ${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
+
+                ${formData.closing}
+                ${formData.senderName}${formData.senderCredentials ? '\n' + formData.senderCredentials : ''}
+            `;
+            break;
+        case 'business':
+            letter = `
+                ${new Date().toLocaleDateString()}
+            `;
+            break;
+        case 'casual':
+            letter = `
+                ${new Date().toLocaleDateString()}
+            `;
+            break;
+        case 'thanks':
+            letter = `
+                ${new Date().toLocaleDateString()}
+            `;
+            break;
+        case 'complaint':
+            letter = `
+                ${new Date().toLocaleDateString()}
+            `;
+            break;
+        case 'invite':
+            letter = `
+                ${new Date().toLocaleDateString()}
+            `;
+            break;
     }
 }
