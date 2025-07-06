@@ -1,7 +1,27 @@
-# [Everythingville](https://everythingville.github.io/)
+# Everythingville
 
 ![Hackatime Badge](https://hackatime-badge.hackclub.com/U07DMCJTB8Q/everythingville)
 
 *(Work in Progress)*
 
-Everythingville is a place where you can find a variety of activities for some popular hobbies and interests. The activities on this site are distributed among the different buildings in Everythingville. There is something for almost everyone in Everythingville, so go ahead and start exploring!
+## About Everythingville
+
+Everythingville is a place where you can find a variety of productivity tools, all in one place, in a fun town-like UI. The features of this site are distributed among the different buildings of the town. There is something for everyone in Everythingville, so go ahead and [start exploring](https://everythingville.github.io/)!
+
+## How to Navigate
+
+Think of Everythingville like a small town, with the main page containing a map of the town.
+
+**If you're on a computer:**
+
+- Click on any green are of your screen and drag your mouse to move around
+
+- Use the `+` and `-` signs located at the top left of your screen to zoom in and out, respectively
+
+**If you're on a mobile device:**
+
+- Tap and hold any green area of your screen to move around by dragging one finger
+
+- Using two fingers, slide your finger away from or toward each other to zoom in and out, respectively
+
+When you find a building that you want to visit, simply click on the building icon to open the popup with more details, and click the `Enter` button to enter the building. If you ever want to return to the map from inside of the buildings, you can always click the map icon at the top right corner of your screen.
