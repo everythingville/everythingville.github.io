@@ -31,16 +31,16 @@ function displayEntries() {
             <button class="delete-btn" data-index="${index}">Delete</button>
         </div>
     `).join('');
-}
 
-// Delete journal entries
-document.querySelectorAll('.delete-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        journalEntries.splice(e.target.dataset.index, 1);
-        localStorage.setItem('journalEntries', JSON.stringify(journalEntries));
-        displayEntries();
+    // Delete journal entries
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            journalEntries.splice(e.target.dataset.index, 1);
+            localStorage.setItem('journalEntries', JSON.stringify(journalEntries));
+            displayEntries();
+        });
     });
-});
+}
 
 // Export all past journal entries
 document.getElementById('export-btn').addEventListener('click', () => {
