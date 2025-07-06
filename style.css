@@ -203,9 +203,9 @@ button.copy-btn {
     width: 150px;
 }
 
-.inline {
-    display: inline;
-    margin: 0px 5px !important;
+button.inline {
+    box-shadow: none;
+    cursor: default;
 }
 
 div.btns button {
@@ -218,6 +218,11 @@ div.btns button {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 } */
+
+img.inline {
+    height: 30px;
+    object-fit: contain;
+}
 
 .delete-btn {
     position: absolute;
@@ -235,6 +240,12 @@ div.btns button {
 
 .hidden {
     display: none;
+}
+
+.inline {
+    display: inline;
+    margin: 0px 5px !important;
+    vertical-align: middle;
 }
 
 .journal-entry {
