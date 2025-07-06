@@ -371,7 +371,7 @@ const buildForm = () => {
 
         <div id="generated-letter" class="hidden">
             <h3>Your Letter</h3>
-            <div id="final-letter"></div>
+            <textarea id="final-letter" spellcheck="true"></textarea>
             <button id="print-btn">Print</button>
         </div>
     `;
@@ -692,7 +692,7 @@ const printLetter = () => {
                 <style>
                     body {
                         font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-                        line-height: 1.5;
+                        line-height: 1.75;
                         white-space: pre-wrap;
                         padding: 20px;
                     }

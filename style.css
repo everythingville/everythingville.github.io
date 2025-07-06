@@ -54,6 +54,10 @@ iframe {
     box-shadow: 0 3px 14px rgba(0,0,0,0.4);
 }
 
+label {
+    font-weight: bold;
+}
+
 li {
     padding: 5px;
 }
@@ -96,6 +100,13 @@ body, h1, h2, h3, h4, p, a, button, input, textarea, b, i {
 
 h1, h2, h3, h4, button, p.center {
     text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
 }
 
 label, input {
@@ -313,17 +324,6 @@ section.flashcards iframe {
     margin: 20px 0;
 }
 
-#letter-form label {
-    font-weight: bold;
-}
-
-#letter-form input, #letter-form select, #letter-draft {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #dddddd;
-    border-radius: 4px;
-}
-
 #map {
     height: 100vh;
     width: 100vw;
@@ -346,6 +346,13 @@ section.flashcards iframe {
 #map-nav img:hover {
     opacity: 1;
     transition: all 0.3s;
+}
+
+/*** DATA ATTRIBUTES ***/
+
+[data-type="builder"] {
+    background-color: rgb(255, 239, 59);
+    border-color: rgb(255, 239, 59);
 }
 
 /*** MEDIA QUERIES ***/
