@@ -614,7 +614,14 @@ ${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition
             break;
         case 'casual':
             letter = `
-${new Date().toLocaleDateString()}
+${formData.senderAddress ? formData.senderAddress + '\n' : ''}${new Date().toLocaleDateString()}
+
+${formData.greeting}
+
+${formData.body1}
+
+${formData.closing}
+${formData.senderName}
             `;
             break;
         case 'thanks':
