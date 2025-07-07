@@ -254,7 +254,7 @@ document.querySelectorAll('div.workout-categories button').forEach(button => {
     });
 });
 
-// Display chosen workout
+// Display exercise from chosen workout
 const displayWorkout = (category) => {
     const workout = workouts[category];
     document.getElementById('workout-display').innerHTML = `
