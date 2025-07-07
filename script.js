@@ -5,6 +5,7 @@ var  bounds = [[0,0], [1000,1000]];
 const map = L.map('map', {
     crs: L.CRS.Simple, // REMINDER: CRS.Simple coordinates are in [y,x] format (L.latLng is opposite order from typical coordinates)
     minZoom: 0,
+    maxZoom: 2,
     maxBounds: bounds, // Prevents user from navigating outside grass
     maxBoundsViscosity: 1.0 // Re-enforces maxBounds
 });

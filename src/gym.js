@@ -1,6 +1,6 @@
 /*** WORKOUT GUIDES ***/
 
-// Workout db
+// Workout DB
 const workouts = {
     easy: {
         title: "Foundational Strength Routine",
