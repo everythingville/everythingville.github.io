@@ -294,25 +294,3 @@ const loadExercise = (workout, index) => {
         <ul>${workout.tips.map(tip => `<li>${tip}</li>`).join('')}</ul>
     `;
 };
-// Exercise
-// Sets
-// Rest
-// Notes
-// Props
-// Focus
-// Avoid If
-// How To
-
-// ${workout.exercises.map(e => `
-//     ${e.name}
-//     ${e.sets}
-//     ${e.rest}
-//     ${e.notes}
-//     ${e.props}
-//     ${e.focusAreas}
-//     ${e.contraindications}
-//     ${e.instructions}
-// `).join('')}
-
-// <b>Pro Tips:</b>
-// <ul>${workout.tips.map(tip => `<li>${tip}</li>`).join('')}</ul>
