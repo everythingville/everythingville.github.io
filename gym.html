@@ -27,7 +27,7 @@
                         <button data-category="easy">Easy</button>
                         <button data-category="medium">Medium</button>
                         <button data-category="challenging">Challenging</button>
-                        <button data-category="Yoga">Yoga</button>
+                        <button data-category="yoga">Yoga</button>
                     </div>
                     <div id="workout-display"></div>
                 </section>
@@ -38,3 +38,25 @@
         <script src="src/gym.js"></script>
     </body>
 </html>
+<!-- Exercise
+Sets
+Rest
+Notes
+Props
+Focus
+Avoid If
+How To
+
+${workout.exercises.map(e => `
+    ${e.name}
+    ${e.sets}
+    ${e.rest}
+    ${e.notes}
+    ${e.props}
+    ${e.focusAreas}
+    ${e.contraindications}
+    ${e.instructions}
+`).join('')}
+
+<b>Pro Tips:</b>
+<ul>${workout.tips.map(tip => `<li>${tip}</li>`).join('')}</ul> -->
