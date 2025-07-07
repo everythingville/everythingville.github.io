@@ -7,7 +7,7 @@ const letterTemplates = {
         structure: `
             <div>
                 <p class="center"><b>Use case:</b> Correspondence with professors, researchers, or academic institutions</p>
-                <h4>Structure</h4>
+                <b>Structure:</b>
                 <ol>
                     <li>Your name</li>
                     <li>Your institution</li>
@@ -34,7 +34,8 @@ const letterTemplates = {
         `,
         example: `
             <div class="letter-example">
-                <h4>Example</h4>
+                <br>
+                <b>Example:</b>
                 <textarea readonly>
 Jane Smith
 ABC University
@@ -68,7 +69,7 @@ ABC University Class of 2027</textarea>
         structure: `
             <div>
                 <p class="center"><b>Use case:</b> Proposals, partnerships, or formal business communication</p>
-                <h4>Structure</h4>
+                <b>Structure:</b>
                 <ol>
                     <li>Your company (optional)</li>
                     <li>Personal or company address</li>
@@ -94,7 +95,8 @@ ABC University Class of 2027</textarea>
         `,
         example: `
             <div class="letter-example">
-                <h4>Example</h4>
+                <br>
+                <b>Example:</b>
                 <textarea readonly>
 ABC Company
 123 Main St
@@ -127,7 +129,7 @@ ABC Company</textarea>
         structure: `
             <div>
                 <p class="center"><b>Use case:</b> Friends, family, or informal thank you notes</p>
-                <h4>Structure</h4>
+                <b>Structure:</b>
                 <ol>
                     <li>Your address (optional)</li>
                     <li>Date</li>
@@ -140,7 +142,8 @@ ABC Company</textarea>
         `,
         example: `
             <div class="letter-example">
-                <h4>Example</h4>
+                <br>
+                <b>Example:</b>
                 <textarea readonly>
 123 Main St
 January 15, 2025
@@ -163,7 +166,7 @@ Janey</textarea>
         structure: `
             <div>
                 <p class="center"><b>Use case:</b> Post-interview or professional gratitude</p>
-                <h4>Structure</h4>
+                <b>Structure:</b>
                 <ol>
                     <li>Your name and title</li>
                     <li>Date</li>
@@ -184,7 +187,8 @@ Janey</textarea>
         `,
         example: `
             <div class="letter-example">
-                <h4>Example</h4>
+                <br>
+                <b>Example:</b>
                 <textarea readonly>
 John Doe
 January 15, 2025
@@ -211,7 +215,7 @@ John Doe</textarea>
         structure: `
             <div>
                 <p class="center"><b>Use case:</b> Product and service issues</p>
-                <h4>Structure</h4>
+                <b>Structure:</b>
                 <ol>
                     <li>Your name</li>
                     <li>Your address</li>
@@ -236,7 +240,8 @@ John Doe</textarea>
         `,
         example: `
             <div class="letter-example">
-                <h4>Example</h4>
+                <br>
+                <b>Example:</b>
                 <textarea readonly>
 Jane Doe
 123 Main St
@@ -268,7 +273,7 @@ janedoe@email.com</textarea>
         structure: `
             <div>
                 <p class="center"><b>Use case:</b> Events, conferences, or ceremonies</p>
-                <h4>Structure</h4>
+                <b>Structure:</b>
                 <ol>
                     <li>Your organization (optional)</li>
                     <li>Personal or organization address</li>
@@ -292,7 +297,8 @@ janedoe@email.com</textarea>
         `,
         example: `
             <div class="letter-example">
-                <h4>Example</h4>
+                <br>
+                <b>Example:</b>
                 <textarea readonly>
 Global Innovations
 123 Main St
