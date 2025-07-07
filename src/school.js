@@ -4,11 +4,11 @@
 const flashcards = {
     math: {
         beginner: `
-            <iframe src="https://kahoot.it/solo/?quizId=83e12b47-03d1-4796-9633-34787488633a&gameMode=flashcards" title="Long Division"></iframe>
+            <iframe src="https://kahoot.it/solo/?quizId=83e12b47-03d1-4796-9633-34787488633a&gameMode=flashcards" title="Long Division" loading="lazy"></iframe>
 
-            <iframe src="https://kahoot.it/solo/?quizId=a0331e4e-698c-46df-bad0-b49eeb22285b&gameMode=flashcards" title="Multiplying 2 & 3 Digit Numbers"></iframe>
+            <iframe src="https://kahoot.it/solo/?quizId=a0331e4e-698c-46df-bad0-b49eeb22285b&gameMode=flashcards" title="Multiplying 2 & 3 Digit Numbers" loading="lazy"></iframe>
 
-            <iframe src="https://kahoot.it/solo/?quizId=283622b0-21dd-4586-9e5c-cb7f10e2db3e&gameMode=flashcards" title="Fractions (+, -, x, ÷)"></iframe>
+            <iframe src="https://kahoot.it/solo/?quizId=283622b0-21dd-4586-9e5c-cb7f10e2db3e&gameMode=flashcards" title="Fractions (+, -, x, ÷)" loading="lazy"></iframe>
         `,
         intermediate: `
             <iframe src="https://kahoot.it/solo/?quizId=ebf25557-d7c6-443c-a75a-8cb3cae95c0d&gameMode=flashcards" title="Area of Polygons & Composite Figures"></iframe>
@@ -115,3 +115,7 @@ document.querySelectorAll('button.flashcards').forEach(button => {
         });
     });
 });
+
+const loadFlashcards = (subject, difficulty) => {
+    document.getElementById('flashcards').innerHTML = flashcards[subject][difficulty];
+}
