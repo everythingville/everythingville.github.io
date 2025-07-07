@@ -254,8 +254,39 @@ document.querySelectorAll('div.workout-categories button').forEach(button => {
     });
 });
 
+// Display chosen workout
 const displayWorkout = (category) => {
     const workout = workouts[category];
     document.getElementById('workout-display').innerHTML = `
+        <h3>${workout.title}</h3>
+        <p class="center">${workout.description}</p>
+        <table class="workout-table">
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Rest</th>
+                <th>Notes</th>
+                <th>Props</th>
+                <th>Focus</th>
+                <th>Avoid If</th>
+                <th>How To</th>
+            </tr>
+            ${workout.exercises.map(e => `
+                <tr>
+                    <td>${e.name}</td>
+                    <td>${e.sets}</td>
+                    <td>${e.rest}</td>
+                    <td>${e.notes}</td>
+                    <td>${e.props}</td>
+                    <td>${e.focusAreas}</td>
+                    <td>${e.contraindications}</td>
+                    <td>${e.instructions}</td>
+                </tr>
+            `).join('')}
+        </table>
+        <div class="workout-tips">
+            <b>Pro Tips:</b>
+            <ul>${workout.tips.map(tip => `<li>${tip}</li>`).join('')}</ul>
+        </div>
     `;
 }
