@@ -377,8 +377,9 @@ const buildForm = () => {
 
         <div id="generated-letter" class="hidden">
             <h3>Your Letter</h3>
-            <textarea id="final-letter" spellcheck="true"></textarea>
+            <textarea id="final-letter" spellcheck="true" placeholder="Type your letter or select a template from above"></textarea>
             <button id="print-btn">Print</button>
+            <button id="new-letter-btn">New Letter</button>
         </div>
     `;
     document.getElementById('letter-type').addEventListener('change', (e) => {
@@ -683,6 +684,7 @@ ${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition
     document.getElementById('generated-letter').classList.remove('hidden');
 
     document.getElementById('print-btn').addEventListener('click', printLetter);
+    document.getElementById('new-letter-btn').addEventListener('click', buildForm);
 };
 
 document.querySelector('[data-type="builder"]').addEventListener('click', buildForm);
@@ -697,7 +699,6 @@ const printLetter = () => {
                 <title>Print Letter | Everythingville</title>
                 <style>
                     body {
-                        font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
                         line-height: 1.75;
                         white-space: pre-wrap;
                         padding: 20px;
@@ -718,6 +719,9 @@ const printLetter = () => {
                         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
                         cursor: pointer;
                         transition: all 0.3s;
+                    }
+                    body, button {
+                        font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
                     }
                     @media print {
                         .no-print {
