@@ -22,7 +22,7 @@ const buildings = {
         }),
         title: 'Music Store',
         hook: 'Want something in the background?',
-        description: 'Listen to music and relaxing sounds to help you concentrate and have fun',
+        description: 'Listen to music and relaxing sounds to help you concentrate',
         marker: null
     },
     gym: {
@@ -35,7 +35,7 @@ const buildings = {
         }),
         title: 'Gym',
         hook: 'Feel like exercising?',
-        description: 'Check out workout guides designed to help you achieve your fitness goals',
+        description: 'Check out workout guides designed to help you achieve your goals',
         marker: null
     },
     restaurant: {
@@ -61,7 +61,7 @@ const buildings = {
         }),
         title: 'Home',
         hook: 'Feel like writing?',
-        description: 'Jot down your thoughts and save them for future reference in your digital journal',
+        description: 'Jot down your thoughts and save them for future reference',
         marker: null    
     },
     townHall: {
@@ -74,7 +74,7 @@ const buildings = {
         }),
         title: 'Town Hall',
         hook: 'Welcome to Everythingville!',
-        description: 'Learn more about how to move around town and navigate between buildings',
+        description: 'Learn more about how to navigate and move around town',
         marker: null
     },
     postOffice: {
@@ -87,7 +87,7 @@ const buildings = {
         }),
         title: 'Post Office',
         hook: 'Want to write to someone?',
-        description: 'Write and print letters using templates designed for a variety of occasions',
+        description: 'Write and print letters using templates for a variety of occasions',
         marker: null
     },
     hardwareStore: {
@@ -100,7 +100,7 @@ const buildings = {
         }),
         title: 'Hardware Store',
         hook: 'Feeling creative?',
-        description: 'Check out tutorials to guide you through making useful life hacks and crafts',
+        description: 'Check out tutorials to guide you through useful life hacks and crafts',
         marker: null
     },
     school: {
