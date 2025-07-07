@@ -3,62 +3,62 @@
 // Recipe DB
 const allRecipes = {
     breakfast: {
-        title: "",
+        title: "Breakfast",
         recipes: [
             {
-                name: "",
-                ingredients: [""],
-                procedure: [""],
-                notesHeading: "",
-                notes: ""
+                name: "Fluffy Scrambled Eggs",
+                ingredients: ["2 large eggs", "1 tbsp butter", "1 tbsp milk (optional)", "Salt & pepper to taste"],
+                procedure: ["Crack eggs into a bowl, add milk, and whisk until fully blended", "Melt butter in a non-stick pan over low heat", "Pour in eggs, wait 10 sec, then gently push them toward the center with a spatula as they set", "Repeat until eggs are softly set (about 3 min), and remove from heat (they'll finish cooking on the plate)", "Season with salt and pepper"],
+                notesHeading: "Pro Tip",
+                notes: "Low heat = creamy eggs, high eat = rubbery eggs"
             }
         ]
     },
     lunch: {
-        title: "",
+        title: "Lunch",
         recipes: [
             {
-                name: "",
-                ingredients: [""],
-                procedure: [""],
-                notesHeading: "",
-                notes: ""
+                name: "5-Minute Grilled Cheese",
+                ingredients: ["2 slices bread", "1 tbsp butter", "1 slice cheddar cheese"],
+                procedure: ["Butter one side of each bread slice", "Place cheese between unbuttered sides", "Heat pan over medium-low heat, and cook sandwich 2-3 min per side until golden", "Press down lightly with a spatula to melt cheese evenly"],
+                notesHeading: "Fix It",
+                notes: "Burned outside? Lower heat next time"
             }
         ]
     },
     dinner: {
-        title: "",
+        title: "Dinner",
         recipes: [
             {
-                name: "",
-                ingredients: [""],
-                procedure: [""],
-                notesHeading: "",
-                notes: ""
+                name: "Pasta with Jarred Sauce",
+                ingredients: ["2 oz pasta (1/2 cup dry)", "1/2 cup jarred marinara sauce", "1 tbsp grated Parmesan"],
+                procedure: ["Boil 4 cups water in a pot, add pasta, and cook for time on package (usually 9-12 minutes)", "Drain pasta, return to pot, stir in sauce, and heat for 1 min", "Top with Parmesan"],
+                notesHeading: "Upgrade",
+                notes: "Add frozen veggies to boiling water 3 minutes before pasta is done"
             }
         ]
     },
     dessert: {
-        title: "",
+        title: "Dessert",
         recipes: [
             {
-                name: "",
-                ingredients: [""],
-                procedure: [""],
-                notesHeading: "",
-                notes: ""
+                name: "Microwave Mug Cake",
+                ingredients: ["4 tbsp flour", "2 tbsp sugar", "2 tbsp milk", "1 tbsp vegetable oil", "1 tbsp cocoa powder (optional)"],
+                procedure: ["Mix all ingredients in a microwave-safe mig until smooth", "Microwave for 1 min 30 sec (add 10 sec if needed)", "Let cool 1 minute, and eat with a spoon"],
+                notesHeading: "Test Doneness",
+                notes: "Toothpick should come out clean"
             }
         ]
     },
     drinks: {
-        title: "",
+        title: "Drinks",
         recipes: [
             {
-                name: "",
-                ingredients: [""],
-                procedure: [""],
-                notesHeading: "",
-                notes: ""
+                name: "Iced Honey Lemon Tea",
+                ingredients: ["1 tea bag (black or green)", "1 cup hot water", "1 tsp honey", "1/2 lemon, sliced", "Ice cubes"],
+                procedure: ["Steep tea in hot water for 3 minutes, and remove bag", "Stir in honey until dissolved", "Add lemon slices and ice"],
+                notesHeading: "Variation",
+                notes: "Use mint leaves instead of lemon for a fresh twist"
             }
         ]
     }
@@ -100,7 +100,7 @@ const loadRecipe = (recipes, index) => {
         <b>Ingredients:</b>
         <ul>${r.ingredients.map(i => `<li>${i}</li>`).join('')}</ul>
         <b>Procedure:</b>
-        <ul>${r.procedure.map(p => `<li>${p}</li>`).join('')}</ul>
+        <ol>${r.procedure.map(p => `<li>${p}</li>`).join('')}</ol>
         <p><b>${r.notesHeading}:</b> ${notes}</p>
     `;
 };
