@@ -691,7 +691,7 @@ const printLetter = () => {
                 <title>Print Letter | Everythingville</title>
                 <style>
                     body {
-                        font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
                         line-height: 1.75;
                         white-space: pre-wrap;
                         padding: 20px;

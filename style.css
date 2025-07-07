@@ -1,3 +1,33 @@
+/*** FONTS ***/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('assets/fonts/Poppins-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
 /*** TAGS ***/
 
 body {
@@ -95,7 +125,7 @@ textarea {
 }
 
 body, h1, h2, h3, h4, p, a, button, input, select, textarea, b, i {
-    font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, button, p.center {
