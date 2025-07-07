@@ -267,9 +267,16 @@ const displayWorkout = (category) => {
             <option value="${workout.exercises.indexOf(e)}">${e.name}</option>
         `).join('')}
     </select>
+    <div id="exercise-info"></div>
     `;
     document.getElementById('exercise').addEventListener('change', (e) => {
-        console.log(e.target.value);
-        // loadExercise(workout, e.target.value);
+        loadExercise(workout, e.target.value);
     });
-}
+};
+
+// Display chosen exercise
+const loadExercise = (category, index) => {
+    if (index == "none") {
+        document.getElementById('exercise-info').innerHTML = `<p>Select an exercise to continue</p>`;
+    }
+};
