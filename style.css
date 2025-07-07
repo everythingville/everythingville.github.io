@@ -94,7 +94,7 @@ textarea {
     resize: vertical;
 }
 
-body, h1, h2, h3, h4, p, a, button, input, textarea, b, i {
+body, h1, h2, h3, h4, p, a, button, input, select, textarea, b, i {
     font-family: BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -107,6 +107,8 @@ input, select {
     padding: 8px;
     border: 1px solid #dddddd;
     border-radius: 10px;
+    color: black;
+    background-color: white;
 }
 
 input, select, textarea {
