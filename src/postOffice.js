@@ -372,10 +372,10 @@ const buildForm = () => {
 
             <div id="letter-fields"></div>
 
-            <button type="button" id="generate-btn">Generate Letter</button>
+            <button type="button" id="generate-btn" class="btns">Generate Letter</button>
         </form>
 
-        <div id="generated-letter" class="hidden">
+        <div id="generated-letter" class="hidden btns">
             <h3>Your Letter</h3>
             <textarea id="final-letter" spellcheck="true" placeholder="Type your letter or select a template from above"></textarea>
             <button id="print-btn">Print</button>

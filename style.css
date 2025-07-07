@@ -263,7 +263,7 @@ button.inline {
     cursor: default;
 }
 
-div.btns button {
+div.btns button, button.btns {
     width: 175px;
 }
 
