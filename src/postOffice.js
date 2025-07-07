@@ -679,7 +679,7 @@ ${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition
             break;
     }
 
-    document.getElementById('final-letter').textContent = letter;
+    document.getElementById('final-letter').value = letter;
     document.getElementById('generated-letter').classList.remove('hidden');
 
     document.getElementById('print-btn').addEventListener('click', printLetter);
@@ -732,7 +732,7 @@ const printLetter = () => {
 
             <body>
                 <div>
-                    ${document.getElementById('final-letter').innerHTML.replace(/\n/g, '<br>')}
+                    ${document.getElementById('final-letter').value.replace(/\n/g, '<br>')}
                 </div>
                 <button class="no-print" onclick="window.close()">Close</button>
             </body>
@@ -741,3 +741,4 @@ const printLetter = () => {
     printWindow.document.close();
     printWindow.focus()
 }
+// ${document.getElementById('final-letter').innerHTML.replace(/\n/g, '<br>')}
