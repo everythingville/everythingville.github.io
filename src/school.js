@@ -117,5 +117,5 @@ document.querySelectorAll('button.flashcards').forEach(button => {
 });
 
 const loadFlashcards = (subject, difficulty) => {
-    document.getElementById('flashcards').innerHTML = flashcards[subject][difficulty];
+    document.getElementById('flashcards').innerHTML = flashcards[subject][difficulty] ? flashcards[subject][difficulty] : `<p>Select a difficulty level to continue</p>`;
 }
