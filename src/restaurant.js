@@ -176,7 +176,7 @@ document.querySelectorAll('div.recipe-categories button').forEach(button => {
     });
 });
 
-// Display recipe from chosen category
+// Display recipes from chosen category
 const displayRecipe = (category) => {
     const recipes = allRecipes[category];
     document.getElementById('recipe-display').innerHTML = `
