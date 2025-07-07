@@ -95,13 +95,23 @@ const flashcards = {
         `
     }
 }
-
 // Display flashcards
 document.querySelectorAll('button.flashcards').forEach(button => {
     button.addEventListener('click', () => {
         const subject = button.dataset.subject;
-        document.getElementById('flashcards').innerHTML = `
-            <label></label>
+        document.getElementById('flashcards-display').innerHTML = `
+            <label>Difficulty Level:</label>
+            <select id="flashcard-difficulty">
+                <option value="none">None selected</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <div id="flashcards"></div>
         `;
+        document.getElementById('flashcard-difficulty').addEventListener('change', (e) => {
+            loadFlashcards(subject, e.target.value);
+        });
     });
 });
