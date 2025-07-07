@@ -267,13 +267,6 @@ div.btns button {
     width: 175px;
 }
 
-/* div.letter-guides {
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-} */
-
 img.inline {
     height: 30px;
     object-fit: contain;
@@ -344,35 +337,6 @@ section.flashcards iframe {
     background-color: #75d8ff;
     border: 1px solid #75d8ff;
 }
-
-/* .workout-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 15px 0;
-}
-
-.workout-table th {
-    background: #2c3e50;
-    color: white;
-    padding: 10px;
-    text-align: left;
-}
-
-.workout-table td {
-    padding: 8px 10px;
-    border-bottom: 1px solid #dddddd;
-}
-
-.workout-table tr:nth-child(even) {
-    background: #f2f2f2;
-}
-
-.workout-tips {
-    background: #e8f4fc;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 20px;
-} */
 
 /*** IDS ***/
 
