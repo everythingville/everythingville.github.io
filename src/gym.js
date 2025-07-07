@@ -271,12 +271,48 @@ const displayWorkout = (category) => {
 
     const randIndex = Math.floor(Math.random() * workout.exercises.length);
     document.getElementById('exercise').selectedIndex = randIndex;
-    // loadExercise(workout, randIndex);
+    loadExercise(workout, randIndex);
     document.getElementById('exercise').addEventListener('change', (e) => {
-        // loadExercise(workout, e.target.value);
+        loadExercise(workout, e.target.value);
     });
 };
 
 // Display chosen exercise (automatically loads random)
-// const loadExercise = (category, index) => {
-// };
+const loadExercise = (workout, index) => {
+    const e = workout.exercises[index];
+    document.getElementById('exercise-info').innerHTML = `
+        <p><b>Sets:</b> ${e.sets}</p>
+        <p><b>Rest:</b> ${e.rest}</p>
+        <p><b>Notes:</b> ${e.notes}</p>
+        <p><b>Props:</b> ${e.props}</p>
+        <b>Focus:</b>
+        <ul>${e.focusAreas.map(area => `<li>${area}</li>`).join('')}</ul>
+        <p><b>Avoid If:</b> ${e.contraindications}</p>
+        <p><b>Instructions:</b> ${e.instructions}</p>
+        <br>
+        <b>Pro Tips:</b>
+        <ul>${workout.tips.map(tip => `<li>${tip}</li>`).join('')}</ul>
+    `;
+};
+// Exercise
+// Sets
+// Rest
+// Notes
+// Props
+// Focus
+// Avoid If
+// How To
+
+// ${workout.exercises.map(e => `
+//     ${e.name}
+//     ${e.sets}
+//     ${e.rest}
+//     ${e.notes}
+//     ${e.props}
+//     ${e.focusAreas}
+//     ${e.contraindications}
+//     ${e.instructions}
+// `).join('')}
+
+// <b>Pro Tips:</b>
+// <ul>${workout.tips.map(tip => `<li>${tip}</li>`).join('')}</ul>
