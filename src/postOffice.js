@@ -336,7 +336,6 @@ document.querySelectorAll('button.letter-guides').forEach(button => {
             <h3>${letterTemplate.title}</h3>
             ${letterTemplate.structure}
             ${letterTemplate.example}
-            <br>
             <button class="copy-btn">Copy Template</button>
         `;
     });

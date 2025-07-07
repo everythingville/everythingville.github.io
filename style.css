@@ -115,7 +115,7 @@ select {
 }
 
 textarea {
-    width: 100%;
+    width: calc(100% - 30px);
     height: 200px;
     padding: 15px;
     margin: 10px 0;
@@ -341,19 +341,15 @@ section.flashcards iframe {
 /*** IDS ***/
 
 #final-letter {
-    padding: 20px;
     white-space: pre-line; /* For plain text, respects \n for line breaks, collapses other whitespace */
 }
 
 #generated-letter {
-    padding: 20px;
     background: #f9f9f9;
     border-radius: 5px;
 }
 
 #letter-display {
-    margin: 20px;
-    padding: 20px;
     background: #f9f9f9;
     border-radius: 5px;
 }
