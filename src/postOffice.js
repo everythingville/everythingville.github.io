@@ -761,9 +761,7 @@ const printLetter = () => {
             </head>
 
             <body>
-                <div>
-                    ${document.getElementById('final-letter').value.replace(/\n/g, '<br>')}
-                </div>
+                <div>${document.getElementById('final-letter').value.replace(/\n/g, '<br>')}</div>
                 <button class="no-print" onclick="window.close()">Close</button>
             </body>
         </html>
