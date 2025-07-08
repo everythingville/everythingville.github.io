@@ -8,7 +8,6 @@
 - Hand-drawn digital illustrations
 
 ## Music Store
-- Add img icons to btns
 - URL params for btns
 - Shuffle mode, maybe with custom-made music player
 - Add more music
