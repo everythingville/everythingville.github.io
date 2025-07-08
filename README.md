@@ -2,8 +2,6 @@
 
 ![Hackatime Badge](https://hackatime-badge.hackclub.com/U07DMCJTB8Q/everythingville)
 
-*(Work in Progress)*
-
 ## About Everythingville
 
 Everythingville is a place where you can find a variety of productivity tools, all in one place, in a fun town-like UI. The features of this site are distributed among the different buildings of the town. There is something for everyone in Everythingville, so go ahead and [start exploring](https://everythingville.github.io/)!
