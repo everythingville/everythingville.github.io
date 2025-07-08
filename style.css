@@ -273,6 +273,7 @@ div.btns button, button.btns {
 
 iframe.book {
     height: 100vh;
+    background-color: white;
 }
 
 img.inline {

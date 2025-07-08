@@ -37,7 +37,7 @@ const library = {
             },
             {
                 title: "Grimms' Fairy Tales",
-                blurb: "by Jacob Grimm and Wilhelm Grimm is a renowned collection of folk tales compiled in the early 19th century. This collection features a myriad of enchanting stories that explore themes of morality, adventure, and the fantastical, capturing the imagination of both children and adults alike. Prominent tales such as \"Hansel and Gretel,\" \"Cinderella,\" and \"The Frog Prince\" weave together vivid narratives populated with princes, princesses, magical creatures, and wise animals, emphasizing timeless lessons embedded in each enchanting narrative. At the start of <i>${b.title}</i>, readers are introduced to the world of magic and wonder through a preparatory note that acknowledges the translations of the original German tales. The opening stories include beloved classics such as \"The Golden Bird,\" which follows a gardener's youngest son as he embarks on an adventure to capture a golden bird, aided by a cunning fox. Other tales such as \"Hans in Luck\" and \"Jorinda and Jorindel\" offer whimsical insights into luck and transformation, showcasing the variety of themes and characters that readers will encounter throughout the collection. Each story unfolds with its own unique charm, setting the stage for a journey into the remarkable and often moralistic world of fairy tales essential to cultural storytelling.",
+                blurb: "by Jacob Grimm and Wilhelm Grimm is a renowned collection of folk tales compiled in the early 19th century. This collection features a myriad of enchanting stories that explore themes of morality, adventure, and the fantastical, capturing the imagination of both children and adults alike. Prominent tales such as \"Hansel and Gretel,\" \"Cinderella,\" and \"The Frog Prince\" weave together vivid narratives populated with princes, princesses, magical creatures, and wise animals, emphasizing timeless lessons embedded in each enchanting narrative. At the start of <i>Grimms' Fairy Tales</i>, readers are introduced to the world of magic and wonder through a preparatory note that acknowledges the translations of the original German tales. The opening stories include beloved classics such as \"The Golden Bird,\" which follows a gardener's youngest son as he embarks on an adventure to capture a golden bird, aided by a cunning fox. Other tales such as \"Hans in Luck\" and \"Jorinda and Jorindel\" offer whimsical insights into luck and transformation, showcasing the variety of themes and characters that readers will encounter throughout the collection. Each story unfolds with its own unique charm, setting the stage for a journey into the remarkable and often moralistic world of fairy tales essential to cultural storytelling.",
                 folder: "grimms-fairy-tales"
             }
         ]
@@ -92,7 +92,7 @@ const library = {
             },
             {
                 title: "The Phantom of the Opera",
-                blurb: "by Gaston Leroux is a fictional novel likely written in the late 19th century. The story revolves around the mysterious figure known as the Opera Ghost, who haunts the Paris Opera House and exerts influence over the opera singers, particularly the talented Christine Daaé. Central to the plot are Christine, a gifted singer sheltered by the ghost's protective presence, and Raoul, the Viscount de Chagny, who ardently loves her and becomes embroiled in the ghost's enigmatic realm. The beginning of <i>${b.title}</i> sets up a tantalizing mystery, both through its prologue, which claims the existence of the ghost is factual, and the opening chapters that dive into the bustling environment of the opera house. As the managers are preparing for their retirement celebration, the ghost's ominous presence is felt through frightened ballet girls discussing strange happenings and a tragic death linked to the ghost, Joseph Buquet. These elements foreshadow the turmoil surrounding Christine Daaé, who after a spectacular performance, begins to withdraw from public life due to an inexplicable fear, while Raoul's affection for her fuels the narrative's tension. The stage is thus set for a Gothic tale of love, obsession, and the supernatural.",
+                blurb: "by Gaston Leroux is a fictional novel likely written in the late 19th century. The story revolves around the mysterious figure known as the Opera Ghost, who haunts the Paris Opera House and exerts influence over the opera singers, particularly the talented Christine Daaé. Central to the plot are Christine, a gifted singer sheltered by the ghost's protective presence, and Raoul, the Viscount de Chagny, who ardently loves her and becomes embroiled in the ghost's enigmatic realm. The beginning of <i>The Phantom of the Opera</i> sets up a tantalizing mystery, both through its prologue, which claims the existence of the ghost is factual, and the opening chapters that dive into the bustling environment of the opera house. As the managers are preparing for their retirement celebration, the ghost's ominous presence is felt through frightened ballet girls discussing strange happenings and a tragic death linked to the ghost, Joseph Buquet. These elements foreshadow the turmoil surrounding Christine Daaé, who after a spectacular performance, begins to withdraw from public life due to an inexplicable fear, while Raoul's affection for her fuels the narrative's tension. The stage is thus set for a Gothic tale of love, obsession, and the supernatural.",
                 folder: "the-phantom-of-the-opera"
             },
             {
@@ -213,7 +213,7 @@ document.querySelectorAll('div.book-genres button').forEach(button => {
 // Display books from chosen genre
 const displayBook = (genre) => {
     const books = library[genre];
-    document.getElementById('div.book-display').innerHTML = `
+    document.getElementById('book-display').innerHTML = `
         <h3>${books.heading}</h3>
         <label>Book:</label>
         <select id="book">
@@ -240,8 +240,3 @@ const loadBook = (genre, index) => {
         <iframe class="book" src="assets/books/${genre}/${b.folder}/book.html" title="${b.title}"></iframe>
     `;
 }
-/*
-BOOKS TO CHECK:
-The Phantom of the Opera
-Grimms' Fairy Tales
-*/
