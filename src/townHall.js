@@ -41,13 +41,4 @@ const loadInfo = (info, title) => {
         <h3>${title}</h3>
         ${section}
     `;
-    if (info == 'feedback') {
-        loadForm();
-    };
-};
-
-// Load feedback form 
-const loadForm = () => {
-    const form = document.querySelector('iframe.feedback');
-    form.style.height = form.contentWindow.document.body.scrollHeight + 'px';
 };
