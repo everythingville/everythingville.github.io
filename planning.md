@@ -1,20 +1,23 @@
 # Planning
 
 ## General
-- Add img icons to btns
 - Put HTML building pages in their own folder while still being able to access folders/files outside
-- URL params for all btns/select
 - Dark mode, enable manually or detect system
 - Rearrange buildings into more map-like random-like layout
 - Improve map background
 - Hand-drawn digital illustrations
 
 ## Music Store
+- Add btns to open each playlist
+- Add img icons to btns
+- URL params for btns
 - Shuffle mode, maybe with custom-made music player
 - Add more music
 - Add more music genres
 
 ## Gym
+- Add img icons to btns
+- URL params for btns/select
 - Print any exercise
 - Export exercises in rich text
 - Add more details to exercises
@@ -24,6 +27,8 @@
 - Fitness tracker
 
 ## Restaurant
+- Add img icons to btns
+- URL params for btns/select
 - Print any recipe
 - Export recipes in rich text
 - Add more details to recipes
@@ -38,16 +43,23 @@
 - Export journals in rich text
 
 ## Town Hall
-- Lates updates, add last devlog, name of latest will always be the same
-- All features explained, add btns to access each section to prevent page from getting too long
+- Add btns to access each section
+- Add img icons to btns
+- All features explained
+- Lates updates, add last devlog
+- URL params for btns
 
 ## Post Office
+- Add img icons to btns
+- URL params for btns
 - Save letters using localStorage
 - Open and edit past letters
 - Export letters in rich text
 - Add more types of letters
 
 ## Hardware Store
+- Add img icons to btns
+- URL params for btns/select
 - Print any tutorial
 - Export tutorials in rich text
 - Add more details to tutorials
@@ -57,6 +69,8 @@
 ## School
 - Store flashcard links and titles in objects, map out to iframes
 - Add dropdown to select specific flashcard deck
+- Add img icons to btns
+- URL params for btns/select
 - Custom-made flashcard display
 - Print any flashcard deck
 - Export flashcards in rich text
@@ -66,6 +80,8 @@
 
 ## Library
 - Make blurb collapsible with details and summary tags
+- Add img icons to btns
+- URL params for btns/select
 - Download book as w/ img as html or w/o img as txt
 - Add more books
 - Add more book genres
