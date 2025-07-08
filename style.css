@@ -406,6 +406,32 @@ small img.inline {
     height: 500px;
 }
 
+/*** DATA ATTRIBUTES ***/
+
+[data-genre="relaxing"] {
+    background: #69d8e4;
+}
+
+[data-genre="instrumental"] {
+    background: #ecd580;
+}
+
+[data-genre="pop"] {
+    background: #ff98a7;
+}
+
+[data-genre="jazz"] {
+    background: #a8bbff;
+}
+
+[data-genre="rock"] {
+    background: #ee9890;
+}
+
+[data-genre="surprise"] {
+    background: #9eccf5;
+}
+
 /*** MEDIA QUERIES ***/
 
 @media print {
