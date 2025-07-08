@@ -17,14 +17,19 @@
 ## Gym
 - Print any exercise
 - Export exercises in rich text
+- Add more details to exercises
 - Add more exercises
 - Add more workout categories
+- Filter by focus area
+- Fitness tracker
 
 ## Restaurant
 - Print any recipe
 - Export recipes in rich text
+- Add more details to recipes
 - Add more recipes
 - Add more recipe categories
+- Filter by dietary restrictions
 
 ## Home
 - Print current journal
@@ -45,6 +50,7 @@
 ## Hardware Store
 - Print any tutorial
 - Export tutorials in rich text
+- Add more details to tutorials
 - Add more tutorials
 - Add more tutorial categories
 
@@ -59,6 +65,8 @@
 - Add more subjects
 
 ## Library
-- Download book as zip file
+- Make blurb collapsible with details and summary tags
+- Download book as w/ img as html or w/o img as txt
 - Add more books
 - Add more book genres
+- Add bookmarks to save where in book user left off
