@@ -1,0 +1,1 @@
+document.getElementById('map-nav').innerHTML = `<img src="assets/img/logo.png" alt="Back to Map" title="Back to Map">`;
