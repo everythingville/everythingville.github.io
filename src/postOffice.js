@@ -697,6 +697,33 @@ const printLetter = () => {
             <head>
                 <title>Print Letter | Everythingville</title>
                 <style>
+                    @font-face {
+                        font-family: 'Poppins';
+                        src: url('assets/fonts/Poppins-Regular.ttf');
+                        font-weight: normal;
+                        font-style: normal;
+                    }
+
+                    @font-face {
+                        font-family: 'Poppins';
+                        src: url('assets/fonts/Poppins-Bold.ttf');
+                        font-weight: bold;
+                        font-style: normal;
+                    }
+
+                    @font-face {
+                        font-family: 'Poppins';
+                        src: url('assets/fonts/Poppins-Italic.ttf');
+                        font-weight: normal;
+                        font-style: italic;
+                    }
+
+                    @font-face {
+                        font-family: 'Poppins';
+                        src: url('assets/fonts/Poppins-BoldItalic.ttf');
+                        font-weight: bold;
+                        font-style: italic;
+                    }
                     body {
                         line-height: 1.75;
                         white-space: pre-wrap;
