@@ -82,6 +82,10 @@ header {
 iframe {
     margin: 20px 0px;
     box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+    width: 100%;
+    min-height: 300px;
+    border: none;
+    border-radius: 10px;
 }
 
 label {
@@ -279,10 +283,7 @@ section.feedback iframe {
 }
 
 section.flashcards iframe {
-    width: 100%;
     height: 600px;
-    border: none;
-    border-radius: 10px;
 }
 
 .delete-btn {
