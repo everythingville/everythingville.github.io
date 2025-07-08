@@ -44,7 +44,7 @@ body div.white {
 button {
     margin: 10px auto;
     font-size: 14px;
-    padding: 5px 20px;
+    padding: 7px 20px;
     border-radius: 40px;
     background-color: #75d8ff;
     border: none;
@@ -263,7 +263,7 @@ button.yellow {
 }
 
 div.btns button, button.btns {
-    width: 175px;
+    width: 200px;
 }
 
 iframe.book {
@@ -408,7 +408,7 @@ small img.inline {
 
 /*** DATA ATTRIBUTES ***/
 
-[data-genre="relaxing"] {
+/* [data-genre="relaxing"] {
     background: #69d8e4;
 }
 
@@ -430,7 +430,7 @@ small img.inline {
 
 [data-genre="surprise"] {
     background: #9eccf5;
-}
+} */
 
 /*** MEDIA QUERIES ***/
 
