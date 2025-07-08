@@ -15,28 +15,16 @@
             <header></header>
             <main>
                 <h1>Welcome to<br>Town Hall</h1>
-                <section class="everythingville-intro">
+                <section class="town-info">
                     <h2>About Everythingville</h2>
                     <p class="center">Everythingville is a place where you can find a variety of productivity tools, all in one place, in a fun town-like UI. The features of this site are distributed among the different buildings of the town. There is something for everyone in Everythingville, so go ahead and start exploring!</p>
-
-                    <h2>How to Navigate</h2>
-                    <p class="center">Think of Everythingville like a small town, with the <a href="index.html">main page</a> containing a map of the town.</p>
-                    <b>If you're on a computer:</b>
-                    <ul>
-                        <li>Click on any green area of your screen and drag your mouse to move around</li>
-                        <li>Use the plus (+) and minus (-) signs located at the top left of your screen to zoom in and out, respectively</li>
-                    </ul>
-                    <b>If you're on a mobile device:</b>
-                    <ul>
-                        <li>Tap and hold any green area of your screen to move around by dragging one finger</li>
-                        <li>Using two fingers, slide your fingers away from or toward each other to zoom in and out, respectively</li>
-                    </ul>
-                    <p class="center">When you find a building that you want to visit, simply click on the building icon to open the popup with more details, and click <button class="inline" alt="Enter button (Not clickable)" title="Enter button (Not clickable)">Enter</button> to enter the building. If you ever want to return to the map from inside any of the buildings, you can always click <img class="inline" alt="Map icon (Not clickable)" title="Map icon (Not clickable)" src="assets/img/logo.png"> at the top right corner of your screen.</p>
-                </section>
-                <section class="feedback">
-                    <h2>Feedback</h2>
-                    <p class="center">Have any suggestions for improving Everythingville? Fill out the form below!</p>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpLv0zl4vnY8xCj_a4G1o2wAlr3ltc829QCXXeXTyQ79k3JQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+                    <div class="btns info-btns">
+                        <button data-info="navigation">How to Navigate</button>
+                        <!-- <button data-info="features">Features Explained</button>
+                        <button data-info="updates">Latest Updates</button> -->
+                        <button data-info="feedback">Feedback Form</button>
+                    </div>
+                    <div id="info-display"></div>
                 </section>
             </main>
             <footer></footer>

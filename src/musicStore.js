@@ -13,13 +13,16 @@ const playlists = {
 document.querySelectorAll('div.music-genres button').forEach(button => {
     button.addEventListener('click', () => {
         const genre = button.dataset.genre;
-        loadPlaylist(genre);
+        const title = button.textContent;
+        loadPlaylist(genre, title);
     });
 });
 
-const loadPlaylist = (genre) => {
+// Load chosen playlist
+const loadPlaylist = (genre, title) => {
     const playlist = playlists[genre];
     document.getElementById('playlist-display').innerHTML = `
+        <h3>${title}</h3>
         <iframe src="${playlist}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     `;
 };
