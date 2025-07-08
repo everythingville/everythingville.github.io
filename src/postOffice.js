@@ -573,8 +573,7 @@ const generateLetter = () => {
     // Format letter based on type
     switch(type) {
         case 'academic':
-            letter = `
-${formData.senderName}
+            letter = `${formData.senderName}
 ${formData.senderOrg}
 ${formData.senderAddress}${formData.senderEmail ? '\n' + formData.senderEmail : ''}
 
@@ -591,12 +590,10 @@ ${formData.greeting}
 ${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
 
 ${formData.closing}
-${formData.senderName}${formData.senderCredentials ? '\n' + formData.senderCredentials : ''}
-            `;
+${formData.senderName}${formData.senderCredentials ? '\n' + formData.senderCredentials : ''}`;
             break;
         case 'business':
-            letter = `
-${formData.senderOrg ? formData.senderOrg + '\n' : ''}${formData.senderAddress}
+            letter = `${formData.senderOrg ? formData.senderOrg + '\n' : ''}${formData.senderAddress}
 ${new Date().toLocaleDateString()}
 
 ${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}
@@ -610,24 +607,20 @@ ${formData.greeting}
 ${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
 
 ${formData.closing}
-${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition : ''}${formData.senderOrg ? '\n' + formData.senderOrg : ''}
-            `;
+${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition : ''}${formData.senderOrg ? '\n' + formData.senderOrg : ''}`;
             break;
         case 'casual':
-            letter = `
-${formData.senderAddress ? formData.senderAddress + '\n' : ''}${new Date().toLocaleDateString()}
+            letter = `${formData.senderAddress ? formData.senderAddress + '\n' : ''}${new Date().toLocaleDateString()}
 
 ${formData.greeting}
 
 ${formData.body1}
 
 ${formData.closing}
-${formData.senderName}
-            `;
+${formData.senderName}`;
             break;
         case 'thanks':
-            letter = `
-${formData.senderName}
+            letter = `${formData.senderName}
 ${new Date().toLocaleDateString()}
 
 ${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}
@@ -638,12 +631,10 @@ ${formData.greeting}
 ${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
 
 ${formData.closing}
-${formData.senderName}
-            `;
+${formData.senderName}`;
             break;
         case 'complaint':
-            letter = `
-${formData.senderName}
+            letter = `${formData.senderName}
 ${formData.senderAddress}
 ${new Date().toLocaleDateString()}
 
@@ -657,12 +648,10 @@ ${formData.greeting}
 ${formData.body1}${formData.body2 ? '\n\n' + formData.body2 : ''}${formData.body3 ? '\n\n' + formData.body3 : ''}
 
 ${formData.closing}
-${formData.senderName}${formData.senderPhone ? '\n' + formData.senderPhone : ''}${formData.senderEmail ? '\n' + formData.senderEmail : ''}
-            `;
+${formData.senderName}${formData.senderPhone ? '\n' + formData.senderPhone : ''}${formData.senderEmail ? '\n' + formData.senderEmail : ''}`;
             break;
         case 'invite':
-            letter = `
-${formData.senderOrg ? formData.senderOrg + '\n' : ''}${formData.senderAddress}
+            letter = `${formData.senderOrg ? formData.senderOrg + '\n' : ''}${formData.senderAddress}
 ${new Date().toLocaleDateString()}
 
 ${formData.recipientName}${formData.recipientPosition ? '\n' + formData.recipientPosition : ''}${formData.recipientOrg ? '\n' + formData.recipientOrg : ''}
@@ -674,8 +663,7 @@ ${formData.greeting}
 ${formData.body1}${formData.body2 ? '\n' + formData.body2 : ''}${formData.body3 ? '\n' + formData.body3 : ''}
 
 ${formData.closing}
-${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition : ''}
-            `;
+${formData.senderName}${formData.senderPosition ? '\n' + formData.senderPosition : ''}`;
             break;
     }
 
