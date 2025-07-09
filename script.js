@@ -17,8 +17,9 @@ const buildings = {
         location: [750, 250],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/musicStore.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'Music Store',
         hook: 'Want something in the background?',
@@ -29,8 +30,9 @@ const buildings = {
         location: [750, 500],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/gym.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'Gym',
         hook: 'Feel like exercising?',
@@ -41,8 +43,9 @@ const buildings = {
         location: [750, 750],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/restaurant.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'Restaurant',
         hook: 'Want to cook or bake?',
@@ -53,8 +56,9 @@ const buildings = {
         location: [500, 250],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/home.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'Home',
         hook: 'Feel like writing?',
@@ -65,8 +69,9 @@ const buildings = {
         location: [500, 500],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/townHall.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'Town Hall',
         hook: 'Welcome to Everythingville!',
@@ -77,8 +82,9 @@ const buildings = {
         location: [500, 750],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/postOffice.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'Post Office',
         hook: 'Want to write to someone?',
@@ -89,8 +95,9 @@ const buildings = {
         location: [250, 250],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/hardwareStore.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'Hardware Store',
         hook: 'Feeling creative?',
@@ -101,8 +108,9 @@ const buildings = {
         location: [250, 500],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/school.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'School',
         hook: 'Want to test your knowledge?',
@@ -113,8 +121,9 @@ const buildings = {
         location: [250, 750],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/library.png',
-            iconAnchor: [75, 75],
-            popupAnchor: [0, -75]
+            iconAnchor: [75, 150],
+            popupAnchor: [0, -150],
+            className: 'map-icon'
         }),
         title: 'Library',
         hook: 'Feel like reading?',
@@ -137,25 +146,24 @@ Object.keys(buildings).forEach(bName => {
 });
 
 // Make building icons jump up when hovering over them
-// map.eachLayer(layer => {
-//     if (layer instanceof L.Marker) {
-//         layer.on('mouseover', () => {
-//             const icon = this.getElement();
-//             if (icon) {
-//                 icon.style.transition = 'transform 0.3s ease';
-//                 icon.style.transform = 'translateY(-10px)';
-//                 icon.style.zIndex = '1000';
-//             }
-//         });
-//         layer.on('mouseout', () => {
-//             const icon = this.getElement();
-//             if (icon) {
-//                 icon.style.transform = 'translateY(0)';
-//                 icon.style.zIndex = '';
-//             }
-//         });
-//     }
-// });
+map.eachLayer(layer => {
+    if (layer instanceof L.Marker) {
+        layer.on('mouseover', () => {
+            const icon = this.getElement();
+            if (icon) {
+                icon.style.transform = 'translateY(-10px) scale(1.1)';
+                icon.style.zIndex = '1000';
+            }
+        });
+        layer.on('mouseout', () => {
+            const icon = this.getElement();
+            if (icon) {
+                icon.style.transform = '';
+                icon.style.zIndex = '';
+            }
+        });
+    }
+});
 
 buildings.townHall.marker.on('click', function(e) {
     buildings.townHall.marker.openPopup();
