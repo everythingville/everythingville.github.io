@@ -28,7 +28,7 @@ function displayEntries() {
         <div class="journal-entry">
             <small>${item.timestamp}</small>
             <p>${item.journalEntry}</p>
-            <button class="delete-btn red" data-index="${index}">Delete</button>
+            <button class="delete-btn red" data-index="${index}"><img class="inline line-start" src="assets/img/delete.png" alt="Delete journal entry button" title="Delete journal entry button"> Delete</button>
         </div>
     `).join('');
 

@@ -33,7 +33,6 @@
 - Filter by dietary restrictions
 
 ## Home
-- Add img icons to btns
 - Print current journal
 - Open and edit past journals
 - Rich text editor for journal
