@@ -490,12 +490,6 @@ small img.inline, button.inline img {
 
 /*** MEDIA QUERIES ***/
 
-@media only screen and (max-width: 764px) {
-    #building-info div {
-        width: 100% !important;
-    }
-}
-
 @media print {
     body {
         background: white !important;
@@ -506,5 +500,17 @@ small img.inline, button.inline img {
     }
     #map-nav, div.letter-guides, #letter-form, .no-print {
         display: none !important;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    #building-info div {
+        max-width: calc(100vw - 4rem) !important;
+    }
+    #building-info div p, #building-info div b {
+        text-align: center;
+    }
+    #building-info div div.custom-list {
+        margin: auto;
     }
 }
