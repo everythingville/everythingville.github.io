@@ -16,6 +16,7 @@ const buildings = {
     musicStore: {
         location: [750, 250],
         icon: L.icon({
+            className: 'map-icons',
             iconUrl: 'assets/img/buildings/musicStore.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],
@@ -29,6 +30,7 @@ const buildings = {
     gym: {
         location: [750, 500],
         icon: L.icon({
+            className: 'map-icons',
             iconUrl: 'assets/img/buildings/gym.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],
@@ -42,6 +44,7 @@ const buildings = {
     restaurant: {
         location: [750, 750],
         icon: L.icon({
+            className: 'map-icon',
             iconUrl: 'assets/img/buildings/restaurant.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],
@@ -55,6 +58,7 @@ const buildings = {
     home: {
         location: [500, 250],
         icon: L.icon({
+            className: 'map-icon',
             iconUrl: 'assets/img/buildings/home.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],
@@ -68,6 +72,7 @@ const buildings = {
     townHall: {
         location: [500, 500],
         icon: L.icon({
+            className: 'map-icon',
             iconUrl: 'assets/img/buildings/townHall.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],
@@ -81,6 +86,7 @@ const buildings = {
     postOffice: {
         location: [500, 750],
         icon: L.icon({
+            className: 'map-icon',
             iconUrl: 'assets/img/buildings/postOffice.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],
@@ -94,6 +100,7 @@ const buildings = {
     hardwareStore: {
         location: [250, 250],
         icon: L.icon({
+            className: 'map-icon',
             iconUrl: 'assets/img/buildings/hardwareStore.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],
@@ -107,6 +114,7 @@ const buildings = {
     school: {
         location: [250, 500],
         icon: L.icon({
+            className: 'map-icon',
             iconUrl: 'assets/img/buildings/school.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],
@@ -120,6 +128,7 @@ const buildings = {
     library: {
         location: [250, 750],
         icon: L.icon({
+            className: 'map-icon',
             iconUrl: 'assets/img/buildings/library.png',
             iconSize: [150, 150],
             iconAnchor: [75, 75],

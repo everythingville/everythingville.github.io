@@ -367,6 +367,17 @@ small img.inline {
     background-color: #7ed957 !important;
 }
 
+.map-icon {
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s;
+}
+
+.map-icon:hover {
+    transform: scale(1.1);
+    transition: all 0.3;
+}
+
 .popup {
     display: flex;
     flex-direction: column;
