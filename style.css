@@ -43,8 +43,7 @@ body div.white {
 
 button {
     margin: 10px auto;
-    font-size: 14px;
-    padding: 7px 20px;
+    padding: 10px 20px;
     border-radius: 40px;
     background-color: #75d8ff;
     border: none;
@@ -81,7 +80,7 @@ h3 {
     font-size: 20px;
 }
 
-h4, p, b, i, input, textarea, select, label {
+h4, p, b, i, input, textarea, select, label, button {
     font-size: 16px;
 }
 
@@ -269,8 +268,8 @@ button.red {
 }
 
 div.btns button, button.btns, button.copy-btn {
-    width: 200px;
-    height: 44px;
+    width: 225px;
+    height: 50px;
 }
 
 iframe.book {
@@ -306,11 +305,18 @@ small img.inline {
     top: 10px;
     right: 10px;
     color: white;
+    font-size: 14px;
+    padding: 5px 10px;
 }
 
 .delete-btn:active {
     color: black;
     transition: all 0.3s;
+}
+
+.delete-btn img.inline.line-start {
+    height: 20px;
+    margin: 0 !important;
 }
 
 .hidden {

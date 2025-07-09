@@ -39,7 +39,6 @@
 - Export journals in rich text
 
 ## Town Hall
-- Add img icons to btns
 - All features explained
 - Lates updates, add last devlog
 - URL params for btns
