@@ -41,7 +41,7 @@
 
 ## Town Hall
 - All features explained
-- Lates updates, add last devlog
+- Latest updates, add last devlog
 - URL params for btns
 
 ## Post Office

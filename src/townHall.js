@@ -1,5 +1,54 @@
 /*** TOWN INFO ***/
 
+// Explanations for features of all buildings
+const buildings = [
+    {
+        name: "Music Store",
+        icon: "musicStore",
+        description: ``
+    },
+    {
+        name: "Gym",
+        icon: "gym",
+        description: ``
+    },
+    {
+        name: "Restaurant",
+        icon: "restaurant",
+        description: ``
+    },
+    {
+        name: "Home",
+        icon: "home",
+        description: ``
+    },
+    {
+        name: "Town Hall",
+        icon: "townHall",
+        description: ``
+    },
+    {
+        name: "Post Office",
+        icon: "postOffice",
+        description: ``
+    },
+    {
+        name: "Hardware Store",
+        icon: "hardwareStore",
+        description: ``
+    },
+    {
+        name: "School",
+        icon: "school",
+        description: ``
+    },
+    {
+        name: "Library",
+        icon: "library",
+        description: ``
+    }
+];
+
 // Content for town info sections
 const allInfo = {
     navigation: `
@@ -17,6 +66,13 @@ const allInfo = {
         <p class="center">When you find a building that you want to visit, simply click on the building icon to open the popup with more details, and click <button class="inline" alt="Enter button (Not clickable)" title="Enter button (Not clickable)">Enter</button> to enter the building. If you ever want to return to the map from inside any of the buildings, you can always click <img class="inline" alt="Map icon (Not clickable)" title="Map icon (Not clickable)" src="assets/img/logo.png"> at the top right corner of your screen.</p>
     `,
     features: `
+        <label>Building:</label>
+        <select id="building">
+            ${buildings.map(b => {`
+                <option value="${buildings.indexOf(b)}">${b.name}</option>
+            `}).join('')}
+        </select>
+        <div id="building-info"></div>
     `,
     updates: `
     `,
