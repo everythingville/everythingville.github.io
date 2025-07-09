@@ -40,7 +40,7 @@
 - Export journals in rich text
 
 ## Town Hall
-- All features explained (missing descriptions)
+- All features explained (fix custom bullets, add descriptions)
 - URL params for btns
 
 ## Post Office

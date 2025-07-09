@@ -312,7 +312,7 @@ ul.no-bullets li {
 }
 
 ul.no-bullets li img {
-    width: 30px;
+    width: 30px !important;
 }
 
 .delete-btn {

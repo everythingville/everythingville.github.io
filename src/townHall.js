@@ -9,11 +9,11 @@ const buildings = [
             <p>If you're looking for something to listen to in the background, then this is the place for you. Visit the Music Store to access a variety of playlists with relaxing sounds and music from different genres. It's perfect for helping you concentrate while you work!</p>
             <b>Current collection of playlists:</b>
             <ul class="no-bullets">
-                <li><img class="inline line-start" src="assets/img/relaxing.png" alt="Relaxing sounds" title="Relaxing sounds"> Relaxing sounds</li>
-                <li><img class="inline line-start" src="assets/img/instrumental.png" alt="Instrumental music" title="Instrumental music"> Instrumental music</li>
-                <li><img class="inline line-start" src="assets/img/pop.png" alt="Pop music" title="Pop music"> Pop music</li>
-                <li><img class="inline line-start" src="assets/img/jazz.png" alt="Jazz music" title="Jazz music"> Jazz music</li>
-                <li><img class="inline line-start" src="assets/img/rock.png" alt="Rock music" title="Rock music"> Rock music</li>
+                <img class="inline line-start" src="assets/img/relaxing.png" alt="Relaxing sounds" title="Relaxing sounds"><li> Relaxing sounds</li>
+                <img class="inline line-start" src="assets/img/instrumental.png" alt="Instrumental music" title="Instrumental music"><li> Instrumental music</li>
+                <img class="inline line-start" src="assets/img/pop.png" alt="Pop music" title="Pop music"><li> Pop music</li>
+                <img class="inline line-start" src="assets/img/jazz.png" alt="Jazz music" title="Jazz music"><li> Jazz music</li>
+                <img class="inline line-start" src="assets/img/rock.png" alt="Rock music" title="Rock music"><li> Rock music</li>
             </ul>
             <p>Not sure what to listen to? Check out the Surprise playlist for an interesting mix!</p>
         `
