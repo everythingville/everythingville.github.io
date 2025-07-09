@@ -718,7 +718,10 @@ const printLetter = () => {
                         padding: 20px;
                     }
                     button {
-                        display: block;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 8px;
                         margin: 10px auto;
                         font-size: 14px;
                         padding: 7px 20px;
@@ -726,12 +729,14 @@ const printLetter = () => {
                         background-color: #75d8ff;
                         border: none;
                         color: black;
-                        width: 200px;
+                        transition: all 0.3s;
                         height: 44px;
+                    }
+                    button:active {
+                        color: white;
                         transition: all 0.3s;
                     }
                     button:hover {
-                        color: #ffffff;
                         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
                         cursor: pointer;
                         transition: all 0.3s;
@@ -740,9 +745,8 @@ const printLetter = () => {
                         font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
                     }
                     img {
-                        height: 30px;
+                        height: 20px;
                         object-fit: contain;
-                        margin: 0 5px 0 0;
                     }
                     @media print {
                         .no-print {
@@ -764,3 +768,24 @@ const printLetter = () => {
     printWindow.document.close();
     printWindow.focus()
 }
+/*
+                    button {
+                        display: block;
+                        text-align: center;
+                        margin: 10px auto;
+                        font-size: 14px;
+                        padding: 7px 20px;
+                        border-radius: 40px;
+                        background-color: #75d8ff;
+                        border: none;
+                        color: black;
+                        transition: all 0.3s;
+                        height: 60px;
+                        line-height: 60px;
+                    }
+                    img {
+                        height: 30px;
+                        object-fit: contain;
+                        margin: 0 5px 0 0;
+                    }
+*/
