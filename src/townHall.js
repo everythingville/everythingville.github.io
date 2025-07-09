@@ -15,7 +15,7 @@ const buildings = [
                 <div class="li"><img class="inline line-start" src="assets/img/jazz.png" alt="Jazz music" title="Jazz music"><p> Jazz music</p></div>
                 <div class="li"><img class="inline line-start" src="assets/img/rock.png" alt="Rock music" title="Rock music"><p> Rock music</p></div>
             </div>
-            <p>Not sure what to listen to? Check out the Surprise playlist for an interesting mix!</p>
+            <p>Not sure what to listen to? Check out the <button class="inline yellow" alt="Surprise button (Not clickable)" title="Surprise button (Not clickable)">Surprise!</button> playlist for an interesting mix!</p>
         `
     },
     {
@@ -90,7 +90,7 @@ const allInfo = {
             <li>Tap and hold any green area of your screen to move around by dragging one finger</li>
             <li>Using two fingers, slide your fingers away from or toward each other to zoom in and out, respectively</li>
         </ul>
-        <p class="center">When you find a building that you want to visit, simply click on the building file to open the popup with more details, and click <button class="inline" alt="Enter button (Not clickable)" title="Enter button (Not clickable)">Enter</button> to enter the building. If you ever want to return to the map from inside any of the buildings, you can always click <img class="inline" alt="Map file (Not clickable)" title="Map file (Not clickable)" src="assets/img/logo.png"> at the top right corner of your screen.</p>
+        <p class="center">When you find a building that you want to visit, simply click on the building file to open the popup with more details, and click <button class="inline" alt="Enter button (Not clickable)" title="Enter button (Not clickable)">Enter</button> to enter the building. If you ever want to return to the map from inside any of the buildings, you can always click <img class="inline" alt="Map icon (Not clickable)" title="Map icon (Not clickable)" src="assets/img/logo.png"> at the top right corner of your screen.</p>
     `,
     features: `
         <label>Building:</label>

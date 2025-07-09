@@ -4,6 +4,7 @@
 - Put HTML building pages in their own folder while still being able to access folders/files outside
 - Dark mode, enable manually or detect system
 - Rearrange buildings into more map-like random-like layout
+- Add shadow to buildings when hovering over them
 - Improve map background
 - Hand-drawn digital illustrations
 - Style/arrange elements/features of building pages to look more like actual interior of building
@@ -40,7 +41,7 @@
 - Export journals in rich text
 
 ## Town Hall
-- All features explained (fix custom bullets, add descriptions)
+- All features explained (add descriptions)
 - URL params for btns
 
 ## Post Office

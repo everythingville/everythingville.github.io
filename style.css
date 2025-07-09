@@ -266,6 +266,9 @@ body.library {
 button.inline {
     box-shadow: none;
     cursor: default;
+    padding: 5px 20px;
+    font-size: 14px;
+    margin: 0;
 }
 
 button.inline:hover {
@@ -317,7 +320,7 @@ img.inline.line-start {
     margin: 0 5px 0 0 !important;
 }
 
-small img.inline {
+small img.inline, button.inline img {
     height: 24px;
 }
 
@@ -486,6 +489,12 @@ small img.inline {
 }
 
 /*** MEDIA QUERIES ***/
+
+@media only screen and (max-width: 764px) {
+    #building-info div {
+        width: 100% !important;
+    }
+}
 
 @media print {
     body {
