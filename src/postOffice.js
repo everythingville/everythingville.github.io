@@ -371,14 +371,14 @@ const buildForm = () => {
 
             <div id="letter-fields"></div>
 
-            <button type="button" id="generate-btn" class="btns">Generate Letter</button>
+            <button type="button" id="generate-btn" class="btns"><img class="inline line-start" src="assets/img/generate.png" alt="Generate letter button" title="Generate letter button"> Generate Letter</button>
         </form>
 
         <div id="generated-letter" class="hidden btns">
             <h3>Your Letter</h3>
             <textarea id="final-letter" spellcheck="true" placeholder="Type your letter or select a template from above"></textarea>
-            <button id="print-btn">Print</button>
-            <button id="new-letter-btn">New Letter</button>
+            <button id="print-btn"><img class="inline line-start" src="assets/img/print.png" alt="Print letter button" title="Print letter button"> Print</button>
+            <button id="new-letter-btn"><img class="inline line-start" src="assets/img/reset.png" alt="New letter button" title="New letter button"> New Letter</button>
         </div>
     `;
     document.getElementById('letter-type').addEventListener('change', (e) => {
