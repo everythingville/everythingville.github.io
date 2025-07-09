@@ -65,7 +65,13 @@ const buildings = [
         name: "Town Hall",
         file: "townHall",
         description: `
-            <p>You're already here!</p>
+            <p>You're already here! If it's your first time in Everythingville, then this is the best place to start. If you're a returning guest, you're more than welcome to stay here for refreshers on navigating the town and all the different buildings in Everythingville. You can also take a look at the latest updates and access the feedback form.</p>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/logo.png" alt="How to navigate" title="How to navigate"><p> Learn about how to use the map to enter any of the buildings</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/features.png" alt="All features" title="All features"><p> Explore all the different features available in each of the buildings</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/updates.png" alt="Latest updates" title="Latest updates"><p> Stay up-to-date on the latest changes in Everythingville</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/feedback.png" alt="Feedback form" title="Feedback form"><p> Help improve the town by providing some feedback</p></div>
+            </div>
         `
     },
     {
@@ -124,7 +130,7 @@ const allInfo = {
         <div id="building-info"></div>
     `,
     updates: `
-        <p class="center">Learn about the most recent changes in the town!</p>
+        <p class="center">Learn about the most recent changes happening in town!</p>
         <video controls>
             <source src="assets/devlogs/latest.mp4" type="video/mp4">
             The video tag is not supported by your browser.
