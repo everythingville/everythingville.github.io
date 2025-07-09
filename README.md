@@ -23,3 +23,28 @@ Think of Everythingville like a small town, with the main page containing a map 
 - Using two fingers, slide your finger away from or toward each other to zoom in and out, respectively
 
 When you find a building that you want to visit, simply click on the building icon to open the popup with more details, and click the `Enter` button to enter the building. If you ever want to return to the map from inside of the buildings, you can always click the map icon at the top right corner of your screen.
+
+## Local Development
+
+### Prerequisites
+
+- A modern web browser
+
+- A code editor
+
+### How to Run
+
+1. Open a terminal
+
+2. Clone this repository with Git:
+
+    ```bash
+    git clone https://github.com/everythingville/everythingville.github.io.git
+    cd everythingville.github.io
+    ```
+
+3. Open your file explorer
+
+3. Navigate to the `everythingville.github.io` directory
+
+4. Open `index.html` in your browser
