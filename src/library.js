@@ -243,9 +243,3 @@ const loadBook = (genre, index) => {
         <iframe class="book" src="assets/books/${genre}/${b.folder}/book.html" title="${b.title}"></iframe>
     `;
 }
-
-/*
-BOOKS TO CHECK
-Mozart
-Jekyll
-*/
