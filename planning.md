@@ -76,7 +76,6 @@
 - Add more subjects
 
 ## Library
-- Make blurb collapsible with details and summary tags
 - Add img icons to btns
 - URL params for btns/select
 - Download book as w/ img as html or w/o img as txt

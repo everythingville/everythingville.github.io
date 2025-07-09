@@ -236,7 +236,10 @@ const displayBook = (genre) => {
 const loadBook = (genre, index) => {
     const b = library[genre].books[index];
     document.getElementById('book-info').innerHTML = `
-        <p><i>${b.title}</i> ${b.blurb}</p>
+        <details>
+            <summary><b>About <i>${b.title}</i></b></summary>
+            <p><i>${b.title}</i> ${b.blurb}</p>
+        </details>
         <iframe class="book" src="assets/books/${genre}/${b.folder}/book.html" title="${b.title}"></iframe>
     `;
 }
