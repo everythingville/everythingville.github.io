@@ -75,6 +75,11 @@ const allInfo = {
         <div id="building-info"></div>
     `,
     updates: `
+        <p class="center">Learn about the most recent changes in the town!</p>
+        <video controls>
+            <source src="assets/devlogs/latest.mp4" type="video/mp4">
+            The video tag is not supported by your browser.
+        </video>
     `,
     feedback: `
         <p class="center">Have any suggestions for improving Everythingville? Fill out the form below!</p>
@@ -107,6 +112,7 @@ const loadInfo = (info, title) => {
     };
 };
 
+// Load all features for chosen building (automatically load first)
 const loadBuilding = (index) => {
     const b = buildings[index];
     document.getElementById('building-info').innerHTML = `

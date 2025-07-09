@@ -40,8 +40,7 @@
 - Export journals in rich text
 
 ## Town Hall
-- All features explained
-- Latest updates, add last devlog
+- All features explained (missing descriptions)
 - URL params for btns
 
 ## Post Office
