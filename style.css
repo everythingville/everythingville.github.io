@@ -368,17 +368,17 @@ small img.inline {
 #building-info {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#building-info img {
-    margin-top: 20px;
+#building-info div {
+    width: 350px;
 }
 
-#building-info div, #building-info img {
-    width: 350px;
+#building-info img {
+    margin: 30px;
+    width: 290px;
 }
 
 #date-time {

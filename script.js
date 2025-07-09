@@ -114,7 +114,7 @@ const buildings = {
         }),
         title: 'School',
         hook: 'Want to test your knowledge?',
-        description: 'Study premade flashcards across a variety of common subject',
+        description: 'Study premade flashcards across a variety of common subjects',
         marker: null
     },
     library: {

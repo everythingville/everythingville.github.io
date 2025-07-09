@@ -4,48 +4,75 @@
 const buildings = [
     {
         name: "Music Store",
-        icon: "musicStore",
-        description: `<p class="center">about the music store</p>`
+        file: "musicStore",
+        description: `
+            <p>If you're looking for something to listen to in the background, then this is the place for you. Visit the Music Store to access a variety of playlists with relaxing sounds and music from different genres. It's perfect for helping you concentrate while you work!</p>
+            <b>Current collection of playlists:</b>
+            <ul>
+                <li>Relaxing sounds</li>
+                <li>Instrumental music</li>
+                <li>Pop music</li>
+                <li>Jazz music</li>
+                <li>Rock music</li>
+            </ul>
+            <p>Not sure what to listen to? Check out the Surprise playlist for an interesting mix!</p>
+        `
     },
     {
         name: "Gym",
-        icon: "gym",
-        description: `<p class="center">about the gym</p>`
+        file: "gym",
+        description: `
+            <p class="center">Visit the Gym to check out workout guides designed to help you achieve your goals</p>
+        `
     },
     {
         name: "Restaurant",
-        icon: "restaurant",
-        description: `<p class="center">about the restaurant</p>`
+        file: "restaurant",
+        description: `
+            <p class="center">Visit the Restaurant to access recipes to suit a variety of occassions and diets</p>
+        `
     },
     {
         name: "Home",
-        icon: "home",
-        description: `<p class="center">about home</p>`
+        file: "home",
+        description: `
+            <p class="center">Visit your Home to jot down your thoughts and save them for future reference</p>
+        `
     },
     {
         name: "Town Hall",
-        icon: "townHall",
-        description: `<p class="center">about the town hall</p>`
+        file: "townHall",
+        description: `
+            <p class="center">You're already here!</p>
+        `
     },
     {
         name: "Post Office",
-        icon: "postOffice",
-        description: `<p class="center">about the post office</p>`
+        file: "postOffice",
+        description: `
+            <p class="center">Visit the Post Office to write and print letters using templates for a variety of occasions</p>
+        `
     },
     {
         name: "Hardware Store",
-        icon: "hardwareStore",
-        description: `<p class="center">about the hardware store</p>`
+        file: "hardwareStore",
+        description: `
+            <p class="center">Visit the Hardware Store to check out tutorials to guide you through useful life hacks and crafts</p>
+        `
     },
     {
         name: "School",
-        icon: "school",
-        description: `<p class="center">about the school</p>`
+        file: "school",
+        description: `
+            <p class="center">Visit the School to study premade flashcards across a variety of common subjects</p>
+        `
     },
     {
         name: "Library",
-        icon: "library",
-        description: `<p class="center">about the library</p>`
+        file: "library",
+        description: `
+            <p class="center">Visit the Library to read free books from an extensive collection of popular genres</p>
+        `
     }
 ];
 
@@ -63,7 +90,7 @@ const allInfo = {
             <li>Tap and hold any green area of your screen to move around by dragging one finger</li>
             <li>Using two fingers, slide your fingers away from or toward each other to zoom in and out, respectively</li>
         </ul>
-        <p class="center">When you find a building that you want to visit, simply click on the building icon to open the popup with more details, and click <button class="inline" alt="Enter button (Not clickable)" title="Enter button (Not clickable)">Enter</button> to enter the building. If you ever want to return to the map from inside any of the buildings, you can always click <img class="inline" alt="Map icon (Not clickable)" title="Map icon (Not clickable)" src="assets/img/logo.png"> at the top right corner of your screen.</p>
+        <p class="center">When you find a building that you want to visit, simply click on the building file to open the popup with more details, and click <button class="inline" alt="Enter button (Not clickable)" title="Enter button (Not clickable)">Enter</button> to enter the building. If you ever want to return to the map from inside any of the buildings, you can always click <img class="inline" alt="Map file (Not clickable)" title="Map file (Not clickable)" src="assets/img/logo.png"> at the top right corner of your screen.</p>
     `,
     features: `
         <label>Building:</label>
@@ -117,6 +144,6 @@ const loadBuilding = (index) => {
     const b = buildings[index];
     document.getElementById('building-info').innerHTML = `
         <div>${b.description}</div>
-        <img src="assets/img/buildings/${b.icon}.png" alt="${b.name}">
+        <a href="${b.file}.html"><img src="assets/img/buildings/${b.file}.png" alt="${b.name}"></a>
     `;
 }
