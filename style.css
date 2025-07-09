@@ -279,6 +279,22 @@ div.btns button, button.btns, button.copy-btn {
     height: 50px;
 }
 
+div.custom-list {
+
+}
+
+div.li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+div.li img.inline.line-start {
+    width: 30px !important;
+}
+
 iframe.book {
     height: 100vh;
     background-color: white;
@@ -305,14 +321,6 @@ img.inline.line-start {
 
 small img.inline {
     height: 24px;
-}
-
-ul.no-bullets li {
-    list-style: none;
-}
-
-ul.no-bullets li img {
-    width: 30px !important;
 }
 
 .delete-btn {
@@ -387,6 +395,12 @@ ul.no-bullets li img {
 #building-info img {
     margin: 30px;
     width: 290px;
+    transition: all 0.3s;
+}
+
+#building-info img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s
 }
 
 #date-time {

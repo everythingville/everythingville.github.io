@@ -8,13 +8,13 @@ const buildings = [
         description: `
             <p>If you're looking for something to listen to in the background, then this is the place for you. Visit the Music Store to access a variety of playlists with relaxing sounds and music from different genres. It's perfect for helping you concentrate while you work!</p>
             <b>Current collection of playlists:</b>
-            <ul class="no-bullets">
-                <img class="inline line-start" src="assets/img/relaxing.png" alt="Relaxing sounds" title="Relaxing sounds"><li> Relaxing sounds</li>
-                <img class="inline line-start" src="assets/img/instrumental.png" alt="Instrumental music" title="Instrumental music"><li> Instrumental music</li>
-                <img class="inline line-start" src="assets/img/pop.png" alt="Pop music" title="Pop music"><li> Pop music</li>
-                <img class="inline line-start" src="assets/img/jazz.png" alt="Jazz music" title="Jazz music"><li> Jazz music</li>
-                <img class="inline line-start" src="assets/img/rock.png" alt="Rock music" title="Rock music"><li> Rock music</li>
-            </ul>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/relaxing.png" alt="Relaxing sounds" title="Relaxing sounds"><p> Relaxing sounds</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/instrumental.png" alt="Instrumental music" title="Instrumental music"><p> Instrumental music</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/pop.png" alt="Pop music" title="Pop music"><p> Pop music</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/jazz.png" alt="Jazz music" title="Jazz music"><p> Jazz music</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/rock.png" alt="Rock music" title="Rock music"><p> Rock music</p></div>
+            </div>
             <p>Not sure what to listen to? Check out the Surprise playlist for an interesting mix!</p>
         `
     },
@@ -144,6 +144,6 @@ const loadBuilding = (index) => {
     const b = buildings[index];
     document.getElementById('building-info').innerHTML = `
         <div>${b.description}</div>
-        <a href="${b.file}.html"><img src="assets/img/buildings/${b.file}.png" alt="${b.name}"></a>
+        <a href="${b.file}.html"><img src="assets/img/buildings/${b.file}.png" alt="${b.name}" title="Visit the ${b.name}"></a>
     `;
 }
