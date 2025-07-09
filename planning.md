@@ -6,6 +6,7 @@
 - Rearrange buildings into more map-like random-like layout
 - Improve map background
 - Hand-drawn digital illustrations
+- Style/arrange elements/features of building pages to look more like actual interior of building
 
 ## Music Store
 - URL params for btns
@@ -51,7 +52,6 @@
 - Add more types of letters
 
 ## Hardware Store
-- Add img icons to btns
 - URL params for btns/select
 - Print any tutorial
 - Export tutorials in rich text
@@ -60,7 +60,6 @@
 - Add more tutorial categories
 
 ## School
-- Add img icons to btns
 - Store flashcard links and titles in objects, map out to iframes
 - Add dropdown to select specific flashcard deck
 - Add img icons to btns
@@ -73,7 +72,6 @@
 - Add more subjects
 
 ## Library
-- Add img icons to btns
 - URL params for btns/select
 - Download book as w/ img as html or w/o img as txt
 - Add more books
