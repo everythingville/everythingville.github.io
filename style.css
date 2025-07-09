@@ -258,12 +258,9 @@ button.red {
     background-color: #e74c3c;
 }
 
-button.yellow {
-    background-color: rgb(255, 239, 59);
-}
-
 div.btns button, button.btns {
     width: 200px;
+    height: 44px;
 }
 
 iframe.book {
@@ -408,29 +405,17 @@ small img.inline {
 
 /*** DATA ATTRIBUTES ***/
 
-/* [data-genre="relaxing"] {
-    background: #69d8e4;
+[data-category="easy"] {
+    background: rgb(105, 255, 100);
 }
 
-[data-genre="instrumental"] {
-    background: #ecd580;
+[data-category="medium"], button.yellow {
+    background: rgb(255, 211, 92);
 }
 
-[data-genre="pop"] {
-    background: #ff98a7;
+[data-category="challenging"] {
+    background: rgb(255, 146, 146);
 }
-
-[data-genre="jazz"] {
-    background: #a8bbff;
-}
-
-[data-genre="rock"] {
-    background: #ee9890;
-}
-
-[data-genre="surprise"] {
-    background: #9eccf5;
-} */
 
 /*** MEDIA QUERIES ***/
 
