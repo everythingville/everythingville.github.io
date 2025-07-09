@@ -17,9 +17,8 @@ const buildings = {
         location: [750, 250],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/musicStore.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'Music Store',
         hook: 'Want something in the background?',
@@ -30,9 +29,8 @@ const buildings = {
         location: [750, 500],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/gym.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'Gym',
         hook: 'Feel like exercising?',
@@ -43,9 +41,8 @@ const buildings = {
         location: [750, 750],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/restaurant.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'Restaurant',
         hook: 'Want to cook or bake?',
@@ -56,9 +53,8 @@ const buildings = {
         location: [500, 250],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/home.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'Home',
         hook: 'Feel like writing?',
@@ -69,9 +65,8 @@ const buildings = {
         location: [500, 500],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/townHall.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'Town Hall',
         hook: 'Welcome to Everythingville!',
@@ -82,9 +77,8 @@ const buildings = {
         location: [500, 750],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/postOffice.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'Post Office',
         hook: 'Want to write to someone?',
@@ -95,9 +89,8 @@ const buildings = {
         location: [250, 250],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/hardwareStore.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'Hardware Store',
         hook: 'Feeling creative?',
@@ -108,9 +101,8 @@ const buildings = {
         location: [250, 500],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/school.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'School',
         hook: 'Want to test your knowledge?',
@@ -121,9 +113,8 @@ const buildings = {
         location: [250, 750],
         icon: L.icon({
             iconUrl: 'assets/img/buildings/library.png',
-            iconAnchor: [75, 150],
-            popupAnchor: [0, -150],
-            className: 'map-icon'
+            iconAnchor: [75, 75],
+            popupAnchor: [0, -75]
         }),
         title: 'Library',
         hook: 'Feel like reading?',
@@ -143,26 +134,6 @@ Object.keys(buildings).forEach(bName => {
             <a href="${bName}.html"><button>Enter</button></a>
         </div>
     `);
-});
-
-// Make building icons jump up when hovering over them
-map.eachLayer(layer => {
-    if (layer instanceof L.Marker) {
-        layer.on('mouseover', () => {
-            const icon = this.getElement();
-            if (icon) {
-                icon.style.transform = 'translateY(-10px) scale(1.1)';
-                icon.style.zIndex = '1000';
-            }
-        });
-        layer.on('mouseout', () => {
-            const icon = this.getElement();
-            if (icon) {
-                icon.style.transform = '';
-                icon.style.zIndex = '';
-            }
-        });
-    }
 });
 
 buildings.townHall.marker.on('click', function(e) {

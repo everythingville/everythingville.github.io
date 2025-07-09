@@ -365,26 +365,10 @@ small img.inline {
     background-color: #7ed957 !important;
 }
 
-.map-icon {
-    transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) !important;
-    transform-origin: 50% 100% !important;
-}
-
-.map-icon:hover {
-    transform: translateY(-10px) scale(1.1) !important;
-    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.3));
-    z-index: 1000 !important;
-}
-
 .leaflet-marker-icon {
     width: 150px;
     height: 150px;
-    transition: all 0.3s ease !important;
 }
-
-/* .leaflet-marker-icon:hover {
-    transform: translateY(-10px) !important;
-} */
 
 .popup {
     display: flex;
