@@ -5,47 +5,47 @@ const buildings = [
     {
         name: "Music Store",
         icon: "musicStore",
-        description: ``
+        description: `<p class="center">about the music store</p>`
     },
     {
         name: "Gym",
         icon: "gym",
-        description: ``
+        description: `<p class="center">about the gym</p>`
     },
     {
         name: "Restaurant",
         icon: "restaurant",
-        description: ``
+        description: `<p class="center">about the restaurant</p>`
     },
     {
         name: "Home",
         icon: "home",
-        description: ``
+        description: `<p class="center">about home</p>`
     },
     {
         name: "Town Hall",
         icon: "townHall",
-        description: ``
+        description: `<p class="center">about the town hall</p>`
     },
     {
         name: "Post Office",
         icon: "postOffice",
-        description: ``
+        description: `<p class="center">about the post office</p>`
     },
     {
         name: "Hardware Store",
         icon: "hardwareStore",
-        description: ``
+        description: `<p class="center">about the hardware store</p>`
     },
     {
         name: "School",
         icon: "school",
-        description: ``
+        description: `<p class="center">about the school</p>`
     },
     {
         name: "Library",
         icon: "library",
-        description: ``
+        description: `<p class="center">about the library</p>`
     }
 ];
 
@@ -68,9 +68,9 @@ const allInfo = {
     features: `
         <label>Building:</label>
         <select id="building">
-            ${buildings.map(b => {`
+            ${buildings.map(b => `
                 <option value="${buildings.indexOf(b)}">${b.name}</option>
-            `}).join('')}
+            `).join('')}
         </select>
         <div id="building-info"></div>
     `,
@@ -97,4 +97,20 @@ const loadInfo = (info, title) => {
         <h3>${title}</h3>
         ${section}
     `;
+    switch(info) {
+        case 'features':
+            document.getElementById('building').selectedIndex = 0;
+            loadBuilding(0);
+            document.getElementById('building').addEventListener('change', (e) => {
+                loadBuilding(e.target.value);
+            });
+    };
 };
+
+const loadBuilding = (index) => {
+    const b = buildings[index];
+    document.getElementById('building-info').innerHTML = `
+        <div>${b.description}</div>
+        <img src="assets/img/buildings/${b.icon}.png" alt="${b.name}">
+    `;
+}

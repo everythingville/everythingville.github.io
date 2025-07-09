@@ -358,6 +358,22 @@ small img.inline {
 
 /*** IDS ***/
 
+#building-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#building-info img {
+    margin-top: 20px;
+}
+
+#building-info div, #building-info img {
+    width: 350px;
+}
+
 #date-time {
     position: fixed;
     top: 20px;
