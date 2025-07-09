@@ -367,14 +367,17 @@ small img.inline {
     background-color: #7ed957 !important;
 }
 
-.map-icon {
+.leaflet-marker-icon {
     width: 150px;
     height: 150px;
+    position: relative;
+    bottom: 0px;
     transition: all 0.3s;
 }
 
-.map-icon:hover {
-    transform: scale(1.1);
+.leaflet-marker-icon:hover {
+    position: relative;
+    bottom: 30px;
     transition: all 0.3;
 }
 
