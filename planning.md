@@ -14,7 +14,6 @@
 - Add more music genres
 
 ## Gym
-- Add img icons to btns
 - URL params for btns/select
 - Print any exercise
 - Export exercises in rich text

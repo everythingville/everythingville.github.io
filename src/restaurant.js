@@ -159,7 +159,7 @@ const allRecipes = {
                 notes: "Add a dash of cinnamon"
             },
             {
-                name: "Cucumber Min Water",
+                name: "Cucumber Mint Water",
                 ingredients: ["4 slices cucumber", "5 mint leaves", "1 cup water"],
                 procedure: ["Muddle cucumber and mint in a glass", "Add water and ice, and let sit for 5 min"],
                 notesHeading: "Fix It",
@@ -194,7 +194,7 @@ const displayRecipe = (category) => {
     document.getElementById('recipe').selectedIndex = randIndex;
     loadRecipe(recipes, randIndex);
     document.getElementById('recipe').addEventListener('change', (e) => {
-        loadRecipe(recipes, e.taget.value);
+        loadRecipe(recipes, e.target.value);
     });
 };
 
