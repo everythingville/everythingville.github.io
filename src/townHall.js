@@ -22,56 +22,63 @@ const buildings = [
         name: "Gym",
         file: "gym",
         description: `
-            <p class="center">Visit the Gym to check out workout guides designed to help you achieve your goals</p>
+            <p>If you're looking for some exercises to do, then this is the place for you. Visit the Gym to access workout guides grouped by different categories. It's perfect for taking a break while working toward achieving your fitness goals!</p>
+            <b>Current workout categories:</b>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/easy.png" alt="Easy exercises" title="Easy exercises"><p> Easy exercises</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/medium.png" alt="Medium exercises" title="Medium exercises"><p> Medium exercises</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/challenging.png" alt="Challenging exercises" title="Challenging"><p> Challenging exercises</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/yoga.png" alt="Yoga poses" title="Yoga poses"><p> Yoga poses</p></div>
+            </div>
         `
     },
     {
         name: "Restaurant",
         file: "restaurant",
         description: `
-            <p class="center">Visit the Restaurant to access recipes to suit a variety of occassions and diets</p>
+            <p>Visit the Restaurant to access recipes to suit a variety of occassions and diets</p>
         `
     },
     {
         name: "Home",
         file: "home",
         description: `
-            <p class="center">Visit your Home to jot down your thoughts and save them for future reference</p>
+            <p>Visit your Home to jot down your thoughts and save them for future reference</p>
         `
     },
     {
         name: "Town Hall",
         file: "townHall",
         description: `
-            <p class="center">You're already here!</p>
+            <p>You're already here!</p>
         `
     },
     {
         name: "Post Office",
         file: "postOffice",
         description: `
-            <p class="center">Visit the Post Office to write and print letters using templates for a variety of occasions</p>
+            <p>Visit the Post Office to write and print letters using templates for a variety of occasions</p>
         `
     },
     {
         name: "Hardware Store",
         file: "hardwareStore",
         description: `
-            <p class="center">Visit the Hardware Store to check out tutorials to guide you through useful life hacks and crafts</p>
+            <p>Visit the Hardware Store to check out tutorials to guide you through useful life hacks and crafts</p>
         `
     },
     {
         name: "School",
         file: "school",
         description: `
-            <p class="center">Visit the School to study premade flashcards across a variety of common subjects</p>
+            <p>Visit the School to study premade flashcards across a variety of common subjects</p>
         `
     },
     {
         name: "Library",
         file: "library",
         description: `
-            <p class="center">Visit the Library to read free books from an extensive collection of popular genres</p>
+            <p>Visit the Library to read free books from an extensive collection of popular genres</p>
         `
     }
 ];
