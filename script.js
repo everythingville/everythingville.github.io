@@ -136,6 +136,27 @@ Object.keys(buildings).forEach(bName => {
     `);
 });
 
+// Make building icons jump up when hovering over them
+map.eachLayer(layer => {
+    if (layer instanceof L.Marker) {
+        layer.on('mouseover', () => {
+            const icon = this.getElement();
+            if (icon) {
+                icon.style.transition = 'transform 0.3s ease';
+                icon.style.transform = 'translateY(-10px)';
+                icon.style.zIndex = '1000';
+            }
+        });
+        layer.on('mouseout', () => {
+            const icon = this.getElement();
+            if (icon) {
+                icon.style.transform = 'translateY(0)';
+                icon.style.zIndex = '';
+            }
+        });
+    }
+});
+
 buildings.townHall.marker.on('click', function(e) {
     buildings.townHall.marker.openPopup();
 });
