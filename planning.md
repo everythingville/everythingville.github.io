@@ -45,7 +45,6 @@
 - URL params for btns
 
 ## Post Office
-- Add img icons to btns
 - URL params for btns
 - Save letters using localStorage
 - Open and edit past letters

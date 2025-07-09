@@ -721,7 +721,6 @@ const printLetter = () => {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        gap: 8px;
                         margin: 10px auto;
                         font-size: 14px;
                         padding: 7px 20px;
@@ -739,13 +738,14 @@ const printLetter = () => {
                     button:hover {
                         box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
                         cursor: pointer;
+                        transform: scale(1.05);
                         transition: all 0.3s;
                     }
                     body, button {
                         font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
                     }
                     img {
-                        height: 20px;
+                        height: 30px;
                         object-fit: contain;
                     }
                     @media print {
