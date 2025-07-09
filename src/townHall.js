@@ -53,7 +53,12 @@ const buildings = [
         name: "Home",
         file: "home",
         description: `
-            <p>Visit your Home to jot down your thoughts and save them for future reference</p>
+            <p>If you're looking for somewhere to jot down your thoughts, then this is the place for you. Visit your Home to write in your personal digital journal. All of your saved journal entries are private to you and stored locally on your web browser.</p>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/save.png" alt="Save journal entry" title="Save journal entry"><p> Save your journal entries for future reference</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/export.png" alt="Export all journals" title="Export all journals"><p> Export all of your saved entries as a text file</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/delete-red.png" alt="Delete journal entry" title="Delete journal entry"><p> Delete any of your saved entries from local storage</p></div>
+            </div>
         `
     },
     {
