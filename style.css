@@ -254,10 +254,6 @@ body.library {
     background-repeat: no-repeat;
 }
 
-button.copy-btn {
-    width: 150px;
-}
-
 button.inline {
     box-shadow: none;
     cursor: default;
@@ -267,7 +263,7 @@ button.red {
     background-color: #e74c3c;
 }
 
-div.btns button, button.btns {
+div.btns button, button.btns, button.copy-btn {
     width: 200px;
     height: 44px;
 }

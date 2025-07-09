@@ -336,7 +336,7 @@ document.querySelectorAll('button.letter-guides').forEach(button => {
             <h3>${letterTemplate.title}</h3>
             ${letterTemplate.structure}
             ${letterTemplate.example}
-            <button class="copy-btn">Copy Template</button>
+            <button class="copy-btn"><img class="inline line-start" src="assets/img/copy.png" alt="Copy template button" title="Copy template button"> Copy Template</button>
         `;
     });
 });
@@ -721,11 +721,13 @@ const printLetter = () => {
                         display: block;
                         margin: 10px auto;
                         font-size: 14px;
-                        padding: 5px 20px;
+                        padding: 7px 20px;
                         border-radius: 40px;
                         background-color: #75d8ff;
-                        border: 1px solid #75d8ff;
+                        border: none;
                         color: black;
+                        width: 200px;
+                        height: 44px;
                         transition: all 0.3s;
                     }
                     button:hover {
@@ -736,6 +738,11 @@ const printLetter = () => {
                     }
                     body, button {
                         font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                    }
+                    img {
+                        height: 30px;
+                        object-fit: contain;
+                        margin: 0 5px 0 0;
                     }
                     @media print {
                         .no-print {
@@ -750,11 +757,10 @@ const printLetter = () => {
 
             <body>
                 <div>${document.getElementById('final-letter').value.replace(/\n/g, '<br>')}</div>
-                <button class="no-print" onclick="window.close()">Close</button>
+                <button class="no-print" onclick="window.close()"><img src="assets/img/close.png" alt="Close window button" title="Close window button"> Close</button>
             </body>
         </html>
     `);
     printWindow.document.close();
     printWindow.focus()
 }
-// ${document.getElementById('final-letter').innerHTML.replace(/\n/g, '<br>')}
