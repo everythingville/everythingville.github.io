@@ -260,6 +260,10 @@ button.inline {
     cursor: default;
 }
 
+button.inline:hover {
+    transform: none;
+}
+
 button.red {
     background-color: #e74c3c;
 }
@@ -400,6 +404,7 @@ small img.inline {
 
 #map-nav img:hover {
     opacity: 1;
+    transform: scale(1.1);
     transition: all 0.3s;
 }
 
