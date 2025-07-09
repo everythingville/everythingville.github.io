@@ -24,7 +24,6 @@
 - Fitness tracker
 
 ## Restaurant
-- Add img icons to btns
 - URL params for btns/select
 - Print any recipe
 - Export recipes in rich text
@@ -34,6 +33,7 @@
 - Filter by dietary restrictions
 
 ## Home
+- Add img icons to btns
 - Print current journal
 - Open and edit past journals
 - Rich text editor for journal
@@ -63,6 +63,7 @@
 - Add more tutorial categories
 
 ## School
+- Add img icons to btns
 - Store flashcard links and titles in objects, map out to iframes
 - Add dropdown to select specific flashcard deck
 - Add img icons to btns
