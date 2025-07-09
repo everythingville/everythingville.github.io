@@ -37,7 +37,16 @@ const buildings = [
         name: "Restaurant",
         file: "restaurant",
         description: `
-            <p>Visit the Restaurant to access recipes to suit a variety of occassions and diets</p>
+            <p>If you're looking for something to cook or bake, then this is the place for you. Visit the Restaurant to access recipes grouped by different categories. It's perfect for taking a break when you get hungry!</p>
+            <b>Current recipe categories:</b>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/breakfast.png" alt="Breakfast" title="Breakfast"><p> Breakfast</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/lunch.png" alt="Lunch" title="Lunch"><p> Lunch</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/dinner.png" alt="Dinner" title="Dinner"><p> Dinner</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/dessert.png" alt="Dessert" title="Dessert"><p> Dessert</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/drinks.png" alt="Drinks" title="Drinks"><p> Drinks</p></div>
+            </div>
+            <p>After selecting a category, you will see a dropdown with a list of recipes, and details about one of the recipes from the list will appear. You can change the selected recipe either by using the dropdown or by clicking again on the category button to view a randomized exercise.</p>
         `
     },
     {
