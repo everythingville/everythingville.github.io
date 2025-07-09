@@ -30,6 +30,7 @@ const buildings = [
                 <div class="li"><img class="inline line-start" src="assets/img/challenging.png" alt="Challenging exercises" title="Challenging"><p> Challenging exercises</p></div>
                 <div class="li"><img class="inline line-start" src="assets/img/yoga.png" alt="Yoga poses" title="Yoga poses"><p> Yoga poses</p></div>
             </div>
+            <p>After selecting a category, you will see a dropdown with a list of exercises, and details about one of the exercises from the list will appear. You can change the selected exercise either by using the dropdown or by clicking again on the category button to view a randomized exercise.</p>
         `
     },
     {
