@@ -78,7 +78,16 @@ const buildings = [
         name: "Post Office",
         file: "postOffice",
         description: `
-            <p>Visit the Post Office to write and print letters using templates for a variety of occasions</p>
+            <p>If you're looking for help with writing letters, then this is the place for you. Visit the Post Office to access guides on writing letters for several different occasions. Each guide contains the general structure for writing the specified type of letter and an example letter that you can copy and use as a template.</p>
+            <b>Current letter types with guides:</b>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/academic.png" alt="Academic letters" title="Academic letters"><p> Academic letters</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/business.png" alt="Business letters" title="Business letters"><p> Business letters</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/casual.png" alt="Casual letters" title="Casual letters"><p> Casual letters</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/thanks.png" alt="Thank you letters" title="Thank you letters"><p> Thank you letters</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/complaint.png" alt="Complaint letters" title="Complaint letters"><p> Complaint letters</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/invite.png" alt="Invitations" title="Invitations"><p> Invitations</p></div>
+            </div>
         `
     },
     {
