@@ -39,6 +39,8 @@ body {
 
 body div.white {
     background-color: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    width: 100%;
 }
 
 button {
@@ -279,10 +281,6 @@ div.btns button, button.btns, button.copy-btn {
     height: 50px;
 }
 
-div.custom-list {
-
-}
-
 div.li {
     display: flex;
     flex-direction: row;
@@ -393,17 +391,21 @@ small img.inline {
     flex-wrap: wrap;
 }
 
-#building-info div {
-    width: 350px;
+#building-info a {
+    max-height: 290px;
 }
 
-#building-info img {
-    margin: 30px;
-    width: 290px;
+#building-info div {
+    max-width: 350px;
+}
+
+#building-info a img {
+    margin: 0px 30px;
+    max-width: 290px;
     transition: all 0.3s;
 }
 
-#building-info img:hover {
+#building-info a img:hover {
     transform: scale(1.1);
     transition: all 0.3s
 }
