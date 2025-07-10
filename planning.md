@@ -1,6 +1,8 @@
 # Planning
 
 ## General
+- Figure out why building interior bkgd isn't fixed on mobile (not issue with screen size, specific to device?)
+- Make screen auto-focus on first element displayed below btns when btn clicked inside building
 - Put HTML building pages in their own folder while still being able to access folders/files outside
 - Dark mode, enable manually or detect system
 - Rearrange buildings into more map-like random-like layout

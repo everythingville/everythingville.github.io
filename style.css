@@ -514,4 +514,7 @@ small img.inline, button.inline img {
     #building-info div div.custom-list {
         margin: auto;
     }
+    div.li p {
+        text-align: left !important;
+    }
 }

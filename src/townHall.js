@@ -88,6 +88,12 @@ const buildings = [
                 <div class="li"><img class="inline line-start" src="assets/img/complaint.png" alt="Complaint letters" title="Complaint letters"><p> Complaint letters</p></div>
                 <div class="li"><img class="inline line-start" src="assets/img/invite.png" alt="Invitations" title="Invitations"><p> Invitations</p></div>
             </div>
+            <p>Ready to write your own letter? The <button class="inline yellow" alt="Letter builder button (Not clickable)" title="Letter builder button (Not clickable)">Letter Builder</button> will help facilitate the process. Once you open the builder, you will see a dropdown with a list of the available types of letters. After you select the letter type, a form will appear for you to fill out the information you want on the letter.</p>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/generate.png" alt="Generate letter" title="Generate letter"><p> Generate your letter from your form responses</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/print.png" alt="Print letter" title="Print letter"><p> Print your letter once you're done editing it</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/reset.png" alt="New letter" title="New letter"><p> Write a new letter or clear the form to start over</p></div>
+            </div>
         `
     },
     {
