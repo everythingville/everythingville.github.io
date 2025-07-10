@@ -100,7 +100,13 @@ const buildings = [
         name: "Hardware Store",
         file: "hardwareStore",
         description: `
-            <p>Visit the Hardware Store to check out tutorials to guide you through useful life hacks and crafts</p>
+            <p>If you're looking for something to create, then this is the place for you. Visit the Hardware Store to access step-by-step DIY tutorials grouped by different categories. It's perfect for taking a break while making something useful!</p>
+            <b>Current tutorial categories:</b>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/lifeHacks.png" alt="Life hacks" title="Life hacks"><p> Life hacks</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/crafts.png" alt="Crafts" title="Crafts"><p> Crafts</p></div>
+            </div>
+            <p>After selecting a category, you will see a dropdown with a list of tutorials, and details about one of the tutorials from the list will appear. You can change the selected tutorial either by using the dropdown or by clicking again on the category button to view a randomized tutorial.</p>
         `
     },
     {
