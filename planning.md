@@ -43,7 +43,6 @@
 - Export journals in rich text
 
 ## Town Hall
-- All features explained (add descriptions)
 - URL params for btns
 
 ## Post Office
