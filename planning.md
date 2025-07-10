@@ -61,6 +61,7 @@
 - Add more tutorial categories
 
 ## School
+- Explain what each difficulty level is
 - Store flashcard links and titles in objects, map out to iframes
 - Add dropdown to select specific flashcard deck
 - Add img icons to btns
