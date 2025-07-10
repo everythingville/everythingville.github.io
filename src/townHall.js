@@ -113,7 +113,15 @@ const buildings = [
         name: "School",
         file: "school",
         description: `
-            <p>Visit the School to study premade flashcards across a variety of common subjects</p>
+            <p>If you're looking for somewhere to study, then this is the place for you. Visit the School to access premade flashcards grouped by subjects. It's perfect for testing your knowledge!</p>
+            <b>Current flashcard subjects:</b>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/math.png" alt="Mathematics" title="Mathematics"><p> Mathematics</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/ela.png" alt="Language arts" title="Language arts"><p> Language arts</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/sci.png" alt="Science" title="Science"><p> Science</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/ss.png" alt="Social studies" title="Social studies"><p> Social studies</p></div>
+            </div>
+            <p>After selecting a subject, you will see a dropdown with a list of difficulty levels. Once you choose a level of difficulty, flashcards for the subject you selected will appear.</p>
         `
     },
     {
