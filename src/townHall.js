@@ -128,7 +128,21 @@ const buildings = [
         name: "Library",
         file: "library",
         description: `
-            <p>Visit the Library to read free books from an extensive collection of popular genres</p>
+            <p>If you're looking for something to read, then this is the place for you. Visit the Library to access an extensive collection of books grouped by different genres. It's perfect for taking a break!</p>
+            <b>Current collection of genres:</b>
+            <div class="custom-list">
+                <div class="li"><img class="inline line-start" src="assets/img/sciFi.png" alt="Sci-fi books" title="Sci-fi books"><p> Sci-fi books</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/fantasy.png" alt="Fantasy books" title="Fantasy books"><p> Fantasy books</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/mystery.png" alt="Mystery books" title="Mystery books"><p> Mystery books</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/humor.png" alt="Humorous books" title="Humorous books"><p> Humorous books</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/plays.png" alt="Plays" title="Plays"><p> Plays</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/society.png" alt="Society books" title="Society books"><p> Society books</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/travel.png" alt="Travel books" title="Travel books"><p> Travel books</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/children.png" alt="Children's books" title="Children's books"><p> Children's books</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/poetry.png" alt="Poetry books" title="Poetry books"><p> Poetry books</p></div>
+                <div class="li"><img class="inline line-start" src="assets/img/biographies.png" alt="Biographies" title="Biographies"><p> Biographies</p></div>
+            </div>
+            <p>After selecting a genre, you will see a dropdown with a list of books, and one of the books from the list will appear. You can change the selected book either by using the dropdown or by clicking again on the genre button to view a randomized book.</p>
         `
     }
 ];
