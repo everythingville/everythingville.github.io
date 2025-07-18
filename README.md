@@ -51,6 +51,6 @@ When you find a building that you want to visit, simply click on the building ic
 
 3. Open your file explorer
 
-3. Navigate to the `everythingville.github.io` directory
+4. Navigate to the `everythingville.github.io` directory
 
-4. Open `index.html` in your browser
+5. Open `index.html` in your browser
