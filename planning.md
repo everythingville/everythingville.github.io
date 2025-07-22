@@ -43,6 +43,7 @@
 - Filter by dietary restrictions
 
 ## Home
+- Add confirm before deleting entry (built-in, like alert)
 - Print current journal
 - Open and edit past journals
 - Rich text editor for journal
