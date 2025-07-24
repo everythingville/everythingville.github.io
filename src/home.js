@@ -4,7 +4,7 @@ let journalEntries;
 try {
     journalEntries = JSON.parse(localStorage.getItem('journalEntries')) || [];
 } catch (e) {
-    console.error("Error loading journal entries:"), e;
+    console.error("Error loading journal entries:", e);
     journalEntries = [];
 }
 
