@@ -10,6 +10,7 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Geniusville/Smartville/Smartieville (problem: not inclusive of non-educational features, could seem slightly misleading)
 
 ## General Improvements
+- Make auto-focus scrolling smooth
 - Dark mode, enable manually or detect system
 - Rearrange buildings into more map-like random-like layout
 - Add shadow to buildings when hovering over them
