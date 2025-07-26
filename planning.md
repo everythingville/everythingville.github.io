@@ -1,6 +1,15 @@
 # Planning
 
-## General
+## Adapation for Kids
+Idea: would limit internet access while still allowing them to learn about the world, safe place to explore web, doesn't have to focus on productivity (can have entertainment as well), more on learning and safety, add theater to watch free kid-friendly moveis and shows, add TKS-style emerging tech/science videos (save all videos from modules into playlists) to school
+
+### Possible Names
+- Funville (problem: not attractive to parents)
+- Allville (problem: pronunciation disputes, might be better with hyphen)
+- Kidville (problem: not attractive to kids)
+- Geniusville/Smartville/Smartieville (problem: not inclusive of non-educational features, could seem slightly misleading)
+
+## General Improvements
 - Figure out why building interior bkgd isn't fixed on mobile (not issue with screen size, specific to device?)
 - Put HTML building pages in their own folder while still being able to access folders/files outside
 - Dark mode, enable manually or detect system
