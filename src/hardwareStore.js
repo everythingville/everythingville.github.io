@@ -82,21 +82,33 @@ document.querySelectorAll('div.diy-btns button').forEach(button => {
 
 // Display tutorials from chosen category
 const displayTutorial = (category) => {
-    const tutorials = allTutorials[category];
-    document.getElementById('tutorial-display').innerHTML = `
-        <h3>${tutorials.title}</h3>
-        <label>Tutorial:</label>
-        <select id="tutorial">
-            <option value="" selected disabled>Select a tutorial</option>
-            ${tutorials.tutorials.map(t => `
-                <option value=${tutorials.tutorials.indexOf(t)}>${t.name}</option>`
-            ).join('')}
-        </select>
-        <div id="tutorial-info"></div>
-    `;
-    document.getElementById('tutorial').addEventListener('change', (e) => {
-        loadTutorial(tutorials, e.target.value);
-    });
+    if (category == 'surprise') {
+        const categories = Object.keys(allTutorials);
+        category = categories[Math.floor(Math.random() * categories.length)];
+        const tutorials = allTutorials[category];
+        const tutorialIndex = Math.floor(Math.random() * tutorials.tutorials.length);
+        document.getElementById('tutorial-display').innerHTML = `
+            <h3>${tutorials.tutorials[tutorialIndex].name}</h3>
+            <div id="tutorial-info"></div>
+        `;
+        loadTutorial(tutorials, tutorialIndex);
+    } else {
+        const tutorials = allTutorials[category];
+        document.getElementById('tutorial-display').innerHTML = `
+            <h3>${tutorials.title}</h3>
+            <label>Tutorial:</label>
+            <select id="tutorial">
+                <option value="" selected disabled>Select a tutorial</option>
+                ${tutorials.tutorials.map(t => `
+                    <option value=${tutorials.tutorials.indexOf(t)}>${t.name}</option>`
+                ).join('')}
+            </select>
+            <div id="tutorial-info"></div>
+        `;
+        document.getElementById('tutorial').addEventListener('change', (e) => {
+            loadTutorial(tutorials, e.target.value);
+        });
+    }
 };
 
 // Display chosen tutorial

@@ -60,7 +60,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more types of letters
 
 ## Hardware Store
-- Add randomize btn that accesses entire db
 - Print any tutorial
 - Export tutorials in rich text
 - Add more details to tutorials
