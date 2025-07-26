@@ -21,14 +21,12 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Fix title attributes on imgs/btns
 
 ## Music Store
-- Make screen auto-focus on 1st element displayed below btns when category btn clicked
 - URL params for btns
 - Shuffle mode, maybe with custom-made music player
 - Add more music
 - Add more music genres
 
 ## Gym
-- Make screen auto-focus on 1st element displayed below btns when category btn clicked
 - Dropdown shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - URL params for btns/select
@@ -41,7 +39,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Fitness tracker
 
 ## Restaurant
-- Make screen auto-focus on 1st element displayed below btns when category btn clicked
 - Dropdown shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - URL params for btns/select
@@ -60,12 +57,10 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Export journals in rich text
 
 ## Town Hall
-- Make screen auto-focus on 1st element displayed below btns when category btn clicked
 - Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - URL params for btns
 
 ## Post Office
-- Make screen auto-focus on 1st element displayed below btns when category btn clicked
 - URL params for btns
 - Save letters using localStorage
 - Open and edit past letters
@@ -73,7 +68,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more types of letters
 
 ## Hardware Store
-- Make screen auto-focus on 1st element displayed below btns when category btn clicked
 - Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - URL params for btns/select
@@ -84,7 +78,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more tutorial categories
 
 ## School
-- Make screen auto-focus on 1st element displayed below btns when category btn clicked
 - Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - Explain what each difficulty level is
@@ -100,7 +93,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more subjects
 
 ## Library
-- Make screen auto-focus on 1st element displayed below btns when category btn clicked
 - Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - URL params for btns/select
