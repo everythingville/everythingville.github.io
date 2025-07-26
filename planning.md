@@ -18,6 +18,7 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Hand-drawn digital illustrations
 - Style/arrange elements/features of building pages to look more like actual interior of building
 - Put HTML building pages in their own folder while still being able to access folders/files outside
+- Fix title attributes on imgs/btns
 
 ## Music Store
 - Make screen auto-focus on 1st element displayed below btns when category btn clicked
