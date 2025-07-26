@@ -35,7 +35,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Fitness tracker
 
 ## Restaurant
-- Add randomize btn that accesses entire db
 - Print any recipe
 - Export recipes in rich text
 - Add more details to recipes

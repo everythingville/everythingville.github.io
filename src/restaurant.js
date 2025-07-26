@@ -178,21 +178,33 @@ document.querySelectorAll('div.recipe-categories button').forEach(button => {
 
 // Display recipes from chosen category
 const displayRecipe = (category) => {
-    const recipes = allRecipes[category];
-    document.getElementById('recipe-display').innerHTML = `
-        <h3>${recipes.title}</h3>
-        <label>Recipe:</label>
-        <select id="recipe">
-            <option value="" selected disabled>Select a recipe</option>
-            ${recipes.recipes.map(r => `
-                <option value="${recipes.recipes.indexOf(r)}">${r.name}</option>
-            `).join('')}
-        </select>
-        <div id="recipe-info"></div>
-    `;
-    document.getElementById('recipe').addEventListener('change', (e) => {
-        loadRecipe(recipes, e.target.value);
-    });
+    if (category == 'surprise') {
+        const categories = Object.keys(allRecipes);
+        category = categories[Math.floor(Math.random() * categories.length)];
+        const recipes = allRecipes[category];
+        const recipeIndex = Math.floor(Math.random() * recipes.recipes.length);
+        document.getElementById('recipe-display').innerHTML = `
+            <h3>${recipes.recipes[recipeIndex].name}</h3>
+            <div id="recipe-info"></div>
+        `;
+        loadRecipe(recipes, recipeIndex);
+    } else {
+        const recipes = allRecipes[category];
+        document.getElementById('recipe-display').innerHTML = `
+            <h3>${recipes.title}</h3>
+            <label>Recipe:</label>
+            <select id="recipe">
+                <option value="" selected disabled>Select a recipe</option>
+                ${recipes.recipes.map(r => `
+                    <option value="${recipes.recipes.indexOf(r)}">${r.name}</option>
+                `).join('')}
+            </select>
+            <div id="recipe-info"></div>
+        `;
+        document.getElementById('recipe').addEventListener('change', (e) => {
+            loadRecipe(recipes, e.target.value);
+        });
+    }
 };
 
 // Display chosen recipe
