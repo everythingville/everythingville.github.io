@@ -31,8 +31,6 @@
 /*** TAGS ***/
 
 body {
-    margin: 0;
-    padding: 0;
     line-height: 1.75;
     background-color: white;
 }
@@ -161,6 +159,15 @@ video {
     background: black;
 }
 
+body, html {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    width: 100%;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
 body, h1, h2, h3, h4, p, a, button, input, select, textarea, b, i {
     font-family: 'Poppins', BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -192,7 +199,13 @@ ul, ol {
 
 /*** CLASSES ***/
 
-body.musicStore {
+body.musicStore #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/musicStore.png");
     background-attachment: fixed;
     background-position: center;
@@ -200,7 +213,13 @@ body.musicStore {
     background-repeat: no-repeat;
 }
 
-body.gym {
+body.gym #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/gym.png");
     background-attachment: fixed;
     background-position: center;
@@ -208,7 +227,13 @@ body.gym {
     background-repeat: no-repeat;
 }
 
-body.restaurant {
+body.restaurant #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/restaurant.png");
     background-attachment: fixed;
     background-position: center;
@@ -216,7 +241,13 @@ body.restaurant {
     background-repeat: no-repeat;
 }
 
-body.home {
+body.home #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/home.png");
     background-attachment: fixed;
     background-position: center;
@@ -224,7 +255,13 @@ body.home {
     background-repeat: no-repeat;
 }
 
-body.townHall {
+body.townHall #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/townHall.png");
     background-attachment: fixed;
     background-position: center;
@@ -232,7 +269,13 @@ body.townHall {
     background-repeat: no-repeat;
 }
 
-body.postOffice {
+body.postOffice #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/postOffice.png");
     background-attachment: fixed;
     background-position: center;
@@ -240,7 +283,13 @@ body.postOffice {
     background-repeat: no-repeat;
 }
 
-body.hardwareStore {
+body.hardwareStore #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/hardwareStore.png");
     background-attachment: fixed;
     background-position: center;
@@ -248,7 +297,13 @@ body.hardwareStore {
     background-repeat: no-repeat;
 }
 
-body.school {
+body.school #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/school.png");
     background-attachment: fixed;
     background-position: center;
@@ -256,7 +311,13 @@ body.school {
     background-repeat: no-repeat;
 }
 
-body.library {
+body.library #bkgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
     background-image: url("assets/img/bkgds/library.png");
     background-attachment: fixed;
     background-position: center;
