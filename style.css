@@ -346,6 +346,12 @@ div.btns button, button.btns, button.copy-btn {
     height: 50px;
 }
 
+div.centered-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 div.li {
     display: flex;
     flex-direction: row;

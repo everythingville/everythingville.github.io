@@ -10,14 +10,13 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Geniusville/Smartville/Smartieville (problem: not inclusive of non-educational features, could seem slightly misleading)
 
 ## General Improvements
-- Figure out why building interior bkgd isn't fixed on mobile (not issue with screen size, specific to device?)
-- Put HTML building pages in their own folder while still being able to access folders/files outside
 - Dark mode, enable manually or detect system
 - Rearrange buildings into more map-like random-like layout
 - Add shadow to buildings when hovering over them
 - Improve map background
 - Hand-drawn digital illustrations
 - Style/arrange elements/features of building pages to look more like actual interior of building
+- Put HTML building pages in their own folder while still being able to access folders/files outside
 
 ## Music Store
 - Make screen auto-focus on 1st element displayed below btns when category btn clicked
