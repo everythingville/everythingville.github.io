@@ -256,22 +256,34 @@ document.querySelectorAll('div.workout-categories button').forEach(button => {
 
 // Display exercise from chosen workout
 const displayWorkout = (category) => {
-    const workout = workouts[category];
-    document.getElementById('workout-display').innerHTML = `
-        <h3>${workout.title}</h3>
-    <p class="center">${workout.description}</p>
-    <label>Exercise:</label>
-    <select id="exercise">
-        <option value="" selected disabled>Select an exercise</option>
-        ${workout.exercises.map(e => `
-            <option value="${workout.exercises.indexOf(e)}">${e.name}</option>
-        `).join('')}
-    </select>
-    <div id="exercise-info"></div>
-    `;
-    document.getElementById('exercise').addEventListener('change', (e) => {
-        loadExercise(workout, e.target.value);
-    });
+    if (category == 'surprise') {
+        const categories = Object.keys(workouts);
+        category = categories[Math.floor(Math.random() * categories.length)];
+        const workout = workouts[category];
+        const exerciseIndex = Math.floor(Math.random() * workout.exercises.length);
+        document.getElementById('workout-display').innerHTML = `
+            <h3>${workout.exercises[exerciseIndex].name}</h3>
+            <div id="exercise-info"></div>
+        `;
+        loadExercise(workout, exerciseIndex);
+    } else {
+        const workout = workouts[category];
+        document.getElementById('workout-display').innerHTML = `
+            <h3>${workout.title}</h3>
+            <p class="center">${workout.description}</p>
+            <label>Exercise:</label>
+            <select id="exercise">
+                <option value="" selected disabled>Select an exercise</option>
+                ${workout.exercises.map(e => `
+                    <option value="${workout.exercises.indexOf(e)}">${e.name}</option>
+                `).join('')}
+            </select>
+            <div id="exercise-info"></div>
+        `;
+        document.getElementById('exercise').addEventListener('change', (e) => {
+            loadExercise(workout, e.target.value);
+        });
+    }
 };
 
 // Display chosen exercise

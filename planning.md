@@ -26,7 +26,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more music genres
 
 ## Gym
-- Add randomize btn that accesses entire db
 - Print any exercise
 - Export exercises in rich text
 - Add more details to exercises
