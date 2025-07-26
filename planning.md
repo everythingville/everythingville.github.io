@@ -21,7 +21,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Fix title attributes on imgs/btns
 
 ## Music Store
-- URL params for btns
 - Shuffle mode, maybe with custom-made music player
 - Add more music
 - Add more music genres
@@ -29,7 +28,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 ## Gym
 - Dropdown shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
-- URL params for btns/select
 - Print any exercise
 - Export exercises in rich text
 - Add more details to exercises
@@ -41,7 +39,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 ## Restaurant
 - Dropdown shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
-- URL params for btns/select
 - Print any recipe
 - Export recipes in rich text
 - Add more details to recipes
@@ -58,10 +55,8 @@ Idea: would limit internet access while still allowing them to learn about the w
 
 ## Town Hall
 - Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
-- URL params for btns
 
 ## Post Office
-- URL params for btns
 - Save letters using localStorage
 - Open and edit past letters
 - Export letters in rich text
@@ -70,7 +65,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 ## Hardware Store
 - Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
-- URL params for btns/select
 - Print any tutorial
 - Export tutorials in rich text
 - Add more details to tutorials
@@ -84,7 +78,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Store flashcard links and titles in objects, map out to iframes
 - Add dropdown to select specific flashcard deck
 - Add img icons to btns
-- URL params for btns/select
 - Custom-made flashcard display
 - Print any flashcard deck
 - Export flashcards in rich text
@@ -95,7 +88,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 ## Library
 - Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
-- URL params for btns/select
 - Download book as w/ img as html or w/o img as txt
 - Add more books
 - Add more book genres

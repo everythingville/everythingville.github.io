@@ -187,10 +187,6 @@ const allInfo = {
 
 document.querySelectorAll('div.info-btns button').forEach(button => {
     button.addEventListener('click', () => {
-        const url = new URL('http://127.0.0.1:3000/townHall.html')
-        url.searchParams.append('info', button.dataset.info);
-        console.log(url.toString());
-
         const info = button.dataset.info;
         const title = button.textContent;
         loadInfo(info, title);
