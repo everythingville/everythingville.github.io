@@ -212,21 +212,33 @@ document.querySelectorAll('div.book-genres button').forEach(button => {
 
 // Display books from chosen genre
 const displayBook = (genre) => {
-    const books = library[genre];
-    document.getElementById('book-display').innerHTML = `
-        <h3>${books.heading}</h3>
-        <label>Book:</label>
-        <select id="book">
-            <option value="" selected disabled>Select a book</option>
-            ${books.books.map(b => `
-                <option value="${books.books.indexOf(b)}">${b.title}</option>
-            `).join('')}
-        </select>
-        <div id="book-info"></div>
-    `;
-    document.getElementById('book').addEventListener('change', (e) => {
-        loadBook(genre, e.target.value);
-    });
+    if (genre == 'surprise') {
+        const genres = Object.keys(library);
+        genre = genres[Math.floor(Math.random() * genres.length)];
+        const books = library[genre];
+        const bookIndex = Math.floor(Math.random() * books.books.length);
+        document.getElementById('book-display').innerHTML = `
+            <h3>${books.books[bookIndex].title}</h3>
+            <div id="book-info"></div>
+        `;
+        loadBook(genre, bookIndex);
+    } else {
+        const books = library[genre];
+        document.getElementById('book-display').innerHTML = `
+            <h3>${books.heading}</h3>
+            <label>Book:</label>
+            <select id="book">
+                <option value="" selected disabled>Select a book</option>
+                ${books.books.map(b => `
+                    <option value="${books.books.indexOf(b)}">${b.title}</option>
+                `).join('')}
+            </select>
+            <div id="book-info"></div>
+        `;
+        document.getElementById('book').addEventListener('change', (e) => {
+            loadBook(genre, e.target.value);
+        });
+    }
 };
 
 // Display chosen book

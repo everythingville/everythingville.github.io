@@ -81,7 +81,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more subjects
 
 ## Library
-- Add randomize btn that accesses entire db
 - Download book as w/ img as html or w/o img as txt
 - Add more books
 - Add more book genres

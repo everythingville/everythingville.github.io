@@ -143,6 +143,10 @@ summary {
     padding: 0px 0px 10px 20px;
 }
 
+summary:hover {
+    cursor: pointer;
+}
+
 textarea {
     width: calc(100% - 30px);
     height: 200px;
