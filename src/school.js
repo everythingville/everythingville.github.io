@@ -102,7 +102,7 @@ document.querySelectorAll('button.flashcards').forEach(button => {
         document.getElementById('flashcards-display').innerHTML = `
             <label>Difficulty Level:</label>
             <select id="flashcard-difficulty">
-                <option value="none">None selected</option>
+                <option value="" selected disabled>Select a difficulty level</option>
                 <option value="beginner">Beginner</option>
                 <option value="intermediate">Intermediate</option>
                 <option value="advanced">Advanced</option>
@@ -117,5 +117,5 @@ document.querySelectorAll('button.flashcards').forEach(button => {
 });
 
 const loadFlashcards = (subject, difficulty) => {
-    document.getElementById('flashcards').innerHTML = flashcards[subject][difficulty] ? flashcards[subject][difficulty] : `<p>Select a difficulty level to continue</p>`;
+    document.getElementById('flashcards').innerHTML = flashcards[subject][difficulty];
 }

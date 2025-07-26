@@ -262,22 +262,19 @@ const displayWorkout = (category) => {
     <p class="center">${workout.description}</p>
     <label>Exercise:</label>
     <select id="exercise">
+        <option value="" selected disabled>Select an exercise</option>
         ${workout.exercises.map(e => `
             <option value="${workout.exercises.indexOf(e)}">${e.name}</option>
         `).join('')}
     </select>
     <div id="exercise-info"></div>
     `;
-
-    const randIndex = Math.floor(Math.random() * workout.exercises.length);
-    document.getElementById('exercise').selectedIndex = randIndex;
-    loadExercise(workout, randIndex);
     document.getElementById('exercise').addEventListener('change', (e) => {
         loadExercise(workout, e.target.value);
     });
 };
 
-// Display chosen exercise (automatically loads random)
+// Display chosen exercise
 const loadExercise = (workout, index) => {
     const e = workout.exercises[index];
     document.getElementById('exercise-info').innerHTML = `

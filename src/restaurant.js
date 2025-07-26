@@ -183,22 +183,19 @@ const displayRecipe = (category) => {
         <h3>${recipes.title}</h3>
         <label>Recipe:</label>
         <select id="recipe">
+            <option value="" selected disabled>Select a recipe</option>
             ${recipes.recipes.map(r => `
                 <option value="${recipes.recipes.indexOf(r)}">${r.name}</option>
             `).join('')}
         </select>
         <div id="recipe-info"></div>
     `;
-
-    const randIndex = Math.floor(Math.random() * recipes.recipes.length);
-    document.getElementById('recipe').selectedIndex = randIndex;
-    loadRecipe(recipes, randIndex);
     document.getElementById('recipe').addEventListener('change', (e) => {
         loadRecipe(recipes, e.target.value);
     });
 };
 
-// Display chosen recipe (automatically loads random)
+// Display chosen recipe
 const loadRecipe = (recipes, index) => {
     const r = recipes.recipes[index];
     document.getElementById('recipe-info').innerHTML = `

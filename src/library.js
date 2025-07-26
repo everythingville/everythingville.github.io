@@ -217,22 +217,19 @@ const displayBook = (genre) => {
         <h3>${books.heading}</h3>
         <label>Book:</label>
         <select id="book">
+            <option value="" selected disabled>Select a book</option>
             ${books.books.map(b => `
                 <option value="${books.books.indexOf(b)}">${b.title}</option>
             `).join('')}
         </select>
         <div id="book-info"></div>
     `;
-
-    const randIndex = Math.floor(Math.random() * books.books.length);
-    document.getElementById('book').selectedIndex = randIndex;
-    loadBook(genre, randIndex);
     document.getElementById('book').addEventListener('change', (e) => {
         loadBook(genre, e.target.value);
     });
 };
 
-// Display chosen book (automatically loads random)
+// Display chosen book
 const loadBook = (genre, index) => {
     const b = library[genre].books[index];
     document.getElementById('book-info').innerHTML = `

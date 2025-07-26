@@ -87,22 +87,19 @@ const displayTutorial = (category) => {
         <h3>${tutorials.title}</h3>
         <label>Tutorial:</label>
         <select id="tutorial">
+            <option value="" selected disabled>Select a tutorial</option>
             ${tutorials.tutorials.map(t => `
                 <option value=${tutorials.tutorials.indexOf(t)}>${t.name}</option>`
             ).join('')}
         </select>
         <div id="tutorial-info"></div>
     `;
-
-    const randIndex = Math.floor(Math.random() * tutorials.tutorials.length);
-    document.getElementById('tutorial').selectedIndex = randIndex;
-    loadTutorial(tutorials, randIndex);
     document.getElementById('tutorial').addEventListener('change', (e) => {
         loadTutorial(tutorials, e.target.value);
     });
 };
 
-// Display chosen tutorial (automatically loads random)
+// Display chosen tutorial
 const loadTutorial = (tutorials, index) => {
     const t = tutorials.tutorials[index];
     document.getElementById('tutorial-info').innerHTML = `

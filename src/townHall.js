@@ -166,6 +166,7 @@ const allInfo = {
     features: `
         <label>Building:</label>
         <select id="building">
+            <option value="" selected disabled>Select a building</option>
             ${buildings.map(b => `
                 <option value="${buildings.indexOf(b)}">${b.name}</option>
             `).join('')}
@@ -202,15 +203,13 @@ const loadInfo = (info, title) => {
     `;
     switch(info) {
         case 'features':
-            document.getElementById('building').selectedIndex = 0;
-            loadBuilding(0);
             document.getElementById('building').addEventListener('change', (e) => {
                 loadBuilding(e.target.value);
             });
     };
 };
 
-// Load all features for chosen building (automatically load first)
+// Load all features for chosen building
 const loadBuilding = (index) => {
     const b = buildings[index];
     document.getElementById('building-info').innerHTML = `

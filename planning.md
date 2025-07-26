@@ -26,7 +26,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more music genres
 
 ## Gym
-- Dropdown shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - Print any exercise
 - Export exercises in rich text
@@ -37,7 +36,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Fitness tracker
 
 ## Restaurant
-- Dropdown shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - Print any recipe
 - Export recipes in rich text
@@ -54,7 +52,7 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Export journals in rich text
 
 ## Town Hall
-- Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
+- Continue recording devlogs
 
 ## Post Office
 - Save letters using localStorage
@@ -63,7 +61,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more types of letters
 
 ## Hardware Store
-- Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - Print any tutorial
 - Export tutorials in rich text
@@ -72,7 +69,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more tutorial categories
 
 ## School
-- Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - Explain what each difficulty level is
 - Store flashcard links and titles in objects, map out to iframes
@@ -86,7 +82,6 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more subjects
 
 ## Library
-- Dropdown for features shouldn't have anything selected by default, display div content should ask user to select option before continuing
 - Add randomize btn that accesses entire db
 - Download book as w/ img as html or w/o img as txt
 - Add more books
