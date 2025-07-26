@@ -103,9 +103,9 @@ document.querySelectorAll('button.flashcards').forEach(button => {
             <label>Difficulty Level:</label>
             <select id="flashcard-difficulty">
                 <option value="" selected disabled>Select a difficulty level</option>
-                <option value="beginner">Beginner</option>
-                <option value="intermediate">Intermediate</option>
-                <option value="advanced">Advanced</option>
+                <option value="beginner">Elementary</option>
+                <option value="intermediate">Junior High</option>
+                <option value="advanced">High School</option>
             </select>
 
             <div id="flashcards"></div>

@@ -68,9 +68,8 @@ Idea: would limit internet access while still allowing them to learn about the w
 - Add more tutorial categories
 
 ## School
-- Add randomize btn that accesses entire db
-- Explain what each difficulty level is
 - Store flashcard links and titles in objects, map out to iframes
+- Add randomize btn that accesses entire db
 - Add dropdown to select specific flashcard deck
 - Add img icons to btns
 - Custom-made flashcard display
