@@ -18,7 +18,7 @@ Think of Everythingville like a small town, with the main page containing a map 
 
 **If you're on a computer:**
 
-- Click on any green are of your screen and drag your mouse to move around
+- Click on any green area of your screen and drag your mouse to move around
 
 - Use the `+` and `-` signs located at the top left of your screen to zoom in and out, respectively
 
